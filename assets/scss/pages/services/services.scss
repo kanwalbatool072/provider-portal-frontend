@@ -1,0 +1,104 @@
+@import '@/assets/variables/light';
+#services{
+    overflow: hidden;
+        .services-grid {
+          .servic-card{
+            .ant-card-body{
+              padding: 5px !important;
+              h3 {
+                font-size: 1.063rem;
+                font-family: $font-family-jost;
+                font-weight: 500;
+                line-height: 2;
+              }
+              span {
+                font-size: 1.0rem;
+                font-family: $font-family-jost;
+                font-weight: 600;
+                color:$heading-color;
+              
+              }
+              .services-desription{
+             
+                p{
+                  font-size: 0.937rem;
+              font-weight: 400;
+                 font-family: $font-family-jost;
+                }
+              }
+              .ant-btn{
+                span{
+                  font-size: 	0.9375rem;
+                  font-weight: 500;
+                  font-family: $font-family-poppins;
+                }
+               
+              }
+              // .product-price {
+              //   h1 {
+              //     font-size: 24px;
+              //     font-family: 'Jost';
+              //     font-weight: 500;
+              //   }
+              //   del {
+              //     font-size: 18px;
+              //     font-weight: 400;
+              //     font-family: 'Jost';
+              //   }
+              // }
+            }
+
+          }
+        
+          img {
+            height: 200px;
+            object-fit: cover;
+          }
+       
+        }
+       
+      
+    
+       
+  }
+  @media screen and (max-width: 1024px) { 
+    #services{
+      .mx-5 {
+        margin-right: 0.3rem !important ;
+        margin-left: 0.3rem !important;
+    }
+      
+    .services-grid {
+      .servic-card{
+        .ant-card-body{
+         
+          h3 {
+            font-size: 0.9rem;
+         
+          }
+          span{
+            font-size: 0.7rem;
+          }
+        }
+      }
+  }
+}
+  }
+  @media screen and (max-width: 768px) { 
+    #services{
+    overflow: hidden;
+        .services-grid {
+          .servic-card{
+            .ant-card-body{
+             
+              .ant-btn{
+                height: 34px !important;
+                span{
+                  font-size: 	0.7rem;
+               
+                }
+              
+              }}}}}}
+         
+     
+  

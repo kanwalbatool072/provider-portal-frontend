@@ -1,0 +1,1032 @@
+@import '@/assets/variables/light';
+#products-details{
+    
+    .product-details-right-side {
+    
+        h1 {
+      
+          margin-bottom: 0px;
+          font-family: $font-family-jost;
+          font-weight: 500;
+        }
+        h2 {
+          font-size: 1.625rem;
+          font-family: $font-family-jost;
+          font-weight: 500;
+        }
+        del {
+          font-size: 1.2rem;
+          line-height: 2;
+          font-family: $font-family-jost;
+          font-weight: 400;
+          color: $text-brown;
+          opacity: 0.7;
+        }
+        h4{
+          font-size: 1rem;
+          font-family: $font-family-jost !important;
+          font-weight: 500;
+        }
+        u{
+          font-size: 0.9rem;
+          font-family: $font-family-jost !important;
+          font-weight: 500;
+          color: rgb(150, 146, 146);
+        }
+        p {
+          font-family: $font-family-jost;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 2;
+          opacity: 0.7;
+        }
+        .cart-btn {
+          width: 100%;
+          border: 1px solid  $primary-color;;
+          background: $text-white;
+          color:  $primary-color;;
+          height: 45px;
+          opacity: 1;
+        }
+        .buy-btn {
+          width: 100%;
+          border: 1px solid  $primary-color;;
+          background:  $primary-color;;
+          color: $text-white;
+          height: 45px;
+        }
+       
+      }
+    .product-details-left-side {
+        img {
+          width: 100%;
+          margin-left: 0px !important;
+        }
+        .product-picture {
+            .ant-card-body {
+              padding: 10px;
+            }
+          }
+      }
+      .products-description {
+        h1 {
+          margin-bottom: 0px;
+          cursor: pointer;
+          font-family: $font-family-jost;
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: $text-brown;
+        }
+        p {
+          text-align: justify;
+          margin-bottom: 0px;
+          cursor: pointer;
+          font-family: $font-family-jost;
+          font-size: 1.12rem;
+          font-weight: 400;
+          opacity: 0.5;
+      
+        }
+      }
+      .products-reviews {
+        .ant-rate{
+         color: #ff7272;
+         opacity: 1;
+        }
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-size: 1.375rem;
+            font-family:$font-family-jost;
+            font-weight: 500;
+        }
+        h3{
+            font-size:1.125rem;
+            font-family: $font-family-jost;
+            color:$primary-color;
+            font-weight: 500;
+        }
+       
+            span{
+              font-size: 1.1rem !important;
+                line-height: 0 !important;
+                color: $primary-color;
+              }
+              label{
+                font-size: 1.1rem !important;
+                line-height: 0 !important;
+               opacity: 0.6;
+               font-family:$font-family-jost;
+              }
+      }
+      .related-products{
+        h1{
+         
+          font-family: $font-family-playfairdisplay;
+          font-size: 2.75rem;
+          font-weight: 400;
+         
+        }
+       p {
+        font-family: $font-family-jost;
+        font-size: 1rem;
+        font-weight: 400;
+        opacity: 0.6;
+
+       }
+        .product-grid {
+
+          .products-card{
+            .card-widgets {
+              width: 135px;
+              height: 30px;
+              padding: 7px;
+              background-color: $heading-color;
+              opacity: 0.6;
+              color: $text-white;
+              position: absolute;
+              bottom: 130px;
+              left: 42px;
+            }
+            .ant-card-body{
+              padding: 10px;
+              h3 {
+                font-size: 1rem;
+                font-weight: 500;
+                font-family: $font-family-jost;
+                line-height: 2;
+              }
+              span {
+                font-size: 0.875rem;
+                font-family:$font-family-poppins !important;
+                line-height: 3;
+              }
+              .product-price {
+                h1 {
+                  font-size: 1.25rem;
+                  font-family: $font-family-jost;
+                  font-weight: 600;
+                }
+                del {
+                  font-size: 1rem;
+                  font-weight: 400;
+                  font-family: $font-family-jost;
+                  color: $heading-color;
+                  opacity: 50%;
+                }
+                
+              }
+  
+            }
+            
+  
+          }
+          img {
+            height: 200px;
+            object-fit: cover;
+          }
+         
+        }
+        .ant-carousel >>> .slick-slide {
+          text-align: center;
+          height: 160px;
+          line-height: 160px;
+          background: #364d79;
+          overflow: hidden;
+        }
+        
+        .ant-carousel >>> .custom-slick-arrow {
+          width: 25px;
+          height: 25px;
+          font-size: 25px;
+          color: $background-white;;
+          background-color: rgba(31, 45, 61, 0.11);
+          opacity: 0.3;
+        }
+        .ant-carousel >>> .custom-slick-arrow:before {
+          display: none;
+        }
+        .ant-carousel >>> .custom-slick-arrow:hover {
+          opacity: 0.5;
+        }
+        
+        .ant-carousel >>> .slick-slide h3 {
+          color:$background-white;
+        }
+        .ant-tabs-ink-bar {
+          height: 0px;
+        }
+        .slick-prev {
+          color: $heading-color;
+        }
+        .slick-prev:hover {
+          color: $heading-color;
+        }
+        .slick-next {
+          color: $heading-color;
+        }
+        .slick-next:hover {
+          color: $heading-color;
+        }
+        .left-arrow {
+          position: absolute;
+          top: -333px;
+          right: -953px;
+          color: $text-brown;
+        }
+        .right-arrow {
+          position: absolute;
+          top: -332px;
+          right: -989px;
+          color: $text-brown;
+        }
+      }
+      .services-carousel{
+        .ant-carousel >>> .slick-slide {
+          text-align: center;
+          height: 160px;
+          line-height: 160px;
+          background: #364d79;
+          overflow: hidden;
+        }
+        
+        .ant-carousel >>> .custom-slick-arrow {
+          width: 25px;
+          height: 25px;
+          font-size: 25px;
+          color: $text-white;
+          background-color: rgba(31, 45, 61, 0.11);
+          opacity: 0.3;
+        }
+        .ant-carousel >>> .custom-slick-arrow:before {
+          display: none;
+        }
+        .ant-carousel >>> .custom-slick-arrow:hover {
+          opacity: 0.5;
+        }
+        
+        .ant-carousel >>> .slick-slide h3 {
+          color: $background-white;
+        }
+        .ant-tabs-ink-bar {
+          height: 0px;
+        }
+        .slick-prev {
+          color: $heading-color;;
+        }
+        .slick-prev:hover {
+          color: $heading-color;;
+        }
+        .slick-next {
+          color: $heading-color;;
+        }
+        .slick-next:hover {
+          color: $heading-color;
+        }
+        .left-arrow {
+          position: absolute;
+          top: -210px;
+          right: -953px;
+          color:$text-brown;
+        }
+        .right-arrow {
+          position: absolute;
+          top: -210px;
+          right: -989px;
+          color: $text-brown;
+        }
+        .services-grid {
+          .servic-card{
+            .ant-card-body{
+              padding: 5px !important;
+              h3 {
+                  font-size: 0.86rem;
+                font-family: $font-family-jost;
+                font-weight: 500;
+                line-height: 2;
+              }
+              span {
+                font-size: 1.1rem;
+                font-family: $font-family-jost;
+                font-weight: 600;
+                color: $heading-color;
+              }
+              .services-desription{
+             
+                p{
+                  font-size: 0.937rem;
+              font-weight: 400;
+                 font-family: $font-family-jost;
+                }
+              }
+              .ant-btn{
+                span{
+                  font-size: 	0.9375rem;
+                  font-weight: 500;
+                  font-family: $font-family-poppins;
+                }
+              
+              }
+              // .product-price {
+              //   h1 {
+              //     font-size: 24px;
+              //     font-family: 'Jost';
+              //     font-weight: 500;
+              //   }
+              //   del {
+              //     font-size: 18px;
+              //     font-weight: 400;
+              //     font-family: 'Jost';
+              //   }
+              // }
+            }
+
+          }
+        
+          img {
+            height: 200px;
+            object-fit: cover;
+          }
+       
+        }
+      }
+     
+      
+}
+.service-inquiry{
+  .ant-form-item-children{
+    textarea {
+      height: auto;  
+  }
+  } 
+  h2{
+    font-size: 1.6rem;
+    font-family:$font-family-jost;
+    font-weight: 500;
+    margin: 0px;
+  }
+  p{
+    opacity: 0.6;
+  }
+  .ant-modal-title{
+    text-align: center;
+
+  }
+  .ant-modal-footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border:none;
+}
+  .ant-modal-header{
+    background-color: #0568B5;
+
+    .ant-modal-title{
+      color: white;
+    }
+    .btn-color{
+      background-color: white; 
+      color: white;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  #products-details{
+    .related-products {
+      .left-arrow {
+        position: absolute;
+        top: -305px;
+        right: -820px;
+        color:$text-brown;
+      }
+      .right-arrow {
+        position: absolute;
+        top: -305px;
+        right: -859px;
+        color: $text-brown;
+      }
+      .product-grid{
+        .products-card {
+          .ant-card-body {
+            .product-price {
+              h1 {
+                font-size: 1rem;
+                font-family: $font-family-jost;
+                font-weight: 600;
+              }
+              del {
+                font-size: 1rem;
+                font-weight: 400;
+                font-family: $font-family-jost;
+                color: $heading-color;
+                opacity: 50%;
+              }
+              
+            }
+            h3{
+              font-size: 0.8rem;
+            }
+            span{
+              font-size: 0.7rem;
+            }
+            h1{
+              font-size: 1.1rem;
+            }
+          }
+        }
+      } 
+    } 
+    .services-carousel{
+      .ant-carousel >>> .slick-slide {
+        text-align: center;
+        height: 160px;
+        line-height: 160px;
+        background: #364d79;
+        overflow: hidden;
+      }
+      
+      .ant-carousel >>> .custom-slick-arrow {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+        color: $text-white;
+        background-color: rgba(31, 45, 61, 0.11);
+        opacity: 0.3;
+      }
+      .ant-carousel >>> .custom-slick-arrow:before {
+        display: none;
+      }
+      .ant-carousel >>> .custom-slick-arrow:hover {
+        opacity: 0.5;
+      }
+      
+      .ant-carousel >>> .slick-slide h3 {
+        color: $background-white;
+      }
+      .ant-tabs-ink-bar {
+        height: 0px;
+      }
+      .slick-prev {
+        color: $heading-color;;
+      }
+      .slick-prev:hover {
+        color: $heading-color;;
+      }
+      .slick-next {
+        color: $heading-color;;
+      }
+      .slick-next:hover {
+        color: $heading-color;
+      }
+      .left-arrow {
+        position: absolute;
+        top: -210px;
+        right: -810px;
+        color:$text-brown;
+      }
+      .right-arrow {
+        position: absolute;
+        top: -210px;
+        right: -852px;
+        color: $text-brown;
+      }
+      .services-grid {
+        .servic-card{
+          .ant-card-body{
+            padding: 5px !important;
+            h3 {
+                font-size: 0.86rem;
+              font-family: $font-family-jost;
+              font-weight: 500;
+              line-height: 2;
+            }
+            span {
+              font-size: 1.1rem;
+              font-family: $font-family-jost;
+              font-weight: 600;
+              color: $heading-color;
+            }
+            .services-desription{
+           
+              p{
+                font-size: 0.937rem;
+            font-weight: 400;
+               font-family: $font-family-jost;
+              }
+            }
+            .ant-btn{
+              span{
+                font-size: 	0.9375rem;
+                font-weight: 500;
+                font-family: $font-family-poppins;
+              }
+            
+            }
+            // .product-price {
+            //   h1 {
+            //     font-size: 24px;
+            //     font-family: 'Jost';
+            //     font-weight: 500;
+            //   }
+            //   del {
+            //     font-size: 18px;
+            //     font-weight: 400;
+            //     font-family: 'Jost';
+            //   }
+            // }
+          }
+
+        }
+      
+        img {
+          height: 200px;
+          object-fit: cover;
+        }
+     
+      }
+    }
+  
+    .px-5 {
+      padding-right: 0rem
+   !important;
+      padding-left: 0rem
+   !important;
+  }
+  
+  }
+}
+@media screen and (max-width: 768px) {
+  #products-details{
+    .mx-5{
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+    .related-products {
+      .left-arrow {
+        position: absolute;
+        top: -456px;
+        right: -658px;
+        color:$text-brown;
+      }
+      .right-arrow {
+        position: absolute;
+        top: -456px;
+        right: -693px;
+        color: $text-brown;
+      }
+      .product-grid{
+        .products-card {
+          .ant-card-body {
+            .product-price {
+              h1 {
+                font-size: 1rem;
+                font-family: $font-family-jost;
+                font-weight: 600;
+              }
+              del {
+                font-size: 1rem;
+                font-weight: 400;
+                font-family: $font-family-jost;
+                color: $heading-color;
+                opacity: 50%;
+              }
+              
+            }
+            h3{
+              font-size: 0.8rem;
+            }
+            span{
+              font-size: 0.7rem;
+            }
+            h1{
+              font-size: 1.1rem;
+            }
+          }
+        }
+      } 
+    } 
+
+  
+    .px-5 {
+      padding-right: 0rem
+   !important;
+      padding-left: 0rem
+   !important;
+  }
+  .services-carousel{
+    .ant-carousel >>> .slick-slide {
+      text-align: center;
+      height: 160px;
+      line-height: 160px;
+      background: #364d79;
+      overflow: hidden;
+    }
+    
+    .ant-carousel >>> .custom-slick-arrow {
+      width: 25px;
+      height: 25px;
+      font-size: 25px;
+      color: $text-white;
+      background-color: rgba(31, 45, 61, 0.11);
+      opacity: 0.3;
+    }
+    .ant-carousel >>> .custom-slick-arrow:before {
+      display: none;
+    }
+    .ant-carousel >>> .custom-slick-arrow:hover {
+      opacity: 0.5;
+    }
+    
+    .ant-carousel >>> .slick-slide h3 {
+      color: $background-white;
+    }
+    .ant-tabs-ink-bar {
+      height: 0px;
+    }
+    .slick-prev {
+      color: $heading-color;;
+    }
+    .slick-prev:hover {
+      color: $heading-color;;
+    }
+    .slick-next {
+      color: $heading-color;;
+    }
+    .slick-next:hover {
+      color: $heading-color;
+    }
+    .left-arrow {
+      position: absolute;
+      top: -374px;
+      right: -665px;
+      color:$text-brown;
+    }
+    .right-arrow {
+      position: absolute;
+      top: -374px;
+      right: -700px;
+      color: $text-brown;
+    }
+    .services-grid {
+      .servic-card{
+        .ant-card-body{
+          padding: 5px !important;
+          h3 {
+              font-size: 0.86rem;
+            font-family: $font-family-jost;
+            font-weight: 500;
+            line-height: 2;
+          }
+          span {
+            font-size: 1.1rem;
+            font-family: $font-family-jost;
+            font-weight: 600;
+            color: $heading-color;
+          }
+          .services-desription{
+         
+            p{
+              font-size: 0.937rem;
+          font-weight: 400;
+             font-family: $font-family-jost;
+            }
+          }
+          .ant-btn{
+            span{
+              font-size: 	0.9375rem;
+              font-weight: 500;
+              font-family: $font-family-poppins;
+            }
+          
+          }
+          // .product-price {
+          //   h1 {
+          //     font-size: 24px;
+          //     font-family: 'Jost';
+          //     font-weight: 500;
+          //   }
+          //   del {
+          //     font-size: 18px;
+          //     font-weight: 400;
+          //     font-family: 'Jost';
+          //   }
+          // }
+        }
+
+      }
+    
+      img {
+        height: 200px;
+        object-fit: cover;
+      }
+   
+    }
+  }
+  
+  }
+}
+@media screen and (max-width: 576px){
+  #products-details{
+    .product-details-right-side{
+      h1 {
+        font-size: 1.7rem;
+        margin-top: 0px;
+    
+    }
+    h2{
+      font-size: 1.6rem;
+    }
+    .cart-btn{
+      width: 80%;
+      height: 32px;
+    
+    }
+    .buy-btn{
+      width: 66%;
+      height: 32px;
+    }
+    }
+    .related-products{
+      .left-arrow {
+        position: absolute;
+        top: -627px;
+        right: -466px;
+        color:$text-brown;
+      }
+      .right-arrow {
+        position: absolute;
+        top: -627px;
+        right: -500px;
+        color: #8b8b8b;
+    }
+      h1{
+        font-size: 1.8rem;
+        margin-top: 10px;
+      }
+      del{
+        line-height: 3;
+      }
+    }
+    .services-carousel{
+      .ant-carousel >>> .slick-slide {
+        text-align: center;
+        height: 160px;
+        line-height: 160px;
+        background: #364d79;
+        overflow: hidden;
+      }
+      
+      .ant-carousel >>> .custom-slick-arrow {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+        color: $text-white;
+        background-color: rgba(31, 45, 61, 0.11);
+        opacity: 0.3;
+      }
+      .ant-carousel >>> .custom-slick-arrow:before {
+        display: none;
+      }
+      .ant-carousel >>> .custom-slick-arrow:hover {
+        opacity: 0.5;
+      }
+      
+      .ant-carousel >>> .slick-slide h3 {
+        color: $background-white;
+      }
+      .ant-tabs-ink-bar {
+        height: 0px;
+      }
+      .slick-prev {
+        color: $heading-color;;
+      }
+      .slick-prev:hover {
+        color: $heading-color;;
+      }
+      .slick-next {
+        color: $heading-color;;
+      }
+      .slick-next:hover {
+        color: $heading-color;
+      }
+      .left-arrow {
+        position: absolute;
+        top: -374px;
+        right: -468px;
+        color:$text-brown;
+      }
+      .right-arrow {
+        position: absolute;
+        top: -374px;
+        right: -505px;
+        color: $text-brown;
+      }
+      .services-grid {
+        .servic-card{
+          .ant-card-body{
+            padding: 5px !important;
+            h3 {
+                font-size: 0.86rem;
+              font-family: $font-family-jost;
+              font-weight: 500;
+              line-height: 2;
+            }
+            span {
+              font-size: 1.1rem;
+              font-family: $font-family-jost;
+              font-weight: 600;
+              color: $heading-color;
+            }
+            .services-desription{
+           
+              p{
+                font-size: 0.937rem;
+            font-weight: 400;
+               font-family: $font-family-jost;
+              }
+            }
+            .ant-btn{
+              span{
+                font-size: 	0.9375rem;
+                font-weight: 500;
+                font-family: $font-family-poppins;
+              }
+            
+            }
+            // .product-price {
+            //   h1 {
+            //     font-size: 24px;
+            //     font-family: 'Jost';
+            //     font-weight: 500;
+            //   }
+            //   del {
+            //     font-size: 18px;
+            //     font-weight: 400;
+            //     font-family: 'Jost';
+            //   }
+            // }
+          }
+  
+        }
+      
+        img {
+          height: 200px;
+          object-fit: cover;
+        }
+     
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px){
+  #products-details{
+    .product-details-right-side{
+      h1 {
+        font-size: 1.7rem;
+        margin-top: 0px;
+    
+    }
+    h2{
+      font-size: 1.6rem;
+    }
+    .cart-btn{
+      width: 80%;
+      height: 32px;
+    
+    }
+    .buy-btn{
+      width: 66%;
+      height: 32px;
+    }
+    }
+    .related-products{
+      .left-arrow {
+        position: absolute;
+        top: -1244px;
+    right: -320px;
+        color:$text-brown;
+      }
+      .right-arrow {
+        position: absolute;
+        top: -1244px;
+    right: -355px;
+        color: #8b8b8b;
+    }
+      h1{
+        font-size: 1.8rem;
+        margin-top: 10px;
+      }
+      del{
+        line-height: 3;
+      }
+    }
+    .services-carousel{
+      .ant-carousel >>> .slick-slide {
+        text-align: center;
+        height: 160px;
+        line-height: 160px;
+        background: #364d79;
+        overflow: hidden;
+      }
+      
+      .ant-carousel >>> .custom-slick-arrow {
+        width: 25px;
+        height: 25px;
+        font-size: 25px;
+        color: $text-white;
+        background-color: rgba(31, 45, 61, 0.11);
+        opacity: 0.3;
+      }
+      .ant-carousel >>> .custom-slick-arrow:before {
+        display: none;
+      }
+      .ant-carousel >>> .custom-slick-arrow:hover {
+        opacity: 0.5;
+      }
+      
+      .ant-carousel >>> .slick-slide h3 {
+        color: $background-white;
+      }
+      .ant-tabs-ink-bar {
+        height: 0px;
+      }
+      .slick-prev {
+        color: $heading-color;;
+      }
+      .slick-prev:hover {
+        color: $heading-color;;
+      }
+      .slick-next {
+        color: $heading-color;;
+      }
+      .slick-next:hover {
+        color: $heading-color;
+      }
+      .left-arrow {
+        position: absolute;
+        top: -733px;
+        right: -310px;
+        color:$text-brown;
+      }
+      .right-arrow {
+        position: absolute;
+        top: -733px;
+        right: -353px;
+        color: $text-brown;
+      }
+      .services-grid {
+        .servic-card{
+          .ant-card-body{
+            padding: 5px !important;
+            h3 {
+                font-size: 0.86rem;
+              font-family: $font-family-jost;
+              font-weight: 500;
+              line-height: 2;
+            }
+            span {
+              font-size: 1.1rem;
+              font-family: $font-family-jost;
+              font-weight: 600;
+              color: $heading-color;
+            }
+            .services-desription{
+           
+              p{
+                font-size: 0.937rem;
+            font-weight: 400;
+               font-family: $font-family-jost;
+              }
+            }
+            .ant-btn{
+              span{
+                font-size: 	0.9375rem;
+                font-weight: 500;
+                font-family: $font-family-poppins;
+              }
+            
+            }
+            // .product-price {
+            //   h1 {
+            //     font-size: 24px;
+            //     font-family: 'Jost';
+            //     font-weight: 500;
+            //   }
+            //   del {
+            //     font-size: 18px;
+            //     font-weight: 400;
+            //     font-family: 'Jost';
+            //   }
+            // }
+          }
+  
+        }
+      
+        img {
+          height: 200px;
+          object-fit: cover;
+        }
+     
+      }
+    }
+  }
+}

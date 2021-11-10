@@ -1,0 +1,90 @@
+@import '@/assets/variables/light';
+#search-modal{
+    width: 45%;
+    position: absolute;
+    top: -62px;
+    right: 232px;
+   
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    .ant-card{
+    border-radius: 6px;   
+   }
+    .ant-card-body{
+        padding: 10px;
+    }
+    .ant-input-group .ant-input{
+        float: left;
+        width: 100%;
+        margin-bottom: 0;
+        text-align: left;
+        height: 45px;
+        border-radius: 0;
+        background-color:#f3f3f3;
+        border-color: #F1F1F1;
+     
+        
+    }
+    .ant-input-search-enter-button{
+        .ant-input-group-addon{
+          .ant-input-search-button {
+              background-color:$secondary-color !important;
+              border-color: $secondary-color !important;
+              color: $text-dark !important;
+              font-family: $font-family-poppins !important;
+              font-weight: 500;
+           
+            }
+         
+          }
+          
+        }
+ 
+}
+#track-modal{
+    position: absolute;
+    top: 106px;
+    right: 53px;
+    width: 100%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    .ant-card-body{
+        padding: 10px;
+    }
+    .ant-input-group .ant-input{
+        float: left;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: left;
+    height: 45px;
+        border-radius: 0;
+        background-color: #f3f3f3;
+        border-color: #F1F1F1;
+     
+        
+    }
+    .ant-input-search-enter-button{
+        .ant-input-group-addon{
+          .ant-input-search-button {
+              background-color:$secondary-color !important;
+              border-color: $secondary-color !important;
+              color: $text-dark !important;
+              font-family: $font-family-poppins !important;
+              font-weight: 500;
+           
+            }
+         
+          }
+          
+        }
+ 
+}
+@media screen and (max-width:768px) {
+  #track-modal{
+    top: 138px;
+    right: 0px;
+}
+#search-modal{
+  width: 100%; 
+    top: 57px;
+    right: 0px;
+}
+}

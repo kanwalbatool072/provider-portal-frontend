@@ -1,0 +1,40 @@
+// ant input
+.ant-form-item-control {
+    .ant-input {
+        height: 45px;
+        border-radius: 0;
+        background-color: #FAFAFA;
+        border-color: #F1F1F1;
+    }
+    .ant-time-picker-input{
+        height: 45px;
+        border-radius: 0;
+        background-color: #FAFAFA;
+        border-color: #F1F1F1;
+        width: 100% !important;
+    }
+    span.ant-calendar-picker {
+        width: 100%;
+    }
+    span.ant-time-picker {
+        width: 100%;
+    }
+    .ant-select-selection--single {
+        height: 45px;
+        border-radius: 0;
+        background-color: #FAFAFA;
+        border-color: #F1F1F1;
+        padding-top: 5px;
+        font-size: 16px;
+    }
+   
+}
+.ant-form-item {
+    margin-bottom: 10px;
+    .ant-form-item-label {
+        line-height: 28.9999px;
+        font-weight: 600;
+        color: #282626;
+        font-size: 14px;
+    }
+}

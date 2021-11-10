@@ -1,0 +1,245 @@
+@import '@/assets/variables/light';
+#faqs-wrapper{
+    .faqs-card-container {
+        position: relative;
+        top: -114px;
+        // z-index: 1;
+        // right: 48px;
+      }
+      .query-card {
+        width: 60%;
+        margin: auto;
+        margin-top: 400px !important;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      
+      .newsletter-class {
+        position: relative;
+      }
+      .queries-bg {
+        background-image: url('/images/housing/rectangle.png');
+        background-size: cover;
+        height:65vh;
+        min-height: 65vh;
+        width: 100%;
+       h1{
+        font-family: $font-family-centuryGothic;
+        font-weight: 300;
+        font-size: 3.2rem;
+        color: $text-white;
+        
+       }
+       span{
+        font-family: $font-family-centuryGothic;
+        font-weight: 300;
+        font-size: 2.7rem;
+         
+       }
+       p{
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: $font-family-jost;
+        opacity: 0.6;
+        
+       }
+   
+        #top-heading{
+          width: 8em;
+          color: $text-white;
+          text-align: center;
+          line-height: 2em;
+          background-color: $color-light-green;
+          transform: rotate(-3deg);
+          position: relative;
+          font-size: 1.75rem;
+        }
+      
+   
+      
+      }
+      .faqs-card {
+        width: 60%;
+        margin: auto;
+        .ant-card-body {
+          padding: 15px;
+          zoom: 1;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          h1 {
+            font-size: 2.2rem;
+            font-family: $font-family-jost;
+            font-weight: 500;
+          }
+          h2 {
+            font-size: 1.375rem;
+            font-family: $font-family-jost;
+            font-weight: 500;
+          
+          }
+          p {
+            color:$text-brown;
+            font-size: 1rem;
+            font-family: $font-family-jost;
+            font-weight: 500;
+          }
+        }
+      }
+}
+@media screen and (max-width: 1024px){
+  #faqs-wrapper{
+    .faqs-card {
+  
+      .ant-card-body {
+    
+        h1 {
+          font-size: 1.7rem;
+        
+        }
+    h2{
+      font-size: 1.2rem;
+    }
+      }
+    }
+    .queries-bg {
+    
+     h1{
+      
+      font-size: 2.3rem;
+     
+      
+     }
+     span{
+      font-size: 2rem;
+     }
+     #top-heading {
+ 
+    
+      font-size: 1.4rem;
+  }
+  }
+}
+}
+@media screen and (max-width: 768px){
+  #faqs-wrapper{
+    .faqs-card {
+      width: 80%;
+      margin: auto;
+      .ant-card-body {
+    
+        h1 {
+          font-size: 1.5rem;
+        
+        }
+    h2{
+      font-size: 1.2rem;
+    }
+      }
+    }
+    .queries-bg {
+    
+     h1{
+      
+      font-size: 1.9rem;
+     
+      
+     }
+     span{
+      font-size: 1.9rem;
+     }
+     #top-heading {
+ 
+    
+      font-size: 1.2rem;
+  }
+  }
+}
+}
+@media screen and (max-width: 576px){
+  #faqs-wrapper{
+    .faqs-card {
+      width: 80%;
+      margin: auto;
+      .ant-card-body {
+    
+        h1 {
+          font-size: 1.3rem;
+        
+        }
+    h2{
+      font-size: 1rem;
+    }
+      }
+    }
+    .queries-bg {
+    
+     h1{
+      
+      font-size: 1.6rem;
+     
+      
+     }
+     span{
+      font-size: 1.6rem;
+     }
+     p{
+      font-size: 0.8rem;
+      font-weight: 400;
+      font-family: $font-family-jost;
+      opacity: 0.6;
+      
+     }
+     #top-heading {
+ 
+    
+      font-size: 1.2rem;
+  }
+  }
+}
+}
+@media screen and (max-width: 576px){
+  #faqs-wrapper{
+    .faqs-card {
+      width: 80%;
+      margin: auto;
+      .ant-card-body {
+    
+        h1 {
+          font-size: 1.3rem;
+        
+        }
+    h2{
+      font-size: 1rem;
+    }
+    p{
+      font-size: 0.8rem;
+    }
+      }
+    }
+    .queries-bg {
+    
+     h1{
+      
+      font-size: 1.2rem;
+     
+      
+     }
+     span{
+      font-size: 1.2rem;
+     }
+     p{
+      font-size: 0.8rem;
+      font-weight: 400;
+      font-family: $font-family-jost;
+      opacity: 0.6;
+      
+     }
+     #top-heading {
+ 
+    
+      font-size: 1rem;
+  }
+  }
+}
+}

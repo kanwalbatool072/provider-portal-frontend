@@ -1,0 +1,42 @@
+@import "@/assets/scss/global/mixins/scrollbar"; // scroller
+#seller {
+   .buyer-img {
+       background-image: url('/images/register/register-bg.png');
+       height: 100vh;
+       background-size: cover;
+   } 
+  .login-btn {
+    border-radius: 0;
+    height: 38px;
+}
+.form-heading {
+    display: flex;
+    align-items: center;
+}
+
+}
+#seller-register-form {
+    .form-heading{
+        .anticon-left{
+            font-size: 20px;
+            color: black;
+        }
+    }
+ 
+    form.ant-form.ant-form-horizontal  {
+        @include scrollbar(340px);
+    }  
+}
+@media screen and (max-width:425px){
+    .right-side{
+        .px-5 {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+        // .mx-2{
+        //     margin-left: 0px !important;
+        //     margin-right: 0px !important;
+        // }
+    }
+    
+}

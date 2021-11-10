@@ -1,0 +1,135 @@
+@import '@/assets/variables/light';
+.products-header {
+    h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0px;
+    font-family: $font-family-playfairdisplay;
+    font-weight: 700;
+    }
+    span {
+      font-size: 1rem;
+      font-family: $font-family-poppins;
+      font-weight: 400;
+      opacity: 0.6;
+    }
+    .product-view {
+      .ant-select {
+        color: $primary-color;
+        border-color: $primary-color;
+      }
+      .ant-select-selection--single {
+        width: 110px;
+        position: relative;
+        height: 35px;
+        cursor: pointer;
+        padding: 2px;
+        color: $primary-color;
+        border-color: $primary-color;
+      }
+      .ant-select-selection-selected-value {
+       
+        font-size: 1rem;
+        font-family: $font-family-poppins;
+    font-weight: 400;
+      }
+      .anticon-down {
+        color: $primary-color;
+        font-size: 12px;
+      }
+      .anticon-appstore {
+        font-size: 25px;
+        padding: 4px;
+        border-radius: 5px;
+        color: $text-white;
+      }
+      .anticon-unordered-list {
+        font-size: 25px;
+        padding: 4px;
+        // background-color: #d5d5d5;
+        border-radius: 5px;
+        color:$text-white;
+      }
+      .bg-color{
+        background-color:$bg-unactive;
+      }
+      .active-bg-color{
+        background-color:  $primary-color;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .products-header {
+    h1 {
+    font-size: 2rem;
+
+    } 
+    span {
+      font-size: 0.8rem;
+    
+    }
+  }
+  }
+  @media screen and (max-width: 768px) { 
+     .products-header {
+      .product-view {
+        .mt-5{
+          margin-top: 0px !important;
+         }
+     
+.ant-select-selection-selected-value {
+       
+          font-size: 0.9rem;
+      
+        }
+        .ant-select-selection--single {
+          width: 96px;
+   
+          height: 33px;
+       
+          padding: 1px;
+         
+        }
+      }
+    h1 {
+    font-size: 1.6rem;
+
+    } 
+    span {
+      font-size: 0.7rem;
+    
+    }
+  }}
+
+  @media screen and (max-width: 576px) { 
+    .products-header {
+     .product-view {
+       .mt-5{
+        margin-top: 0px !important;
+       }
+
+
+
+       .ant-select-selection-selected-value {
+      
+         font-size: 0.9rem;
+     
+       }
+       .ant-select-selection--single {
+         width: 96px;
+  
+         height: 33px;
+      
+         padding: 1px;
+        
+       }
+     }
+   h1 {
+   font-size: 1.6rem;
+
+   } 
+   span {
+     font-size: 0.7rem;
+   
+   }
+ }}
+  

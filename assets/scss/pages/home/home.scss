@@ -1,0 +1,1028 @@
+
+@import '@/assets/variables/light';
+#home-products{
+    .home-grid {
+      position: relative;
+        .home-card{
+          .ant-card-body{
+            background-color: $text-white;
+            padding: 10px;
+            h3 {
+              font-size: 1.08rem;
+              font-weight: 500;
+              color:$heading-color;
+              margin-bottom: 0px;
+            }
+            span {
+                  
+              font-size: 0.9rem;
+              color:$heading-color;
+              font-family: $font-family-poppins !important;
+              opacity: 0.6;
+              font-weight: 400 !important;
+            }
+            .product-price {
+              h1 {
+                font-size: 1.5rem;
+                
+                font-family: $font-family-jost !important;
+                font-weight: 600;
+              }
+              del {
+                font-size: 1.0rem;
+                font-weight: 400;
+                font-family: $font-family-jost !important;
+                color: #202224a8;
+                // opacity: 0.5;
+              }
+           
+            }
+            .home-card-widgets {
+              width: 150px;
+              height: 37px;
+              padding: 7px;
+              background-color: $heading-color;
+              opacity: 0.6;
+              color: $text-white;
+              position: absolute;
+              bottom: 160px;
+              left: 65px;
+            }
+        
+          }
+          
+    
+        }
+        img {
+          height: 400px;
+          object-fit: cover;
+        }
+       
+      }
+      .fund-raising {
+        img {
+          width: 100%;
+        }
+        h1 {
+          font-size: 2.1rem !important;
+         font-weight: 400 !important;
+         
+         font-family:$font-family-montserrat ;
+          span {
+            font-weight: 500;
+            font-family:$font-family-montserrat;
+          }
+        }
+        p {
+          font-size: 1.1rem;
+          font-weight: 400;
+        }
+        .ant-card {
+          .ant-card-body {
+            padding: 10px;
+            h1 {
+              font-size: 1.2rem !important;
+              font-weight: 600 !important;
+            }
+            span {
+              font-size: 0.9rem;
+              font-weight: 400;
+              color: $success-color;
+              opacity: 1;
+            }
+            p {
+              font-size: 0.72rem;
+              font-weight: 400;
+              opacity: 1;
+              font-family:$font-family-montserrat;
+            }
+          }
+        }
+      }
+      .home-menu {
+        .ant-menu {
+          background: none;
+        }
+        .ant-tabs-bar {
+          border-bottom: none;
+        }
+        .ant-tabs-nav .ant-tabs-tab {
+          position: relative;
+          display: inline-block;
+          box-sizing: border-box;
+          height: 100%;
+          margin: 0 32px 0 0;
+          padding: 12px 16px;
+          text-decoration: none;
+          font-size: 1.125rem;
+          font-weight: 400;
+          font-family:$font-family-montserrat;
+          cursor: pointer;
+          transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+        .ant-menu-horizontal {
+          border-bottom: 0px;
+          .ant-menu-item {
+            font-size: 18px;
+            font-family: $font-family-montserrat !important;
+            font-weight: 400;
+            color: $heading-color;
+            margin-right: 30px;
+          }
+          .ant-menu-item-selected {
+            font-size: 18px;
+            font-family: $font-family-montserrat !important;
+            font-weight: 400;
+            background-color:$background-grey-dark;
+            border-radius: 5px;
+            margin-right: 30px;
+            opacity: 3.1;
+            color: $success-color;
+            border-bottom: 0px;
+          }
+        }
+       
+          .ant-tabs-nav .ant-tabs-tab-active {
+            font-size: 1rem;
+            font-family: $font-family-montserrat !important;
+            font-weight: 400;
+            background-color:$background-grey-dark; //This is background color of active tab
+            border-radius: 5px;
+            padding: 10px 50px 10px 50px;
+            opacity: 3.1;
+            color: $success-color;
+            border-bottom: none;
+          }
+          .ant-tabs-ink-bar {
+            height: 0px;
+          }
+          .slick-prev {
+            color: $heading-color;
+          }
+          .slick-prev:hover {
+            color: $heading-color;
+          }
+          .slick-next {
+            color: $heading-color;
+          }
+          .slick-next:hover {
+            color: $heading-color;
+          }
+          .left-arrow {
+            position: absolute;
+            top: -320px;
+            right: -1115px;
+            color:$text-brown
+          }
+          .right-arrow {
+            position: absolute;
+            top: -320px;
+            right: -1155px;
+          }
+        
+      }
+     
+      .ant-divider-horizontal {
+        width: 50%;
+        min-width: 50%;
+      }
+      .devider {
+        .ant-divider-inner-text {
+          font-size: 1.9rem;
+          font-weight: 400;
+          color: $heading-color;
+          opacity: 1;
+          font-family:$font-family-playfairdisplay;
+        }
+      }
+      .best-seller-cards {
+        .ant-card-body {
+          background-color:  $text-white;
+          .home-card {
+            .ant-card-body {
+              background-color:  $text-white;
+            }
+          }
+        }
+      }
+      .blog-card {
+        .ant-card-body {
+          padding: 5px;
+          h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            font-family: $font-family-montserrat !important;
+          }
+          p {
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-family: $font-family-montserrat !important;
+          }
+          .ant-btn {
+            height: 45px;
+            font-weight: 400;
+            font-size: 18px;
+        
+          }
+        }
+      }
+      .shop-catagory {
+  img {
+    height: 80px;
+  }
+  span {
+    // margin-left: 23px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $heading-color;
+    opacity: 0.9;
+  }
+}
+}
+@media screen and (max-width: 1024px) { 
+  #home-products{
+    .home-menu{
+         .ant-tabs-nav .ant-tabs-tab {
+         
+          font-size: 1rem;
+
+
+  }
+  .ant-tabs-nav .ant-tabs-tab-active {
+    font-size: 1rem;
+ 
+    padding: 8px 20px 9px 21px;
+  
+  }
+  .left-arrow {
+    position: absolute;
+    top: -307px;
+    right: -797px;
+    color: #8b8b8b;
+  }
+  .right-arrow {
+    position: absolute;
+    top: -307px;
+    right: -836px;
+    color: #8b8b8b
+  }
+    }
+    .home-grid {
+      position: relative;
+        .home-card{
+          .ant-card-body{
+            .home-card-widgets {    
+              bottom: 126px;
+              left: 20px;
+            }
+            .product-price {
+              h1 {
+                font-size: 1rem;
+               
+              }
+              del {
+                font-size: 1rem;
+               
+              
+              }
+            }
+            h3 {
+              font-size: 0.7rem;
+         
+            }
+            span {
+                  
+              font-size: 0.8rem;
+            
+            }
+          }
+        }
+      }
+      .devider {
+        .ant-divider-inner-text {
+          font-size: 1.6rem;
+         
+        }
+      }
+      .fund-raising {
+      
+        h1 {
+          font-size: 1.7rem !important;
+        
+        }
+        p {
+          font-size: 1rem;
+      
+        }
+        .ant-card {
+          .ant-card-body {
+           
+            h1 {
+              font-size: 1rem !important;
+            
+            }
+          }
+        }
+      }
+      .shop-catagory {
+        img {
+          height: 60px;
+        }
+      
+         
+          span {
+         
+            font-size: 1rem;
+           
+          }
+        
+      }
+      .blog-card {
+        .ant-card-body {
+         p{
+          font-size: 0.8rem;
+         }
+          h3 {
+            font-size: 1.1rem;
+        
+       
+          }
+          .ant-btn {
+            height: 41px;
+            font-size: 0.9rem;
+        
+          }
+        }
+      }
+}
+  
+}
+@media screen and (max-width: 768px) { 
+  #home-products{
+    .shop-catagory{
+      img {
+        height: 46px;
+    }
+    span {
+      font-size: 0.8rem;
+  }
+    }
+    .home-menu{
+      .ant-tabs-nav .ant-tabs-tab {
+      
+       font-size: 0.8rem !important;
+
+
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+       font-size: 0.9rem !important;
+}
+.left-arrow {
+  position: absolute;
+  top: -575px;
+  right: -554px;
+  color: #8b8b8b;
+}
+.right-arrow {
+  position: absolute;
+  top: -575px;
+  right: -593px;
+}
+ }
+
+    .devider {
+      margin-top: 40px;
+      .ant-divider-inner-text {
+        font-size: 1.5rem;
+     
+      }
+    }
+    .home-grid {
+      position: relative;
+        .home-card{
+          .ant-card-body{
+            .home-card-widgets {    
+              bottom: 144px;
+              left: 68px;
+            }
+            .product-price {
+              h1 {
+                font-size: 1.2rem;
+               
+              }
+              del {
+                font-size: 1.1rem;
+               
+              
+              }
+            }
+            h3 {
+              font-size: 1.1rem;
+         
+            }
+            span {
+                  
+              font-size: 1rem;
+            
+            }
+          }
+        }
+      }
+      .fund-raising {
+        padding-right: 0 !important;
+          padding-left: 0 !important;
+      
+        .ant-card {
+          .ant-card-body {
+           
+            h1 {
+              font-size: 0.7rem !important;
+            
+            }
+            span{
+              font-size: 0.9rem !important;
+            }
+            p{
+              font-size: 0.5rem !important;
+            }
+          }
+        }
+    
+        .pt-5 {
+          padding-top: 0 !important;
+      }
+        h1 {
+          font-size: 1.1rem!important;
+          margin-bottom: 0px;
+        
+        }
+        p{
+          font-size: 1rem!important;
+        }
+      }
+      .blog-card {
+        .ant-card-body {
+         p{
+          font-size: 0.7rem;
+         }
+          h3 {
+            font-size: 0.8rem;
+        
+       
+          }
+          .ant-btn {
+            height: 37px;
+            font-size: 0.7rem;
+        
+          }
+        }
+      }
+  }
+}
+@media screen and (max-width: 576px) { 
+  #home-products{
+    .shop-catagory{
+      img {
+        height: 46px;
+    }
+    span {
+      font-size: 0.8rem;
+  }
+    }
+    .best-seller-cards{
+      .px-5{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+      
+    }
+    .deals-of-the-day{
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      .px-5{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+     
+    }
+    .recentely-added{
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      .ant-card-body{
+        padding: 0px;
+      }
+      .px-5{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+    }
+    .latest-blog{
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+     
+
+    }
+    .home-menu{
+      .ant-tabs-nav .ant-tabs-tab {
+      
+       font-size: 0.8rem !important;
+
+
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+       font-size: 0.9rem !important;
+}
+.left-arrow {
+  position: absolute;
+  top: -1509px;
+  right: -450px;
+  color: #8b8b8b;
+}
+.right-arrow {
+  position: absolute;
+  top: -1509px;
+  right: -485px;
+}
+ }
+
+   
+    .home-grid {
+      position: relative;
+        .home-card{
+          .ant-card-body{
+            .home-card-widgets {
+              bottom: 150px;
+              left: 128px;
+          }
+            .product-price {
+              h1 {
+                font-size: 1.2rem;
+               
+              }
+              del {
+                font-size: 1.1rem;
+               
+              
+              }
+            }
+            h3 {
+              font-size: 1.1rem;
+         
+            }
+            span {
+                  
+              font-size: 1rem;
+            
+            }
+          }
+        }
+        img{
+        height: 600px;
+        }
+      }
+      .fund-raising {
+        padding-right: 0 !important;
+          padding-left: 0 !important;
+      
+        .ant-card {
+          .ant-card-body {
+           
+            h1 {
+              font-size: 0.7rem !important;
+            
+            }
+            span{
+              font-size: 0.9rem !important;
+            }
+            p{
+              font-size: 0.5rem !important;
+            }
+          }
+        }
+    
+        .pt-5 {
+          padding-top: 0 !important;
+      }
+        h1 {
+          font-size: 1.1rem!important;
+          margin-bottom: 0px;
+        
+        }
+        p{
+          font-size: 1rem!important;
+        }
+      
+      }
+      .blog-card {
+        .ant-card-body {
+         p{
+          font-size: 0.7rem;
+         }
+          h3 {
+            font-size: 0.8rem;
+        
+       
+          }
+          .ant-btn {
+            height: 37px;
+            font-size: 0.7rem;
+        
+          }
+        }
+      }
+  }
+}
+@media screen and (max-width: 425px) { 
+  #home-products{
+    .shop-catagory{
+      img {
+        height: 46px;
+    }
+    span {
+      font-size: 0.8rem;
+  }
+    }
+    .best-seller-cards{
+      .px-5{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+      
+    }
+    .deals-of-the-day{
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      .px-5{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+      .devider {
+        margin-top: 152px;
+        .ant-divider-inner-text {
+          font-size: 1.5rem;
+       
+        }
+      }
+     
+    }
+    .fund-rasing-divider{
+      .devider {
+        margin-top: 0px;
+        .ant-divider-inner-text {
+          font-size: 1.5rem;
+       
+        }
+      }
+    }
+    .recentely-added{
+      .devider {
+        margin-top: 0px;
+        .ant-divider-inner-text {
+          font-size: 1.5rem;
+       
+        }
+      }
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      .ant-card-body{
+        padding: 0px;
+      }
+      .px-5{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+    }
+    .latest-blog{
+      .devider {
+        margin-top: 0px;
+        .ant-divider-inner-text {
+          font-size: 1.5rem;
+       
+        }
+      }
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+     
+
+    }
+    .home-menu{
+      .ant-tabs-nav .ant-tabs-tab {
+      
+       font-size: 0.8rem !important;
+
+
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+       font-size: 0.9rem !important;
+}
+.left-arrow {
+  position: absolute;
+  top: -1509px;
+  right: -450px;
+  color: #8b8b8b;
+}
+.right-arrow {
+  position: absolute;
+  top: -1509px;
+  right: -485px;
+}
+ }
+
+    .devider {
+      margin-top: 0px;
+      .ant-divider-inner-text {
+        font-size: 1.5rem;
+     
+      }
+    }
+    .home-grid {
+      position: relative;
+        .home-card{
+          .ant-card-body{
+            .home-card-widgets {
+              bottom: 150px;
+              left: 128px;
+          }
+            .product-price {
+              h1 {
+                font-size: 1.2rem;
+               
+              }
+              del {
+                font-size: 1.1rem;
+               
+              
+              }
+            }
+            h3 {
+              font-size: 1.1rem;
+         
+            }
+            span {
+                  
+              font-size: 1rem;
+            
+            }
+          }
+        }
+        img{
+        height: 600px;
+        }
+      }
+      .fund-raising {
+        padding-right: 0 !important;
+          padding-left: 0 !important;
+      
+        .ant-card {
+          .ant-card-body {
+           
+            h1 {
+              font-size: 0.7rem !important;
+            
+            }
+            span{
+              font-size: 0.9rem !important;
+            }
+            p{
+              font-size: 0.5rem !important;
+            }
+          }
+        }
+    
+        .pt-5 {
+          padding-top: 0 !important;
+      }
+        h1 {
+          font-size: 1.1rem!important;
+          margin-bottom: 0px;
+        
+        }
+        p{
+          font-size: 1rem!important;
+        }
+        .fund-rasing-cards{
+          .ant-col-xs-24{
+            margin-top: 10px;
+          }
+         
+        }
+      }
+      .blog-card {
+        .ant-card-body {
+         p{
+          font-size: 0.7rem;
+         }
+          h3 {
+            font-size: 0.8rem;
+        
+       
+          }
+          .ant-btn {
+            height: 37px;
+            font-size: 0.7rem;
+        
+          }
+        }
+      }
+  }
+}
+@media screen and (max-width: 320px) { 
+  #home-products{
+    .shop-catagory{
+      img {
+        height: 46px;
+    }
+    span {
+      font-size: 0.8rem;
+  }
+    }
+    .best-seller-cards{
+      .px-5{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+      
+    }
+    .deals-of-the-day{
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      .px-5{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+      .devider {
+        margin-top: 152px;
+        .ant-divider-inner-text {
+          font-size: 1.5rem;
+       
+        }
+      }
+     
+    }
+    .fund-rasing-divider{
+      .devider {
+        margin-top: 0px;
+        .ant-divider-inner-text {
+          font-size: 1.5rem;
+       
+        }
+      }
+    }
+    .recentely-added{
+      .devider {
+        margin-top: 0px;
+        .ant-divider-inner-text {
+          font-size: 1.5rem;
+       
+        }
+      }
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      .ant-card-body{
+        padding: 0px;
+      }
+      .px-5{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+    }
+    .latest-blog{
+      .devider {
+        margin-top: 0px;
+        .ant-divider-inner-text {
+          font-size: 1.5rem;
+       
+        }
+      }
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+     
+
+    }
+    .home-menu{
+      .ant-tabs-nav .ant-tabs-tab {
+      
+       font-size: 0.8rem !important;
+
+
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+       font-size: 0.9rem !important;
+}
+.left-arrow {
+  position: absolute;
+  top: -1509px;
+  right: -450px;
+  color: #8b8b8b;
+}
+.right-arrow {
+  position: absolute;
+  top: -1509px;
+  right: -485px;
+}
+ }
+
+    .devider {
+      margin-top: 0px;
+      .ant-divider-inner-text {
+        font-size: 1.5rem;
+     
+      }
+    }
+    .home-grid {
+      position: relative;
+        .home-card{
+          .ant-card-body{
+            .home-card-widgets {
+              bottom: 150px;
+              left: 128px;
+          }
+            .product-price {
+              h1 {
+                font-size: 1.2rem;
+               
+              }
+              del {
+                font-size: 1.1rem;
+               
+              
+              }
+            }
+            h3 {
+              font-size: 1.1rem;
+         
+            }
+            span {
+                  
+              font-size: 1rem;
+            
+            }
+          }
+        }
+        img{
+        height: 600px;
+        }
+      }
+      .fund-raising {
+        padding-right: 0 !important;
+          padding-left: 0 !important;
+      
+        .ant-card {
+          .ant-card-body {
+           
+            h1 {
+              font-size: 0.7rem !important;
+            
+            }
+            span{
+              font-size: 0.9rem !important;
+            }
+            p{
+              font-size: 0.5rem !important;
+            }
+          }
+        }
+    
+        .pt-5 {
+          padding-top: 0 !important;
+      }
+        h1 {
+          font-size: 1.1rem!important;
+          margin-bottom: 0px;
+        
+        }
+        p{
+          font-size: 1rem!important;
+        }
+        .fund-rasing-cards{
+          .ant-col-xs-24{
+            margin-top: 10px;
+          }
+         
+        }
+      }
+      .blog-card {
+        .ant-card-body {
+         p{
+          font-size: 0.7rem;
+         }
+          h3 {
+            font-size: 0.8rem;
+        
+       
+          }
+          .ant-btn {
+            height: 37px;
+            font-size: 0.7rem;
+        
+          }
+        }
+      }
+  }
+}

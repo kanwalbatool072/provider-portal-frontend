@@ -1,0 +1,138 @@
+
+@import '@/assets/variables/light';
+  .chat-popover-wrapper {
+    position: fixed;
+  
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    min-height: 80vh;
+  }
+  
+  #live-chat {
+    .container {
+      text-align: left;
+      padding: 0px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .header-row {
+      padding: 8px;
+      padding-left: 15px;
+      padding-bottom: 3px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+    .header-row p {
+      margin-top: 10px;
+    }
+    .cards {
+      padding: 0px;
+      margin: 0px;
+      overflow: hidden;
+    }
+    .cards .ant-card-body {
+      margin: 0px;
+      padding: 0px;
+      background-color: $text-white;
+    }
+    ul {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+    }
+   
+    .icon-event {
+      pointer-events: all !important;
+      cursor: pointer !important;
+      text-align: right;
+      padding: 5px;
+    }
+    .server {
+      font-size: 0.625rem;
+      font-family: $font-family-jost;
+      width: 80%;
+      // background: $text-white;
+      // margin: 10px;
+      // padding: 10px;
+      border-radius: 0px 15px 15px 15px;
+      float: left;
+      clear: both;
+      p{
+        font-size: 0.625rem;
+        font-family: $font-family-jost;
+        width: 100%;
+        background: #F5F9FF;
+        border-radius: 0px 15px 15px 15px;
+        padding: 7px;
+        margin:0px;
+        margin-left:20px !important;
+      }
+      img{
+        width:25px;
+      }
+    }
+    .client {
+      clear: both;
+      float: right;
+      text-align: right;
+      font-size: 0.625rem;
+      font-family: $font-family-jost;
+      width: 80%;
+      background: $primary-color;
+      color: $text-white;
+      font-weight: 400;
+      margin: 10px;
+      padding: 6px;
+      border-radius: 15px 0px 15px 15px;
+    }
+    .scroll_div {
+      width: 100%;
+      max-height: calc(100vh - 550px);
+      min-height: 340px;
+      overflow-y: auto;
+    }
+    .btn-cancel {
+      border-radius: 3px;
+      border: none;
+      padding: 2px;
+      margin-right: 5px;
+      height: 28px;
+      font-size: 0.625rem;
+    }
+    
+    .ant-form .ant-form-item {
+      margin-bottom: 1rem;
+    }
+   
+    .footer-row {
+      margin: 10px;
+      padding: 3px;
+      padding-top: 10px;
+      .from-class .ant-form-item-label label {
+        font-size: 0.75rem;
+      }
+      .from-class .ant-form-item-control .ant-input {
+        height: 45px;
+        border-radius: 3;
+        background-color: $text-white;
+        border-color: $text-white;
+      }
+      .from-class .ant-form-item-control .ant-input:focus{
+        height: 45px;
+        border-radius: 3;
+        background-color: $text-white;
+        border-color: $text-white;
+      }
+    }
+    .footer-row button {
+      font-size: 0.625rem;
+      font-weight: 100;
+    }
+    .scroll_div::-webkit-scrollbar {
+      display: none;
+  }
+  .scroll_div {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  }

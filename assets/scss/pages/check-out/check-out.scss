@@ -1,0 +1,144 @@
+.check-out-right {
+  
+ 
+  
+    .ant-card {
+      .ant-card-body {
+        padding: 15px;
+        background-color: #f5f5f5;
+        padding-bottom: 100px;
+        img {
+          width: 100%;
+        }
+        .ant-badge-count {
+          background: #0568b5;
+        }
+        .ant-badge-not-a-wrapper, .ant-scroll-number{
+          z-index: 0;
+        }
+        
+      }
+     
+    }
+  }
+  .check-out-left{
+    .shipping-info{
+      h3{
+        font-size: 1rem;
+        font-weight: 400;
+        color:#788995;
+      }
+        
+         
+    }
+    h1{
+      font-size: 31px;
+      font-weight: 400;
+    }
+    h2{
+      font-size: 21px;
+      font-weight: 400;
+    }
+    .ant-tabs{
+      .ant-tabs-nav-container{
+        .ant-tabs-tab-active{
+          color:#1B2125 !important;
+          opacity: 1;
+          font-size: 1.063rem;
+          border-bottom: 1px solid black;
+          font-weight: 400;
+        }
+        .ant-tabs-tab{
+          color:#D4D9DC;
+          opacity: 1;
+          font-size: 1.063rem;
+        
+          font-weight: 400;
+        }
+        .ant-tabs-nav{
+          .ant-tabs-ink-bar{
+            background-color:black;
+            opacity: 0.7;
+            bottom:0px;
+            width:195px;
+
+          }
+        }
+       
+      }
+  
+       
+      }
+      .ant-form-item{
+        .ant-form-item-label{
+          label{
+            color: #D4D9DD;
+            font-size: 14px;
+            font-weight: 400;
+           
+          }
+       
+        }
+      }
+    
+  }
+  .find-btn {
+    .ant-input-search-enter-button
+      input
+      + .ant-input-group-addon
+      .ant-input-search-button {
+      background-color: #f5f5f5;
+      border-color: #f5f5f5;
+    }
+  }
+  .btn-shipping {
+    .ant-btn {
+      background-color: #0568b5;
+      border-color: #0568b5;
+      color: white;
+    }
+   
+  }
+  .back-btn {
+    .ant-btn {
+      background-color: white;
+      border-color: white;
+    }
+  }
+  .check-out{
+    span{
+      .ant-calendar-picker{
+        width:100%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    
+
+  .check-out{
+    .mx-5 {
+          margin-right: 1rem !important;
+          margin-left: 1rem !important;
+      }
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .check-out-left {
+    h3{
+      font-size: 0.8rem;
+    }
+    .ant-card{
+     
+        margin-top: 12px;
+      
+    }
+    .btn-shipping{
+      .ant-btn {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+}

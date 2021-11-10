@@ -1,0 +1,43 @@
+
+*:not(i):not(span) {
+    font-family: $font-family-jost;
+}
+html {
+    font-family: $font-family-jost;
+  }
+  body {
+    font-family: $font-family-jost;;
+  }
+
+// h1, h2, h3, h4, h5, h6{
+//     // margin-bottom: 0px;
+//     letter-spacing: 0px;
+// }
+// h1{
+//     font-size: $font-size-extra-large;
+//     font-weight: 700!important;
+// }
+// h2{
+//     font-size: $font-size-large;
+// }
+// h3{
+//     font-size: $font-size-medium;
+// }
+// h4{
+//     font-size: $font-size-small;
+// }
+// h5{
+//     font-size: $font-size-extra-small;
+// }
+// h6{
+//     font-size: 12px;
+// }
+// p,span,div{
+//     font-size: $font-size-small;
+// }
+// label {
+//     font-size: $font-size-small !important;
+// }
+// small{
+//     font-size: $font-size-extra-small;
+// }

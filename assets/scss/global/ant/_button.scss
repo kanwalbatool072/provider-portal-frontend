@@ -1,0 +1,39 @@
+// upload ant button
+.ant-upload.ant-upload-select.ant-upload-select-text {
+    width: 100%;
+    .ant-btn {
+        height: 50px;
+        text-align: left;
+        border-radius: 0;
+        background-color: #FAFAFA;
+        border-color: #F1F1F1;
+   img {
+            position: absolute;
+            right: 15px;
+            width: 20px;
+        }
+    }
+}
+// ant button
+.ant-btn {
+    height: 45px;
+    border-radius: 0;
+    // background-color: #F0FF0E;
+    // border-color: #F0FF0E;
+    // color: #212121;
+    // box-shadow: none;
+    font-family:'Poppins';
+    font-weight: 400;
+    font-size: 0.93rem;
+    
+}
+// .ant-btn:hover {
+//     background-color: #F0FF0E;
+//     border-color: #F0FF0E;
+//     color: #212121; 
+// }
+// .ant-btn:focus {
+//     background-color: #F0FF0E;
+//     border-color: #F0FF0E;
+//     color: #212121; 
+// }

@@ -1,0 +1,517 @@
+/********** HERO SECTION *************/
+@import '@/assets/variables/light';
+#hero-section {
+    .hero-home-bg{
+        background-image: url('/images/home/Group 5675.png');
+        background-size: cover;
+        background-position: center;
+        color:$text-white;
+        min-height: 100vh;
+        p{
+            font-size: 1.5rem;
+            font-weight: 500 !important;
+        }
+        h1{
+            color:$text-white !important;
+            font-size: 4rem !important;
+            font-weight: 700 !important;
+            line-height: 1;
+            font-family: $font-family-playfairdisplay!important;
+        }
+        .ant-btn{
+            font-size: 1.1rem;
+            font-family: $font-family-poppins !important;
+            font-weight: 500;
+            color: $heading-color;
+            height: 55px;
+        }
+        // .buyer-btn {
+        //     color:$heading-color;
+        //     height: 55px;
+        // }
+        .home-hero{
+            .ant-divider-horizontal {
+                width: 24%;
+                min-width: 30%;
+            }
+        }
+       
+    }
+    .hero-services-bg{
+        background-image: url('/images/housing/rectangle.png');
+        background-position: center;
+        background-size: cover;
+        color:$text-white;
+        min-height: 50vh;
+        h1{
+            color:$text-white;
+            font-size: 2.9rem;
+            font-weight: 400;
+            font-family: $font-family-centuryGothic;
+        }
+        .ant-input-affix-wrapper{
+           width: 40%;
+           .ant-input{
+            height:50px;
+            border-radius: 25px;
+           }
+           .anticon-search{
+               font-size: 25px;
+               color:$text-info;
+           }
+        }
+        span.ant-input-suffix {
+            z-index: 0 !important;
+          }
+          .ant-input-affix-wrapper .ant-input {
+            position: relative;
+            text-align: left;
+          }
+    }
+    .hero-about-bg{
+        background-image: url('/images/housing/rectangle.png');
+        background-position: center;
+        background-size: cover;
+        color:$text-white;
+        min-height: 60vh;
+        h1{
+            color: $text-white;
+            font-size: 4.2rem !important;
+            font-weight: 300 !important;
+            font-family: $font-family-centuryGothic !important;
+        } 
+    }
+.hero-section-bg{
+        background-image: url('/images/products/hero_img.png');
+        background-size: cover;
+        color:$text-white;
+        min-height: 80vh;
+        background-position: center;
+        h1{
+            color:$text-white !important;
+            font-size: 4rem !important;
+            font-weight: 700 !important;
+            line-height: 1;
+            font-family: $font-family-playfairdisplay!important;
+        }
+}
+.hero-food-bg{
+    background-image: url('/images/food/food-header.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    color:$text-white;
+    p{
+        color:$text-white;
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-family: $font-family-centuryGothic;
+    }
+    h1{
+        color:$text-white;
+        font-size:4.9rem;
+        font-weight: 600;
+        font-family: $font-family-centuryGothic;      
+    }
+  
+}
+.hero-fashion-bg{
+    background-image: url('/images/fashion/hero-fashion.png');
+    background-size: cover;
+    color:$text-white;
+    min-height: 80vh;
+    background-position: center;
+    p{
+        color:$text-white;
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-family: $font-family-centuryGothic;
+    }
+    h1{
+        color:$text-white;
+        font-size: 4.9rem;
+        font-weight: 600;
+        font-family: $font-family-centuryGothic;
+    }
+
+}
+.hero-beauty-bg{
+    background-image: url('/images/beauty/beauty-bg.png');
+    background-size: cover;
+    color:$text-white;
+    min-height: 80vh;
+    background-position: center;
+    p{
+        color:$text-white;
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-family: $font-family-centuryGothic;
+    }
+    h1{
+        color:$text-white;
+        font-size: 4.9rem;
+        font-weight: 600;
+        font-family: $font-family-centuryGothic;
+    }
+}
+
+.hero-elctronic-bg{
+    background-image: url('/images/electronics/hero-electronics.png');
+    background-size: cover;
+    color:$text-white;
+    min-height: 80vh;
+    background-position: center;
+    p{
+        color:$text-white;
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-family: $font-family-centuryGothic;
+    }
+    h1{
+        color:$text-white;
+        font-size: 4.9rem;
+        font-weight: 600;
+        font-family: $font-family-centuryGothic;
+    }
+}
+.hero-funding-bg{
+    background-image: url('/images/fundraiser/Group 5652.png');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+   
+   
+    p{
+     
+        font-size: 0.879rem;
+        font-weight: 400;
+        font-family: $font-family-jost; 
+    }
+    h1{
+       
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: $font-family-jost;
+    }
+    .medical-care{
+         color: $text-yellogreen;
+         font-weight: 600;
+         font-size: 3rem;
+    }
+}
+.hero-animal-bg{
+    background-image: url('/images/animal/hero-animal.png');
+    background-size: cover;
+    color:$text-white;
+    background-position: center;
+    p{
+        color:$text-white;
+        font-size: 1.375rem;
+        font-weight: 400;
+        font-family: $font-family-centuryGothic;
+    }
+    h1{
+        color:$text-white;
+        font-size: 4.9rem;
+        font-weight: 600;
+        font-family: $font-family-centuryGothic;
+    }
+
+}
+
+}
+@media screen and (max-width: 1024px) { 
+    #hero-section {
+        .hero-home-bg{
+            
+            p{
+                font-size: 1.1rem;
+           
+            }
+            h1{
+             
+                font-size: 3.1rem !important;
+            
+            }
+            .ant-btn{
+                font-size: 0.9rem;
+               
+                height: 48px;
+            }
+        }
+        .hero-food-bg{      
+            p{
+                font-size: 1.1rem;
+                           
+                            }
+                            h1{
+                                font-size: 4rem; 
+                            }
+                        }     
+        .hero-services-bg{
+                   h1{
+           
+                font-size: 2.5rem;
+              
+            }
+         .ant-input-affix-wrapper {
+                width: 35%;
+            }
+        }
+    }
+           
+            
+}
+@media screen and (max-width: 768px) { 
+    #hero-section {
+        .hero-services-bg{
+            h1{
+    
+         font-size: 2rem;
+       
+     }
+  .ant-input-affix-wrapper {
+         width: 45%;
+     }
+ }
+        .hero-home-bg{
+            
+            p{
+                font-size: 0.7rem;
+           
+            }
+            h1{
+             
+                font-size: 2rem !important;
+            
+            }
+            .ant-btn{
+                font-size: 0.8rem;
+               
+                height: 40px;
+            }
+        }
+        .hero-food-bg{
+         
+            p{
+                font-size: 1rem;
+                           
+                            }
+                            h1{
+                                font-size: 3.6rem; 
+                            }
+                        }
+                        .hero-about-bg{
+                           h1{
+                            font-size: 3.7rem !important;
+                           } 
+                        }
+    }
+}
+@media screen and (max-width: 576px) { 
+    #hero-section {
+        .hero-funding-bg{
+            background-image: url('/images/fundraiser/Group 5652.png');
+            background-size: cover;
+            background-position: center;
+            width:100%;
+           
+            .pl-5{
+                padding-left: 0px !important;
+            } 
+            .ml-5{
+                margin-left: 0px !important;
+            }
+        
+                p.px-5{
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+                }
+            
+          
+        }
+        .hero-services-bg{
+            h1{
+    
+         font-size: 2rem;
+       
+     }
+  .ant-input-affix-wrapper {
+         width: 60%;
+     }
+ }
+        .hero-home-bg{
+            .ml-5{
+                margin-left:0px !important
+            }
+            
+            p{
+                font-size: 0.7rem;
+           
+            }
+            h1{
+             
+                font-size: 2rem !important;
+            
+            }
+            .ant-btn{
+                font-size: 0.8rem;
+               
+                height: 40px;
+            }
+        }
+        .hero-food-bg{
+         
+            p{
+                font-size: 1rem;
+                           
+                            }
+                            h1{
+                                font-size: 3.6rem; 
+                            }
+                        }
+                        .hero-about-bg{
+                           h1{
+                            font-size: 3.7rem !important;
+                           } 
+                        }
+    }
+}
+@media screen and (max-width: 425px) { 
+    #hero-section {
+        .hero-services-bg{
+            h1{
+    
+         font-size: 2rem;
+       
+     }
+  .ant-input-affix-wrapper {
+         width: 70%;
+     }
+ }
+        .hero-home-bg{
+            
+            p{
+                font-size: 0.7rem;
+           
+            }
+            h1{
+             
+                font-size: 2rem !important;
+            
+            }
+            .ant-btn{
+                font-size: 0.8rem;
+               
+                height: 40px;
+            }
+        }
+        .hero-food-bg{
+         
+            p{
+                font-size: 1rem;
+                           
+                            }
+                            h1{
+                                font-size: 3.6rem; 
+                            }
+                        }
+                        .hero-about-bg{
+                           h1{
+                            font-size: 3.7rem !important;
+                           } 
+                        }
+    }
+}
+@media screen and (max-width: 375px) { 
+    #hero-section {
+        .hero-services-bg{
+            h1{
+    
+         font-size: 2rem;
+       
+     }
+  .ant-input-affix-wrapper {
+         width: 80%;
+     }
+ }
+        .hero-home-bg{
+            
+            p{
+                font-size: 0.7rem;
+           
+            }
+            h1{
+             
+                font-size: 2rem !important;
+            
+            }
+            .ant-btn{
+                font-size: 0.8rem;
+               
+                height: 40px;
+            }
+        }
+        .hero-food-bg{
+         
+            p{
+                font-size: 1rem;
+                           
+                            }
+                            h1{
+                                font-size: 3.6rem; 
+                            }
+                        }
+                        .hero-about-bg{
+                           h1{
+                            font-size: 3.7rem !important;
+                           } 
+                        }
+    }
+}
+@media screen and (max-width: 320px) { 
+    #hero-section {
+        .hero-services-bg{
+            h1{
+    
+         font-size: 2rem;
+       
+     }
+  .ant-input-affix-wrapper {
+         width: 80%;
+     }
+ }
+        .hero-home-bg{
+            
+            p{
+                font-size: 0.7rem;
+           
+            }
+            h1{
+             
+                font-size: 2rem !important;
+            
+            }
+            .ant-btn{
+                font-size: 0.8rem;
+               
+                height: 40px;
+            }
+        }
+        .hero-food-bg{
+         
+            p{
+                font-size: 1rem;
+                           
+                            }
+                            h1{
+                                font-size: 3.6rem; 
+                            }
+                        }
+                        .hero-about-bg{
+                           h1{
+                            font-size: 3.7rem !important;
+                           } 
+                        }
+    }
+}
