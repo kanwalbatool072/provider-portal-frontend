@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+  <g id="Group_57039" data-name="Group 57039" transform="translate(7126 -5970)">
+    <g id="Video_Call" data-name="Video Call" transform="translate(-7126 5970)">
+      <circle id="Ellipse_70" data-name="Ellipse 70" cx="20.5" cy="20.5" r="20.5" fill="#423869"/>
+      <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M10.429,4.5H1.483A1.483,1.483,0,0,0,0,5.983v8.946a1.483,1.483,0,0,0,1.483,1.483h8.946a1.483,1.483,0,0,0,1.483-1.483V5.983A1.483,1.483,0,0,0,10.429,4.5ZM16.3,5.669,12.9,8.015V12.9l3.4,2.342a1,1,0,0,0,1.563-.8V6.47A1,1,0,0,0,16.3,5.669Z" transform="translate(12.366 10.345)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

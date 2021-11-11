@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <g id="Group_57000" data-name="Group 57000" transform="translate(-2540 -12520)">
+    <g id="Group_55707" data-name="Group 55707" transform="translate(2540 12520.336)">
+      <rect id="Rectangle_105" data-name="Rectangle 105" width="46" height="46" rx="5" transform="translate(0 -0.336)" fill="#0066b2" opacity="0.18"/>
+      <g id="Group_55705" data-name="Group 55705" transform="translate(7 11)">
+        <g id="Group_55701" data-name="Group 55701">
+          <rect id="Rectangle_2090" data-name="Rectangle 2090" width="32.722" height="23.043" rx="2" fill="#0066b2"/>
+          <g id="Group_55700" data-name="Group 55700" transform="translate(6 8)">
+            <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
+              <path id="Path_7" data-name="Path 7" d="M780.088,727.6h-1.7l1.065-6.546h1.7Z" transform="translate(-771.034 -720.939)" fill="#fff"/>
+              <path id="Path_8" data-name="Path 8" d="M711.854,721.057l-1.625,4.5-.192-.97h0l-.574-2.944a.729.729,0,0,0-.809-.59h-2.686l-.031.111a6.364,6.364,0,0,1,1.783.748L709.2,727.6h1.776l2.712-6.546Z" transform="translate(-705.938 -720.94)" fill="#fff"/>
+              <path id="Path_9" data-name="Path 9" d="M856.542,727.6h1.565l-1.365-6.546h-1.37a.783.783,0,0,0-.787.488l-2.542,6.059h1.776l.355-.972h2.167Zm-1.875-2.316.9-2.45.5,2.45Z" transform="translate(-837.22 -720.94)" fill="#fff"/>
+              <path id="Path_10" data-name="Path 10" d="M810.384,721.593l.243-1.406a4.921,4.921,0,0,0-1.533-.285c-.846,0-2.854.37-2.854,2.167,0,1.691,2.357,1.712,2.357,2.6s-2.114.729-2.812.169l-.254,1.47a4.774,4.774,0,0,0,1.924.37c1.163,0,2.918-.6,2.918-2.241,0-1.7-2.379-1.86-2.379-2.6S809.655,721.191,810.384,721.593Z" transform="translate(-795.427 -719.902)" fill="#fff"/>
+            </g>
+            <path id="Path_11" data-name="Path 11" d="M710.037,724.59l-.574-2.944a.729.729,0,0,0-.809-.59h-2.686l-.031.111a6.6,6.6,0,0,1,2.53,1.27A5.1,5.1,0,0,1,710.037,724.59Z" transform="translate(-705.938 -720.94)" fill="#f9a533"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

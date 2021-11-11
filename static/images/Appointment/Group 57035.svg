@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.685" height="25.685" viewBox="0 0 25.685 25.685">
+  <g id="Group_57035" data-name="Group 57035" transform="translate(7688 -6321)">
+    <g id="Group_51738" data-name="Group 51738" transform="translate(-8012 5745)">
+      <g id="Attach" transform="translate(324.158 576)">
+        <g id="Group_23" data-name="Group 23" transform="translate(0 0)">
+          <circle id="Ellipse_1003" data-name="Ellipse 1003" cx="12.842" cy="12.842" r="12.842" transform="translate(-0.158)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="pen-filled-diagonal-writing-tool" transform="translate(324.156 583)">
+        <path id="Path_17231" data-name="Path 17231" d="M8.177,277.354l2-.656a.48.48,0,0,0,.193-.119l4.692-4.719L13.2,269.99,8.515,274.7a.5.5,0,0,0-.127.225l-.537,2.13A.255.255,0,0,0,8.177,277.354Z" transform="translate(0 -267.042)" fill="#5e5e5e"/>
+        <path id="Path_17232" data-name="Path 17232" d="M529.923,1.119l-.946-.946a.7.7,0,0,0-.915-.009l-2.307,2.32,1.87,1.87.726-.731.354.356a.22.22,0,0,1,0,.309l-.573.572-.464.463-1.943,1.937a.437.437,0,1,0,.617.618l2.98-2.974a1.093,1.093,0,0,0,0-1.543L528.968,3l.963-.969A.7.7,0,0,0,529.923,1.119Z" transform="translate(-512.099 0)" fill="#5e5e5e"/>
+      </g>
+    </g>
+  </g>
+</svg>

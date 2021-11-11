@@ -1,120 +1,35 @@
 @import '@/assets/variables/light';
 @import './baseHeader';
-@import './baseFooter';
-@import './heroSection';
-@import './pagination';
-@import './newsLetters';
-@import './breadCrumb';
-@import '@/assets/scss/pages/filter-toggle/filter-toggle.scss';
+@import './baseNavbar';
 
-#layout .logo {
-    height: 32px;
-    margin: 16px;
+html {
+  font-size: 16px;
 }
-.main-layout-content{
-  // padding: 0 25px;
-  margin-top: 120px;
-  margin-bottom: 25px;
+* {
+  font-family: "Poppins";
+ 
+}
+.dashboard-layout{
   
-}
-.layout-content{
-  // padding: 24px;
-  min-height: 380px;
-}
-.ant-layout{
-  background: #F9FAFF;
-  overflow: hidden;
-}
-.ant-btn-danger {
-  background-color: #f1d3d4 !important;
-  border-color: #f1d3d4 !important;
-}
-.ant-layout-footer{
-  padding: 24px 50px;
-
-  font-size: 14px;
-  background: #ffffff;
-  border-top: 1px solid #c1bfbf;
-  .bottom-bar{
-    p{
-      font-size: 1.01rem;
-    font-family: $font-family-poppins;
-    color: black;
-    }
-  }
-}
-
-.discount-badge {
-  width: 80px;
-  height: 33px;
-  padding-top: 3px;
-
-  position: absolute;
-  bottom: 480px;
-  left: 10px;
-  opacity: 1;
-  font-size: 19px;
-  font-family: 'Montserrat';
-  font-weight: 400;
-}
-.bg-white {
-  // background-color: #b1e860;
-  background-color: white;
-  color: black !important;
-}
-.bg-green {
-  background-color: #b1e860;
-  color: white !important;
-}
-.bg-sold {
-  background-color: none;
-  border: 1px solid yellowgreen !important;
-  border-color: yellowgreen;
-  color: #b1e860 !important;
-  font-weight: 400;
-}
-@media screen and (max-width: 1024px) { 
-  .discount-badge {
-    width: 73px;
-    height: 29px;
-    padding-top: 1px;
+ .ant-layout-sider{
+   width:80px !important;
+ }
+  .ant-layout-sider-dark{
+    border-radius:0px 30px 0px 0px;
+    background-color:#42295a;
+    width:140px !important;
+    #NavBar{
     
-    bottom: 467px;
-   
-  }
-  .ant-layout-footer{
-
-  
-  
-    .bottom-bar{
-      p{
-        font-size: 0.9rem;
-   
-      }
+    .ant-menu-dark{
+      background-color:#42295a;
     }
+    li.logout.ant-menu-item {
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+    }
+    }
+ 
   }
-}
-@media screen and (max-width:576px) {
-  .discount-badge {
-    width: 73px;
-    height: 29px;
-    padding-top: 1px;
-    bottom: 677px;
-}
-}
-@media (max-width: 425px) {
-  .main-layout-content{
-    padding:0px 0px,
-  }
-  .content-title{
-   
-    text-align: center;
-  }
-  .content-title h1{
-    font-weight: 700 !important;
-  }
-   .content-btn{
-   
-    text-align: center;
-  }
+ 
 }

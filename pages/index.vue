@@ -1,9 +1,17 @@
+<!-- ************************** TEMPLATE  ************************* -->
 <template>
-  <div class="dashboard">hello world</div>
+  <!--START CONTAINER SECTION -->
+  <div class="container"></div>
+  <!--END CONTAINER SECTION -->
 </template>
-
+<!-- ************************** SCRIPTS  ************************* -->
 <script>
-export default {}
+export default {
+  layout: 'auth',
+  mounted() {
+    this.$router.push('/auth/login')
+  }
+}
 </script>
 
 <style></style>

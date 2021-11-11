@@ -1,0 +1,12 @@
+<svg id="exit-full-screen" xmlns="http://www.w3.org/2000/svg" width="22.748" height="22.748" viewBox="0 0 22.748 22.748">
+  <g id="fullscreen_x5F_exit">
+    <g id="Group_56642" data-name="Group 56642">
+      <g id="Group_56643" data-name="Group 56643">
+        <path id="Path_54145" data-name="Path 54145" d="M23.26,25.27l3.26,3.26,2.01-2.01-3.26-3.26L28.53,20H20v8.53Z" transform="translate(-5.783 -5.782)" fill="#fff"/>
+        <path id="Path_54146" data-name="Path 54146" d="M0,8.53H8.53V0L5.27,3.26,2.044.031.033,2.041,3.26,5.27Z" fill="#fff"/>
+        <path id="Path_54147" data-name="Path 54147" d="M0,26.52l2.01,2.01,3.26-3.26,3.26,3.26V20H0l3.26,3.26Z" transform="translate(0 -5.782)" fill="#fff"/>
+        <path id="Path_54148" data-name="Path 54148" d="M20,8.53h8.53L25.27,5.27,28.5,2.041,26.492.031,23.26,3.26,20,0Z" transform="translate(-5.783)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
