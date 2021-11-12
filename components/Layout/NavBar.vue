@@ -28,9 +28,9 @@
         <img
           src="/images/icons/Group 57033.svg"
           alt=""
-          @click="$router.push('/specialist')"
+          @click="$router.push('/registered-patients')"
         />
-        <span class="nav-text">Specialist</span>
+        <span class="nav-text">Patients</span>
       </a-menu-item>
       <a-menu-item key="4" @click="$router.push('/clinical-documents')">
         <img src="/images/icons/Group 57034.svg" alt="" />
@@ -49,14 +49,17 @@
         <span class="nav-text">Log Out</span>
       </a-menu-item>
     </a-menu>
+    <AppointmentModal />
   </div>
   <!--END NAV BAR SECTION -->
 </template>
 <!-- ************************** SCRIPT  ************************* -->
 <script>
+import AppointmentModal from '@/components/Pages/AppointmentModal/AppointmentModal'
+
 export default {
   name: 'NavBar',
-  components: {},
+  components: { AppointmentModal },
   methods: {
     showModal() {
       this.$root.$emit('appointment-modal')

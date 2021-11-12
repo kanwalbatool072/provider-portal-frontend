@@ -1,0 +1,287 @@
+#dashboard {
+    .ant-list-split .ant-list-item {
+        border-bottom: none !important;
+      }
+    .new-patient-list {
+        border-radius: 10px;
+        width: 100%;
+        h3 {
+          font-size: 1.1rem;
+          padding: 10px 0;
+        }
+        .anticon-small-dash {
+          height:30px;
+          margin-top: 15px;
+        }
+        .top-doctors-list-items {
+          padding-top: 0px;
+          display: flex;
+          .ant-card-bordered{
+            border:1px solid #ededed;
+            border-radius: 10px;
+          }
+     .ant-card{
+      height: 80px;
+      width: 100%;
+       display: flex;
+       .ant-card-body{
+        display: flex;
+              padding:5px;
+              width: 100%;
+        .ant-list-item-meta{
+            display: flex;
+            align-items: center;
+            .ant-list-item-meta-title {
+              font-size: 0.875rem;
+               font-weight: 500;
+               margin-bottom: 0px;
+               padding: 0px;
+             }
+             .ant-list-item-meta-description {
+              margin-top: 0px;
+              padding-top: 0px;
+              font-size: 10px;
+              line-height: 1.5;
+            }
+         
+        }
+        
+        .top-doctors-status {
+          margin-top: 8px;
+         padding: 8px 17px;
+          border-radius: 12px;
+          border: none;
+          width: 84px;
+          height: 35px;
+          .ant-tag{
+            .ant-tag-cyan{
+              color: #c2134d;
+             background: #e6ffeb;
+            }
+          }
+        }
+        .ant-list-item-meta-avatar {
+          width: 50px;
+          height: 50px;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+      }
+     }
+        }
+      }
+.tele-health-appointment {
+       .chart-container{
+        overflow: hidden;
+        width: 100%;
+       height: 440px;
+        border-radius: 15px;
+        padding: 20px 0px;
+        .apexcharts-menu-icon {
+            display: none;
+        }
+        h2{
+          font-size:18px;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+        .ant-card-head {
+            border: none;
+        }
+        .ant-card-head-title {
+          font-weight: 600;
+          font-size: 1.125rem;
+        }
+        .ant-card{
+          height: 410px;
+          .ant-card-body{
+     
+           padding:25px;
+          
+          .chart {
+             width:100%;
+             overflow-x: scroll !important;
+             overflow-y: hidden !important;
+            }
+        }
+      }
+       
+      }
+}
+.all-notifications {
+.notifications {
+    
+    border-radius: 10px;
+    padding: 5px;
+   
+   
+    // position:absolute; top:0px; left:0px; height:200px; right:0px;overflow:hidden;
+    .ant-card-body {
+      padding: 5px 0;
+      .notification-header{
+        width: 100%;
+           
+    // background: #333;
+           padding: 0px;
+    
+        //  overflow:hidden;
+         h1{
+          font-size:1.125rem;
+          font-weight: 600;
+        }
+      }
+     
+     
+    }
+    .scroll-testing{
+      height: 325px;
+      overflow-y: scroll;
+      .notifications-list{
+      padding-top: 10px;
+      display: flex;
+      // background-image: url('/images/Dashboard/Rectangle 26.svg');
+      border-radius: 15px;
+      .ant-card-bordered{
+        border:none;
+       border-radius: 15px;
+      }
+       .ant-card{
+         height: 71px;
+        width:100%;
+          display: flex;
+          .ant-card-body{
+            display: flex;
+          width: 100%;
+        .ant-list-item-meta {
+            display: flex;
+            align-items: center;
+          .ant-list-item-meta-title {
+            font-size: 0.813rem;
+             font-weight: 500;
+             margin-bottom: 0px;
+             padding: 0px;
+           }
+           .ant-list-item-meta-description {
+            margin-top: 0px;
+            padding-top: 0px;
+            font-size: 10px;
+          }
+        .ant-list-item-meta-avatar {
+          width: 45px;
+          height: 45px;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+       
+      }
+      
+
+    
+   }
+      
+      }
+    } 
+    }
+    .notefications-footer {
+      
+      width:100%;
+     
+      text-align: center;
+    }
+    .scroll-testing::-webkit-scrollbar {
+      display: none;
+  }
+  .scroll-testing {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+}
+.menu-card {
+    border-radius: 10px;
+    h1{
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+    .ant-list-item{
+      padding:13px 0;
+      cursor: pointer;
+    }
+    .ant-list-item-meta {
+        display: flex;
+        align-items: center;
+    }
+    .ant-list-item-meta-title {
+      
+      font-size: 14px;
+      // line-height: 13px;
+      font-weight: 500;
+    }
+
+    .ant-list-item-meta-avatar {
+      width: 45px;
+      height: 45px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+ 
+}
+#modal-appointment {
+  .ant-modal-close {
+    padding: 0px;
+    .ant-modal-close-icon {
+      padding: 4px;
+      background-color: #423869;
+      border-radius: 15px;
+      color: white;
+      font-size: 12px;
+      position: absolute;
+      top: 11px;
+      right: 12px;
+    }
+  }
+  .ant-modal-content {
+    padding: 20px;
+    .ant-modal-header {
+      padding: 10px;
+      border-bottom: 0px solid #e8e8e8;
+      .ant-modal-title {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .ant-modal-body {
+      padding: 10px;
+    }
+    .ant-modal-footer {
+      display: flex;
+      border-top: 0px solid #e8e8e8;
+      .ant-btn {
+        padding: 15px 30px 35px 30px;
+      }
+    }
+  }
+  .modal-card {
+    padding: 0px;
+    .ant-card-body {
+      padding: 10px;
+      .telehealth-row {
+        background-color: rgba(192, 192, 192, 0.1);
+        padding: 8px;
+        border-radius: 10px;
+        .clinic-appoint-ment-img {
+          width: 50px;
+        }
+      }
+    }
+  }
+}

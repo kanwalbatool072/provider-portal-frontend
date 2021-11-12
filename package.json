@@ -12,9 +12,12 @@
   },
   "dependencies": {
     "ant-design-vue": "^1.7.6",
-    "core-js": "^3.15.1",
+    "apexcharts": "^3.29.0",
     "babel-plugin-import": "^1.13.3",
-    "nuxt": "^2.15.7"
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7",
+    "vue-apexcharts": "^1.6.2",
+    "vue-draggable-cal": "^2.6.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

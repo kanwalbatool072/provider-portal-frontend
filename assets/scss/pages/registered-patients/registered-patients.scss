@@ -1,0 +1,185 @@
+#registered-patients {
+  .doctor-card {
+    h2 {
+      color: #1F2127;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: medium;
+    }
+    span {
+      color: #1F2127B2;
+      opacity: 1;
+    }
+    p {
+      font-size: 13px;
+      letter-spacing: 0.65px;
+    }
+  }
+    .ant-card{
+        border-radius: 8px !important;
+    .ant-card-body {
+        padding: 10px;
+    }
+    .ant-card-actions {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background: #B4ACD3;
+        p{
+        color: #ffffff !important;
+        }
+    }
+    i.anticon.anticon-more {
+        font-size: 20px;
+    }
+    .ant-rate {
+        font-size: 15px;
+    }
+    .rating {
+        .ant-card-body {
+            padding: 5px 0px;
+        }
+    }
+}
+    .ant-card-small > .ant-card-head{
+        border-radius: 4px !important;
+        background: #B4ACD3 !important;
+        color: #ffffff;
+         .ant-card-extra a{
+            color: #ffffff;
+
+        }
+
+    }  
+    .working {
+        p {
+            line-height: 1.7 !important;
+        }
+    }
+    .get-appointment {
+        button.ant-btn {
+            height: 45px;
+        }
+    }
+    #month-picker {
+        .container {
+          padding: 0;
+          .drag-calendar {
+            height: 6.5rem !important;
+          }
+        }
+        .drag-calendar .days .cell[data-v-5af1977c] {
+          float: left;
+          width: 2.5rem;
+          padding: 1rem 0.1rem;
+          margin-right: 15px;
+          border-right: 1px solid rgba(0, 0, 0, 0.03);
+          text-align: center;
+          position: relative;
+          color: #888;
+          box-shadow: 0px 1px 5px #8080803d;
+          background: #8080801f;
+          border-radius: 0.5em;
+        }
+        .drag-calendar .cal-cell[selected='selected'][data-v-5af1977c],
+        .drag-calendar .month-cell[selected='selected'][data-v-5af1977c] {
+          padding: 1.2rem 0.1rem !important;
+          font-size: 9px;
+          background-color: #423869 !important;
+          border-color: #423869;
+        }
+        .drag-calendar .days .cell.today .day-number[data-v-5af1977c] {
+          color: #888;
+          text-decoration: none;
+        }
+        .drag-calendar .cal-cell[selected=selected] .cell-content .day-number[data-v-5af1977c], .drag-calendar .month-cell[selected=selected] .cell-content .day-number[data-v-5af1977c] {
+          color: #ffffff;
+        }
+        .drag-calendar
+          .cal-cell[selected='selected']
+          .cell-content
+          div[data-v-5af1977c],
+        .drag-calendar
+          .month-cell[selected='selected']
+          .cell-content
+          div[data-v-5af1977c] {
+          font-size: 9px;
+          font-weight: 400;
+        }
+        .cell-content {
+          display: table;
+          margin: 0 auto;
+          .day {
+            display: table-header-group;
+            font-weight: 500;
+          }
+          .day-number {
+            top:7px;
+            font-weight: 500;
+          }
+        }
+        .months {
+          display: none !important;
+        }
+        .arrow.left.top {
+          display: none;
+        }
+        .arrow.right.top {
+          display: none;
+        }
+        .arrow.bottom.left {
+          display: none;
+        }
+        .arrow.bottom.right {
+          display: none;
+        }
+      }
+
+}
+#available-slots {
+  .ant-modal-footer {
+    padding: 0px 45px 30px 45px !important;
+    border-top: none !important;
+    button.ant-btn {
+      height: 45px;
+    }
+ }
+ .slots-time.ant-radio-button-wrapper{
+    width: 90px;
+  
+  }
+ .ant-modal-close {
+  padding: 0px;
+  .ant-modal-close-icon {
+    padding: 4px;
+    background-color: #423869;
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+  }
+}
+.ant-select-selection--multiple {
+  height: 50px;
+  background: #F1F0F6;
+  border: none;
+  padding: 0 8px;
+  .ant-select-selection__rendered > ul > li  {
+height: 32px;
+margin-top: 9px;
+border-radius: 5px;
+background-color: #E5E3F4;
+line-height: 30px;
+color: #A7A2BF;
+font-size: 12px;
+  }
+ .ant-select-search--inline{
+display: none;
+  }
+}
+}
+@media screen and (max-width: 1024px) {
+  #available-slots {
+    .ant-modal{     
+       width: 48% !important;
+    }
+  }
+}

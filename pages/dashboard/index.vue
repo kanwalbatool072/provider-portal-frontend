@@ -1,9 +1,18 @@
 <template>
-  <div id="dashbaord"></div>
+  <div id="dashboard">
+    <Dashboard />
+  </div>
 </template>
 
 <script>
-export default {}
+import Dashboard from '@/components/Pages/Dashboard/Dashboard'
+export default {
+  components: {
+    Dashboard
+  }
+}
 </script>
 
-<style></style>
+<style lang="sass">
+@import '~/assets/scss/pages/dashboard/dashboard.scss'
+</style>
