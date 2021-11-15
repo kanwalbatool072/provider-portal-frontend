@@ -47,7 +47,7 @@ export default {
   //   }
   // },
   computed: {
-    ...mapGetters('dashboard', ['getMenuData'])
+    ...mapGetters('modules/dashboard', ['getMenuData'])
   },
   methods: {
     showMenuData(title) {

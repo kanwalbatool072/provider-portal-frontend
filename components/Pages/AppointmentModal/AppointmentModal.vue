@@ -96,7 +96,7 @@ export default {
     ])
   },
   mounted() {
-    this.$root.$on('appointment-modal', this.showAppointmentModal)
+    this.$root.$on('modules/appointment-modal', this.showAppointmentModal)
   },
 
   methods: {

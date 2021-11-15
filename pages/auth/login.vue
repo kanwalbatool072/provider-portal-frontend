@@ -143,7 +143,7 @@ export default {
   },
   // CALL ANYTHING ON RUN TIME
   computed: {
-    ...mapGetters('auth', ['setValidation'])
+    ...mapGetters('modules/auth', ['setValidation'])
   },
   // CALL ACTION METHOD
   methods: {

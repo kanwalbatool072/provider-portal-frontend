@@ -25,7 +25,7 @@
 import { mapGetters } from 'vuex'
 export default {
   computed: {
-    ...mapGetters('dashboard', ['apptList'])
+    ...mapGetters('modules/dashboard', ['apptList'])
   }
 }
 </script>

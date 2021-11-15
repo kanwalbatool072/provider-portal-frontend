@@ -29,7 +29,7 @@ export default {
     ApexCharts: VueApexCharts
   },
   computed: {
-    ...mapGetters('dashboard', ['chartOptions', 'getSeries'])
+    ...mapGetters('modules/dashboard', ['chartOptions', 'getSeries'])
   }
 }
 </script>
