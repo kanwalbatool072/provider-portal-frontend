@@ -117,7 +117,7 @@ export default {
   },
   // Call actions method
   methods: {
-    ...mapActions('specialist', ['handleAvailableSlots']),
+    ...mapActions('modules/specialist', ['handleAvailableSlots']),
 
     // async handleSave() {
     //   this.loading = true
