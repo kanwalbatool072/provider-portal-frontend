@@ -55,7 +55,7 @@
 import { mapGetters } from 'vuex'
 export default {
   computed: {
-    ...mapGetters('dashboard', ['getNewPatient'])
+    ...mapGetters('modules/dashboard', ['getNewPatient'])
   }
 }
 </script>

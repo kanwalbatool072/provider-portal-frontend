@@ -77,7 +77,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('dashboard', ['getNotifications'])
+    ...mapGetters('modules/dashboard', ['getNotifications'])
   },
   methods: {
     chageClass(index) {

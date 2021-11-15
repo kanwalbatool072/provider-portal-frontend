@@ -62,7 +62,7 @@ export default {
     return {}
   },
   computed: {
-    ...mapGetters('dashboard', ['getNotifications'])
+    ...mapGetters('modules/dashboard', ['getNotifications'])
   }
 }
 </script>

@@ -14,6 +14,7 @@
           :md="11"
           :lg="8"
           :xl="6"
+          @click="handleAvailableSlots('')"
         >
           <PatientCard :doctor-list="doctor" />
         </a-col>
@@ -21,23 +22,30 @@
       </a-row>
       <!--END DOCTER CARD  ROW-->
     </div>
+    <AvailableSlots />
   </div>
+
   <!--START DOCTER LIST  SECTION-->
 </template>
 <!-- ************************** SCRIPT  ************************* -->
 <script>
 // STORE
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import PatientCard from './PatientCard.vue'
+import AvailableSlots from '@/components/Pages/RegisteredPatients/Modal/AvailableSlots'
 
 export default {
   // COMPONENT
   components: {
-    PatientCard
+    PatientCard,
+    AvailableSlots
   },
   // CALL ANYTHING ON RUN TIME
   computed: {
-    ...mapGetters('registered-patients', ['doctorList'])
+    ...mapGetters('modules/registered-patients', ['doctorList'])
+  },
+  methods: {
+    ...mapActions('modules/specialist', ['handleAvailableSlots'])
   }
 }
 </script>
