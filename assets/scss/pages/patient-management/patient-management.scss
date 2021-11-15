@@ -18,38 +18,12 @@
         }
         .demo-profile-card{
             border-radius: 18px;
-.ant-input,
-.ant-input-number,
-.ant-time-picker-input {
-  border-radius: 9px;
-  overflow: hidden;
-  background-color: transparent !important;
-  height: 42px;
-
-}
 textarea.ant-input {
     height: auto;
     background-color: #F5F7F9 !important;
-    color: #434141;
-    border-color: #8E93B745;
 }
 label.ant-form-item-no-colon {
     font-weight: 600;
-}
-.ant-select {
-    .ant-select-selection {
-        border-radius: 9px;
-        overflow: hidden;
-        background-color: transparent !important;
-        height: 42px;
-     
-    }
-}
-.ant-calendar-picker {
-    // width: 100%;
-    .ant-calendar-picker-icon {
-        color: #9E99B2;
-    }
 }
 .ant-radio-button-wrapper {
     height: 55px;
@@ -69,42 +43,73 @@ label.ant-form-item-no-colon {
     color: #ffffff;
 }
 
-    button.ant-btn {
-        height: 45px;
-        border-radius: 4px;
-    }
+  
+}
+button.ant-btn {
+    height: 45px;
+    border-radius: 4px;
 }
     .edit-profile-picture {
             border-radius: 18px;
             padding-bottom: 25px;
         .ant-card-body {
-            padding: 10px;
-            .ant-row{
-                .ant-col{
-                    .profile-pic{
-                        
-                            width: 150px;
-                             border-radius: 50%; 
-                             border: 5px solid #423869;
-                    }
-                    .camera-icon{
-                        margin-right:20px;
-                    }
-                   
-                    .anticon-plus{
-                        position: absolute;
-                        top: 130px;
-                        right: 123px;
-                        font-size: 24px;
-                        background: #12c719;
-                        border-radius: 15px;
-                        color: white;
-                        padding: 5px;
-                    }
-                }
-               
+            padding: 10px; 
             }
         }
     }
+    .profile-picture {
+        border-radius: 18px;
+        .profile-pic{                     
+            width: 150px;
+             border-radius: 50%; 
+             border: 5px solid #423869;
+    }
+    .camera-icon{
+        margin-right:20px;
+    }
+   
+    .anticon-plus{
+        position: absolute;
+        top: 130px;
+        right: 123px;
+        font-size: 24px;
+        background: #12c719;
+        border-radius: 15px;
+        color: white;
+        padding: 5px;
+    }
   }
+  .Insurance {
+  .insurance-card {
+    border-radius: 8px !important;
+    .ant-card-body {
+        padding: 10px;
+    }
+    h2 {
+      color: #1F2127;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: medium;
+    }
+    span {
+      color: #1F2127B2;
+      opacity: 1;
+    }
+    p {
+      font-size: 13px;
+      letter-spacing: 0.65px;
+    }
+  }
+  .ant-card-actions {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #B4ACD3;
+    p{
+    color: #ffffff !important;
+    }
+}
+i.anticon.anticon-more {
+    font-size: 20px;
+}
+}
 }

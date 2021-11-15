@@ -1,11 +1,11 @@
 <!-- ************************* TEMPLATE ************************ -->
 <template>
-  <!-- LOGIN SECTION -->
-  <div id="login">
+  <!--REGISTER SECTION -->
+  <div id="resigter">
     <a-row>
       <!--LOGIN IMAGES COLUMN-->
-      <a-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12" class="login-img">
-        <div class="login-bg pl-5 pr-4 ml-2 mr-2">
+      <a-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12" class="resigter-img">
+        <div class="resigter-bg pl-5 pr-4 ml-2 mr-2">
           <p class="mb-4 mr-5 pr-5 text-justify fs-small">
             This system may only be accessed by authorized users, and each user
             can only view data associated with their specific account. By
@@ -21,26 +21,20 @@
       <!--END LOGIN IMAGES COLUMN-->
 
       <!--LOGIN FORM COLUMN-->
-      <a-col
-        :xs="24"
-        :sm="24"
-        :md="24"
-        :lg="12"
-        :xl="12"
-        class="px-5 pt-5 pb-4"
-      >
+      <a-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12" class="p-5">
         <a-form-model
-          ref="loginForm"
-          :model="loginForm"
+          ref="resigterForm"
+          :model="resigterForm"
           :rules="setValidation.rules"
+          :layout="formLayout"
           :hide-required-mark="true"
           label-align="left"
         >
           <a-row :gutter="16" class="p-5 mx-5 login-cridentials-box">
             <h2 class="mb-2 fs-extra-larg px-2 font-600 login-heading pt-5">
-              Login
+              Register
             </h2>
-            <hr class="login-line mx-2" />
+            <hr class="resigter-line mx-2" />
             <p class="px-2 fs-normal font-600 py-3 mb-1">
               Please enter your credentials
             </p>
@@ -58,7 +52,7 @@
                   xs: 24
                 }"
               >
-                <a-input v-model="loginForm.email" placeholder="Email" />
+                <a-input v-model="resigterForm.email" placeholder="Email" />
               </a-form-model-item>
             </a-col>
             <!-- END EMAIL COLUMN-->
@@ -78,7 +72,7 @@
                 }"
               >
                 <a-input-password
-                  v-model="loginForm.password"
+                  v-model="resigterForm.password"
                   prop="password"
                   placeholder="Password"
                 />
@@ -96,7 +90,7 @@
               :lg="24"
               :xl="24"
               align="center"
-              class="pt-2"
+              class="pt-4"
             >
               <!-- BUTTON COLUMN-->
               <a-button
@@ -107,14 +101,14 @@
                 @click="handleSubmit()"
               >
                 <span v-if="loading == true"> Loading </span>
-                <span v-else class="font-600">LOGIN</span>
+                <span v-else class="font-600">REGISTER</span>
               </a-button>
               <!-- END BUTTON COLUMN-->
             </a-col>
             <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" align="center">
-              Dont't have an account?
-              <nuxt-link to="/register"
-                ><span class="font-600 account-text">Register</span></nuxt-link
+              Already have an account?
+              <nuxt-link to="/auth/login"
+                ><span class="font-600 account-text">Login</span></nuxt-link
               >
             </a-col>
           </a-row>
@@ -123,9 +117,9 @@
       <!--END LOGIN FORM COLUMN-->
     </a-row>
   </div>
-  <!--END LOGIN SECTION-->
+  <!--END REGISTER SECTION-->
 </template>
-<!-- ************************** SCRIPT  ************************* -->
+<!-- ************************** SCRIPTS  ************************* -->
 <script>
 // STORE
 import { mapGetters } from 'vuex'
@@ -135,20 +129,20 @@ export default {
   data() {
     return {
       loading: false,
-      loginForm: {
-        email: 'patient@demo.com',
-        password: '123'
+      resigterForm: {
+        email: '',
+        password: ''
       }
     }
   },
   // CALL ANYTHING ON RUN TIME
   computed: {
-    ...mapGetters('modules/auth', ['setValidation'])
+    ...mapGetters('auth', ['setValidation'])
   },
   // CALL ACTION METHOD
   methods: {
     async handleSubmit() {
-      await this.$refs.loginForm.validate(valid => {
+      await this.$refs.resigterForm.validate(valid => {
         if (valid) {
           this.loading = true
           this.disabled = true
@@ -157,10 +151,9 @@ export default {
             this.disabled = false
             // Show Notification Popup
             await this.$notification.success({
-              message: 'Login Successfully!'
+              message: 'Register Successfully!'
             })
           }, 1000)
-          this.$router.push('/dashboard')
         }
       })
     }
@@ -169,18 +162,18 @@ export default {
 </script>
 
 <style lang="scss">
-#login {
-  .login-bg {
+#resigter {
+  .resigter-bg {
     position: absolute;
     bottom: 0;
     color: #aaa5bb;
   }
-  .login-img {
+  .resigter-img {
     background-image: url('/images/1.png');
     background-size: cover;
     height: 100vh;
   }
-  .login-line {
+  .resigter-line {
     width: 20px;
     border: 2px solid #04c6ff;
     border-radius: 5px;
@@ -195,7 +188,6 @@ export default {
   }
   .ant-form-item-control {
     line-height: 50px;
-
     .ant-input {
       height: 40px;
     }

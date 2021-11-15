@@ -1,17 +1,17 @@
 // ant input
 .ant-form-item-control {
     .ant-input {
-        height: 45px;
-        border-radius: 0;
-        background-color: #FAFAFA;
-        border-color: #F1F1F1;
-    }
+        border-radius: 9px;
+ 
+}
+.ant-input:focus, .ant-input:hover {
+    border-color: #595175;
+    border-right-width: 1px !important;
+    outline: none;
+    box-shadow: none;
+}
     .ant-time-picker-input{
-        height: 45px;
-        border-radius: 0;
-        background-color: #FAFAFA;
-        border-color: #F1F1F1;
-        width: 100% !important;
+        border-radius: 9px;
     }
     span.ant-calendar-picker {
         width: 100%;
@@ -19,13 +19,15 @@
     span.ant-time-picker {
         width: 100%;
     }
-    .ant-select-selection--single {
-        height: 45px;
-        border-radius: 0;
-        background-color: #FAFAFA;
-        border-color: #F1F1F1;
-        padding-top: 5px;
-        font-size: 16px;
+    .ant-select {
+        .ant-select-selection {
+            border-radius: 9px;
+            &:focus {
+                border-color: #595175;
+                border-right-width: 1px !important;  
+                box-shadow: none;
+            }
+        }
     }
    
 }
