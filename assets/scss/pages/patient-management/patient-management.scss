@@ -1,0 +1,110 @@
+#patient-management{
+    .patient-management {
+        .clinic-documents-btn {
+          min-width: 430px;
+          border-radius: 6px;
+          .ant-card-body {
+            padding: 8px;
+            .documents-btn {
+              background-color: #aca5c7;
+              border-color: #aca5c7;
+            }
+          }
+        }
+        .ant-radio-button-wrapper {
+          background: #aca5c7;
+          color: #ffffff;
+          margin-left: 10px;
+        }
+        .demo-profile-card{
+            border-radius: 18px;
+.ant-input,
+.ant-input-number,
+.ant-time-picker-input {
+  border-radius: 9px;
+  overflow: hidden;
+  background-color: transparent !important;
+  height: 42px;
+
+}
+textarea.ant-input {
+    height: auto;
+    background-color: #F5F7F9 !important;
+    color: #434141;
+    border-color: #8E93B745;
+}
+label.ant-form-item-no-colon {
+    font-weight: 600;
+}
+.ant-select {
+    .ant-select-selection {
+        border-radius: 9px;
+        overflow: hidden;
+        background-color: transparent !important;
+        height: 42px;
+     
+    }
+}
+.ant-calendar-picker {
+    // width: 100%;
+    .ant-calendar-picker-icon {
+        color: #9E99B2;
+    }
+}
+.ant-radio-button-wrapper {
+    height: 55px;
+    line-height: 50px;
+    width: 65px;
+    padding: 0;
+    text-align: center;
+}
+.slots-time { 
+     background-color: #F5F7F9 ;
+    border-radius: 8px;
+    border-color:#F5F7F9 ;
+}
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+    background: #423869;
+    border-color: #423869;
+    color: #ffffff;
+}
+
+    button.ant-btn {
+        height: 45px;
+        border-radius: 4px;
+    }
+}
+    .edit-profile-picture {
+            border-radius: 18px;
+            padding-bottom: 25px;
+        .ant-card-body {
+            padding: 10px;
+            .ant-row{
+                .ant-col{
+                    .profile-pic{
+                        
+                            width: 150px;
+                             border-radius: 50%; 
+                             border: 5px solid #423869;
+                    }
+                    .camera-icon{
+                        margin-right:20px;
+                    }
+                   
+                    .anticon-plus{
+                        position: absolute;
+                        top: 130px;
+                        right: 123px;
+                        font-size: 24px;
+                        background: #12c719;
+                        border-radius: 15px;
+                        color: white;
+                        padding: 5px;
+                    }
+                }
+               
+            }
+        }
+    }
+  }
+}

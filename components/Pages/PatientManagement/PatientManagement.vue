@@ -1,7 +1,7 @@
 <!-- ************************** TEMPLATE  ************************* -->
 <template>
   <!--SETTINGS SECTION-->
-  <div id="patient-management mb-5 pb-5">
+  <div class="patient-management mb-5 pb-5">
     <!--START AVAILABE LIST ROW -->
     <a-row>
       <a-col :xs="24" :sm="24" :md="16" :lg="16" :xl="16">
@@ -147,25 +147,4 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-#patient-management {
-  .clinic-documents-btn {
-    min-width: 430px;
-    .ant-card-body {
-      padding: 8px;
-      .documents-btn {
-        background-color: #aca5c7;
-        border-color: #aca5c7;
-      }
-    }
-  }
-  .ant-radio-button-wrapper {
-    background: #aca5c7;
-    color: #ffffff;
-    margin-left: 10px;
-  }
-  // .ant-radio-button-wrapper:last-child {
-  //   border-radius: 4px 4px 4px 4px;
-  // }
-}
-</style>
+<style lang="scss"></style>

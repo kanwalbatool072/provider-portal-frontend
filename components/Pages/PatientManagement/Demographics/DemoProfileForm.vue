@@ -3,7 +3,7 @@
   <!--START EDIT PROFILE SECTION -->
   <div class="demo-profile-form">
     <!--START EDIT PROFILE CARD -->
-    <a-card :bordered="false">
+    <a-card :bordered="false" class="demo-profile-card">
       <!--START FORM MODEL-->
       <a-form-model
         ref="editProfile"
@@ -12,7 +12,7 @@
         label-align="left"
       >
         <!--START PATIENT ID ROW -->
-        <a-row :gutter="24" class="px-4 pt-2">
+        <a-row :gutter="24" class="px-2">
           <!--START PATIENT ID COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -243,7 +243,7 @@
         </a-row>
         <!--END PATIENT ID ROW -->
         <!--START ADDRESS ROW -->
-        <a-row :gutter="24" class="px-4">
+        <a-row :gutter="24" class="px-2">
           <!--START ADDRESS COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -359,7 +359,7 @@
         </a-row>
         <!--END ADDRESS ROW -->
         <!--START ZIP ROW -->
-        <a-row :gutter="24" class="px-4 mt-0">
+        <a-row :gutter="24" class="px-2 mt-0">
           <!--START ZIP COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -474,7 +474,7 @@
       <!--START FORM MODEL -->
       <a-row :gutter="24">
         <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" align="end">
-          <a-button type="primary" class="px-5 my-3 mr-4"
+          <a-button type="primary" class="px-5 my-3 mr-2"
             >Save Changes</a-button
           >
         </a-col>
