@@ -117,7 +117,7 @@ export default {
   },
   data() {
     return {
-      btnName: 'all_doc',
+      btnName: 'all_demo',
       documentsForm: {
         document: null
       }
@@ -126,23 +126,20 @@ export default {
   // Call Anything On runtime
   computed: {},
   //
-  mounted() {
-    this.$root.$on('show-unsign-document', this.showUnsignDoc)
-  },
+  // mounted() {
+  //   this.$root.$on('show-unsign-document', this.showUnsignDoc)
+  // },
 
   methods: {
     changePaymentType(btnName) {
       // console.log(btnName)
       // console.log('helo')
       this.btnName = btnName
-      if (btnName == 'request_doc') {
-        this.$root.$emit('show-date-picker', true)
-      } else {
-        this.$root.$emit('show-date-picker', false)
-      }
-    },
-    showUnsignDoc() {
-      this.btnName = 'unsigned_doc'
+      // if (btnName == 'request_doc') {
+      //   this.$root.$emit('show-date-picker', true)
+      // } else {
+      //   this.$root.$emit('show-date-picker', false)
+      // }
     }
   }
 }
