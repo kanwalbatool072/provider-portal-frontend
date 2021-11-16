@@ -1,7 +1,7 @@
 <!-- ************************** TEMPLATE  ************************* -->
 <template>
   <!--START EDIT PROFILE SECTION -->
-  <div class="Insurance">
+  <div class="insurance">
     <!--START EDIT PROFILE ROW -->
     <a-row :gutter="24" class="mt-3">
       <!--START EDIT PROFILE COLUMN -->
