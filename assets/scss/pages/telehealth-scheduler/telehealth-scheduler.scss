@@ -1,7 +1,26 @@
 #telehealth-scheduler{
-    .ant-card{
+    .appointment-form{
         border-radius: 8px;
     }
+    .patient-detail-card{
+        border-radius: 8px;
+     .ant-card-body{
+        padding: 10px !important;
+    }
+    .sub-heading{
+        font-size: 14px;
+        font-weight: 400;
+    color: #02100F;
+    opacity: 0.6;
+    }
+    .btn-sub-heading{
+        font-size: 12px;
+        font-weight: 400;
+    color: white;
+    opacity: 0.6;
+    }
+    }
+   
 .ant-input,
 .ant-input-number,
 .ant-time-picker-input {
