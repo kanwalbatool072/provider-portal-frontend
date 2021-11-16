@@ -17,7 +17,7 @@
             <img src="/images/Dashboard/dr_john.svg" height="92" />
           </div>
           <h2 class="mb-0 pt-2">David James</h2>
-          <span class="fs-normal font-400">1234</span>
+          <span class="fs-normal font-400 management-card-text">1234</span>
         </a-col>
         <!--START DOCTER IMAGE LIST COLUMN-->
       </a-row>
@@ -26,7 +26,7 @@
       <template slot="actions" class="ant-card-actions">
         <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" align="center">
           <div class="card-text">
-            <p class="mb-0 fs-normal font-400">ORITHOPEDICS</p>
+            <p class="mb-0 fs-normal font-400 management-card-text">PATIENT</p>
           </div>
         </a-col>
       </template>

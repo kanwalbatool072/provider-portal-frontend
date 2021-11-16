@@ -11,7 +11,7 @@
             </a-col>
             <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="21">
               <p class="mb-0 font-600">{{ item.title }}</p>
-              <span>{{ item.description }}</span>
+              <span class="doc-list-text">{{ item.description }}</span>
             </a-col>
             <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="1" align="end">
               <a-icon type="right" />

@@ -1,38 +1,38 @@
 export default () => ({
   newPatient: [
     {
-      title: 'Dr johnn Smith ',
-      description: 'MBBS.MD',
+      title: 'John Smith ',
+      description: 'Patient',
       avatar: '/images/Dashboard/dr_john.svg',
       status: 'Avaliable'
     },
     {
-      title: 'Dr Sarah Smith',
-      description: 'BOS.MDS',
+      title: 'Maria James',
+      description: 'Patient',
       avatar: '/images/Dashboard/dr_sarah.svg',
       status: 'Avaliable'
     },
     {
-      title: 'Dr Megha Trivedi',
-      description: 'BHMSI',
+      title: 'Smitha Pal',
+      description: 'Patient',
       avatar: '/images/Dashboard/dr_megha.svg',
       status: 'Absent'
     },
     {
-      title: 'Dr john Doe',
-      description: 'MBBS.MS',
+      title: 'QB James',
+      description: 'Patient',
       avatar: '/images/Dashboard/dr_john_doe.svg',
       status: 'Avaliable'
     },
     {
-      title: 'Dr Naimur R. ',
-      description: 'MBBS',
+      title: 'Samantha ',
+      description: 'Patient',
       avatar: '/images/Dashboard/dr_naimur.svg',
       status: 'Avaliable'
     },
     {
-      title: 'Dr Jacob Royan',
-      description: 'MBBS.MD',
+      title: 'Maria Pal',
+      description: 'Patient',
       avatar: '/images/Dashboard/dr_jacab_roy.svg',
       status: 'Absent'
     }
@@ -41,10 +41,10 @@ export default () => ({
     {
       title: 'Reminder for Checkup',
       notefication_img: '/images/Dashboard/stethoscope.svg',
-      date: '26/06/21 6:50 AM'
+      date: '26/06/21 5:30 PM'
     },
     {
-      title: 'From Dr. Maria Wilson',
+      title: 'Notification From Dr. Maria Wilson',
       notefication_img: '/images/Dashboard/notification_icon.svg',
       date: '26/06/21 6:50 AM'
     },
@@ -76,20 +76,12 @@ export default () => ({
     },
 
     {
-      title: 'Call Recording',
+      title: 'Patient Management',
       menu_icon: '/images/Dashboard/call_recording.svg'
     },
     {
-      title: 'Timestamp',
+      title: 'Telehealth Scheduler',
       menu_icon: '/images/Dashboard/time_stamp.svg'
-    },
-    {
-      title: 'Prescription/Lab Report',
-      menu_icon: '/images/Dashboard/prescription_lab_report.svg'
-    },
-    {
-      title: 'Education Center',
-      menu_icon: '/images/Dashboard/education_center.svg'
     }
   ],
   teleHealthAppointment: [

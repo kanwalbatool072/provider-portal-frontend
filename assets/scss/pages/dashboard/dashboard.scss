@@ -149,12 +149,13 @@
        border-radius: 15px;
       }
        .ant-card{
-         height: 71px;
-        width:100%;
+         width:100%;
           display: flex;
+          box-shadow: rgba(57, 84, 255, 0.04) 0px 3px 6px;
           .ant-card-body{
             display: flex;
           width: 100%;
+          padding: 10px;
         .ant-list-item-meta {
             display: flex;
             align-items: center;
@@ -251,6 +252,7 @@
   }
   .ant-modal-content {
     padding: 20px;
+    border-radius: 12px;
     .ant-modal-header {
       padding: 10px;
       border-bottom: 0px solid #e8e8e8;

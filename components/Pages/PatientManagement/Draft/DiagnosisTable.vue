@@ -20,21 +20,21 @@
 const data = [
   {
     key: '1',
-    title: 'Patient Responsibility',
+    title: '724',
     age: 32,
-    value: 'Patient Responsibility1'
+    value: 'Other unspecified back...'
   },
   {
     key: '2',
-    title: 'Insurance Bal',
+    title: '724',
     age: 42,
-    value: '$0'
+    value: 'Other unspecified back...'
   },
   {
     key: '3',
-    title: 'Alloc Payment',
+    title: '724',
     age: 32,
-    value: '$240'
+    value: 'Other unspecified back...'
   }
 ]
 
@@ -53,7 +53,7 @@ export default {
 
       const columns = [
         {
-          title: 'Title',
+          title: 'Codes',
           dataIndex: 'title',
           key: 'title',
           sorter: (a, b) => a.age - b.age,
@@ -61,7 +61,7 @@ export default {
         },
 
         {
-          title: 'Value',
+          title: 'Description',
           dataIndex: 'value',
           key: 'value'
         },

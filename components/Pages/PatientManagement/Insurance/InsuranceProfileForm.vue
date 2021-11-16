@@ -16,7 +16,7 @@
           <!--START PATIENT ID COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'Patient ID'"
+              :label="'Insurance Name'"
               prop="patientId"
               has-feedback
               :colon="false"
@@ -37,7 +37,7 @@
             >
               <a-input
                 v-model="insuranceEditProfile.patientId"
-                placeholder="12345"
+                placeholder="Health Care"
               >
               </a-input>
             </a-form-model-item>
@@ -46,7 +46,7 @@
           <!--START FIRST NAME COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'First Name'"
+              :label="'Policy Number'"
               prop="firstname"
               has-feedback
               :colon="false"
@@ -67,7 +67,7 @@
             >
               <a-input
                 v-model="insuranceEditProfile.firstname"
-                placeholder="John"
+                placeholder="123548"
               >
               </a-input>
             </a-form-model-item>
@@ -77,7 +77,7 @@
           <!--START MIDDLE NAME COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'Middle Name'"
+              :label="'Insurance Group #'"
               prop="middlename"
               has-feedback
               :colon="false"
@@ -98,7 +98,7 @@
             >
               <a-input
                 v-model="insuranceEditProfile.middlename"
-                placeholder="Shawn"
+                placeholder="221121"
               >
               </a-input>
             </a-form-model-item>
@@ -107,7 +107,7 @@
           <!--START LAST NAME COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'Last Name'"
+              :label="'Eligibility Date'"
               prop="lastname"
               has-feedback
               :colon="false"
@@ -126,11 +126,10 @@
                 xs: 24
               }"
             >
-              <a-input
+              <a-date-picker
                 v-model="insuranceEditProfile.lastname"
-                placeholder="Wicks"
-              >
-              </a-input>
+                placeholder="22/10/21"
+              />
             </a-form-model-item>
           </a-col>
           <!--END LAST NAME COLUMN -->
@@ -138,7 +137,7 @@
           <!--START SUFFIX COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'Suffix'"
+              :label="'Start Date'"
               prop="suffix"
               has-feedback
               :colon="false"
@@ -157,18 +156,17 @@
                 xs: 24
               }"
             >
-              <a-input
+              <a-date-picker
                 v-model="insuranceEditProfile.suffix"
-                placeholder="Suffix"
-              >
-              </a-input>
+                placeholder="22/10/21"
+              />
             </a-form-model-item>
           </a-col>
           <!--END SUFFIX  COLUMN -->
           <!--START DATE OF BIRTH  COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'Date Of Birth'"
+              :label="'End Date'"
               prop="dateOfBirth"
               has-feedback
               :colon="false"
@@ -189,7 +187,7 @@
             >
               <a-date-picker
                 v-model="insuranceEditProfile.dateOfBirth"
-                style="width: 100%"
+                placeholder="22/10/21"
               />
             </a-form-model-item>
           </a-col>
@@ -197,7 +195,7 @@
           <!--START GENDER COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'Gender'"
+              :label="'Add Pharmacy Group'"
               prop="gender"
               has-feedback
               :colon="false"
@@ -216,14 +214,10 @@
                 xs: 24
               }"
             >
-              <a-select
+              <a-input
                 v-model="insuranceEditProfile.gender"
-                default-value="Male"
-                style="width: 100%"
-              >
-                <a-select-option value="1"> Male </a-select-option>
-                <a-select-option value="2"> Female </a-select-option>
-              </a-select>
+                placeholder="221121"
+              />
             </a-form-model-item>
           </a-col>
           <!--END GENDER COLUMN -->
@@ -231,7 +225,7 @@
           <!--START SSN COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'SSN'"
+              :label="'BIN'"
               prop="ssn"
               has-feedback
               :colon="false"
@@ -250,10 +244,7 @@
                 xs: 24
               }"
             >
-              <a-input
-                v-model="insuranceEditProfile.ssn"
-                placeholder="SSN2345678"
-              >
+              <a-input v-model="insuranceEditProfile.ssn" placeholder="221121">
               </a-input>
             </a-form-model-item>
           </a-col>

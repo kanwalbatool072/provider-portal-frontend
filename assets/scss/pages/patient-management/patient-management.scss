@@ -79,7 +79,7 @@ i.anticon.anticon-delete {
       font-weight: medium;
     }
     span {
-      color: #1F2127B2;
+      color: #41D2F8;
       opacity: 1;
     }
     p {
@@ -110,5 +110,9 @@ i.anticon.anticon-more {
   .description {
     display: flex;
     align-items: center;
+  }
+  .doc-list-text {
+    font-size: 12px;
+    color: #C1C1C1;
   }
 }

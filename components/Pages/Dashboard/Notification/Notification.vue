@@ -40,7 +40,7 @@
         <nuxt-link to="all-notifications">
           <a-button
             type="primary"
-            class="px-5 mb-1"
+            class="px-5 mb-2"
             @click="$router.push('/all-notifications')"
           >
             view All

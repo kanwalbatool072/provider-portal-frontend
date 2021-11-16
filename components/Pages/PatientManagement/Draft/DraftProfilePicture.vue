@@ -26,7 +26,7 @@
       <template slot="actions" class="ant-card-actions">
         <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" align="center">
           <div class="card-text">
-            <p class="mb-0 fs-normal font-400">ORITHOPEDICS</p>
+            <p class="mb-0 fs-normal font-400">PATIENT</p>
           </div>
         </a-col>
       </template>

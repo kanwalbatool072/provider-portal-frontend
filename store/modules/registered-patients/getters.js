@@ -4,47 +4,47 @@ export default {
     const cardsData = [
       {
         title: 'Adrita Kha',
-        email: 'Adritakhaaa@mail.com',
+        email: '123458',
         image: '/images/Specialist/doctor1.svg'
       },
       {
         title: 'Adrita Kha',
-        email: 'Adritakhaaa@mail.com',
+        email: '123458',
         image: '/images/Specialist/doctor2.svg'
       },
       {
         title: 'Adrita Kha',
-        email: 'Adritakhaaa@mail.com',
+        email: '123458',
         image: '/images/Specialist/doctor3.svg'
       },
       {
         title: 'Adrita Kha',
-        email: 'Adritakhaaa@mail.com',
+        email: '123458',
         image: '/images/Specialist/doctor1.svg'
       },
       {
         title: 'Adrita Kha',
-        email: 'Adritakhaaa@mail.com',
+        email: '123458',
         image: '/images/Specialist/doctor2.svg'
       },
       {
         title: 'Adrita Kha',
-        email: 'Adritakhaaa@mail.com',
+        email: '123458',
         image: '/images/Specialist/doctor4.svg'
       },
       {
         title: 'Adrita Kha',
-        email: 'Adritakhaaa@mail.com',
+        email: '123458',
         image: '/images/Specialist/doctor1.svg'
       },
       {
         title: 'Adrita Kha',
-        email: 'Adritakhaaa@mail.com',
+        email: '123458',
         image: '/images/Specialist/doctor2.svg'
       },
       {
         title: 'Adrita Kha',
-        email: 'Adritakhaaa@mail.com',
+        email: '123458',
         image: '/images/Specialist/doctor4.svg'
       }
     ]

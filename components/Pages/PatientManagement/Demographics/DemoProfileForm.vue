@@ -245,7 +245,7 @@
         <!--START ADDRESS ROW -->
         <a-row :gutter="24" class="px-2">
           <!--START ADDRESS COLUMN -->
-          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+          <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
             <a-form-model-item
               :label="'Address'"
               props="address"
@@ -298,38 +298,6 @@
             </a-form-model-item>
           </a-col>
           <!--END CITY COLUMN -->
-          <!--START COUNTRY COLUMN -->
-          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
-            <a-form-model-item
-              :label="'Country'"
-              prop="country"
-              has-feedback
-              :colon="false"
-              :label-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-              :wrapper-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-            >
-              <a-select
-                label-in-value
-                :default-value="{ key: 'USA' }"
-                style="width: 100%"
-              >
-                <a-select-option value="USA"> USA </a-select-option>
-              </a-select>
-            </a-form-model-item>
-          </a-col>
-          <!--START COUNTRY COLUMN -->
           <!--START STATE COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item

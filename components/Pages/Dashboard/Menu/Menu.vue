@@ -3,7 +3,7 @@
   <!--START MENU SECTION -->
   <div class="menu mt-4">
     <!--START MENU CARD  -->
-    <a-card class="menu-card" :bordered="false">
+    <a-card class="menu-card pb-5" :bordered="false">
       <!--START MENU ROW -->
       <a-row>
         <a-col :span="22">
@@ -14,7 +14,7 @@
       <!--START MENU ROW -->
 
       <!--START MENU ITEM ICON -->
-      <div>
+      <div class="pb-5 mb-5">
         <a-list item-layout="horizontal" :data-source="getMenuData">
           <a-list-item slot="renderItem" slot-scope="item" class="menu-list">
             <a-list-item-meta
