@@ -13,6 +13,6 @@ export default {
 }
 </script>
 
-<style lang="sass">
-@import '~/assets/scss/pages/patient-management/patient-management'
+<style lang="scss">
+@import '~/assets/scss/pages/patient-management/patient-management';
 </style>

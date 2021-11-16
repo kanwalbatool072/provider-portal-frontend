@@ -8,7 +8,18 @@
         <a-row :gutter="16" class="my-3">
           <!--START ALL AVAILABE SPECIALIST COLUMN  -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
-            <h3 class="font-600 fs-extra-large">Demographics</h3>
+            <h3 v-if="btnName == 'all_demo'" class="font-600 fs-extra-large">
+              Demographics
+            </h3>
+            <h3 v-if="btnName == 'insurance'" class="font-600 fs-extra-large">
+              Insurance
+            </h3>
+            <h3 v-if="btnName == 'draft'" class="font-600 fs-extra-large">
+              Draft
+            </h3>
+            <h3 v-if="btnName == 'documents'" class="font-600 fs-extra-large">
+              Documents
+            </h3>
           </a-col>
           <!--END ALL AVAILABE SPECIALIST COLUMN -->
           <!--START MENU ITEM COLUMN -->

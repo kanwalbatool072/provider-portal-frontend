@@ -4,16 +4,16 @@
   <div class="demo-profile-form">
     <a-row v-for="(item, key) in getDocumentList" :key="key" class="mb-2">
       <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
-        <a-card class="listCard">
+        <a-card class="listCard py-0">
           <a-row :gutter="16" class="description">
-            <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="2">
+            <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="3">
               <img :src="item.avatar" />
             </a-col>
-            <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="21">
+            <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="19">
               <p class="mb-0 font-600">{{ item.title }}</p>
               <span class="doc-list-text">{{ item.description }}</span>
             </a-col>
-            <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="1" align="end">
+            <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="2" align="center">
               <a-icon type="right" />
             </a-col>
           </a-row>
