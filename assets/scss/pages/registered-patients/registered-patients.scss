@@ -136,6 +136,9 @@
 
 }
 #available-slots {
+  .ant-modal-content{
+   border-radius: 10px !important; 
+  }
   #month-picker {
     .container {
       padding: 0;
@@ -252,6 +255,24 @@ display: none;
   border: 2px solid black;
     height: 40px;
     border-radius: 5px;
+}
+.datepicker-day.disabled {
+  background: #e4e5e5 !important;
+}
+.datepicker-day.first {
+  .datepicker-day-effect {
+    background: #42295a !important;
+  }
+}
+.datepicker-day.between {
+  .datepicker-day-effect {
+    background: #42295a !important;
+  }
+}
+.datepicker-day.last {
+  .datepicker-day-effect {
+    background: #42295a !important;
+  }
 }
 }
 @media screen and (max-width: 1024px) {
