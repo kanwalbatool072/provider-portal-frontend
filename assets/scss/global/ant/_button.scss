@@ -27,13 +27,8 @@
     font-size: 0.93rem;
     
 }
-// .ant-btn:hover {
-//     background-color: #F0FF0E;
-//     border-color: #F0FF0E;
-//     color: #212121; 
-// }
-// .ant-btn:focus {
-//     background-color: #F0FF0E;
-//     border-color: #F0FF0E;
-//     color: #212121; 
-// }
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    background-color: #423869;
+    color: #ffffff;
+    border-color: #423869;
+}

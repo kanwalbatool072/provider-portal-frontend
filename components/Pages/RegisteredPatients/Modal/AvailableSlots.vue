@@ -4,7 +4,7 @@
   <a-modal
     id="available-slots"
     v-model="isAvailable"
-    width="35%"
+    width="38%"
     @close="handleCancel"
   >
     <h3 class="font-600 px-3 mt-3">Select Available Slots</h3>
@@ -16,8 +16,8 @@
           class="fs-small font-400"
         ></DraggableCal> </a-col
     ></a-row>
-    <a-row class="scheduler_btn">
-      <a-col :xs="24" :sm="24" :md="22" :lg="22" :xl="22" class="pt-2">
+    <a-row class="scheduler_btn px-3 mx-1">
+      <a-col :xs="24" :sm="24" :md="22" :lg="22" :xl="24" class="pt-2">
         <VueCtkDateTimePicker
           v-model="dateRange"
           :no-keyboard="true"

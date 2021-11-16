@@ -28,11 +28,11 @@
         <img
           src="/images/icons/Group 57033.svg"
           alt=""
-          @click="$router.push('/patient-management')"
+          @click="$router.push('/registered-patients')"
         />
         <span class="nav-text">Patients</span>
       </a-menu-item>
-      <a-menu-item key="4" @click="$router.push('/clinical-documents')">
+      <a-menu-item key="4" @click="$router.push('/patient-management')">
         <img src="/images/icons/Group 57034.svg" alt="" />
         <span class="nav-text">Documents</span>
       </a-menu-item>

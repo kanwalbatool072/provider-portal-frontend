@@ -184,6 +184,7 @@
       font-size: 9px;
       font-weight: 400;
     }
+ 
     .cell-content {
       display: table;
       margin: 0 auto;
@@ -252,12 +253,16 @@ display: none;
   }
 }
 .selectedSlot{
-  border: 2px solid black;
+  border: 2px solid #42295a;
     height: 40px;
     border-radius: 5px;
+    color: #42295a;
+    margin-top: 5px;
 }
 .datepicker-day.disabled {
   background: #e4e5e5 !important;
+  height: 30px;
+  border-radius: 5px;
 }
 .datepicker-day.first {
   .datepicker-day-effect {
@@ -274,6 +279,7 @@ display: none;
     background: #42295a !important;
   }
 }
+
 }
 @media screen and (max-width: 1024px) {
   #available-slots {
