@@ -17,6 +17,7 @@
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
     "vue-apexcharts": "^1.6.2",
+    "vue-ctk-date-time-picker": "^2.5.0",
     "vue-draggable-cal": "^2.6.0"
   },
   "devDependencies": {

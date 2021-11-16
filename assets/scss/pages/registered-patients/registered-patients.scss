@@ -136,6 +136,79 @@
 
 }
 #available-slots {
+  #month-picker {
+    .container {
+      padding: 0;
+      .drag-calendar {
+        height: 6.5rem !important;
+      }
+    }
+    .drag-calendar .days .cell[data-v-5af1977c] {
+      float: left;
+      width: 2.5rem;
+      padding: 1rem 0.1rem;
+      margin-right: 15px;
+      border-right: 1px solid rgba(0, 0, 0, 0.03);
+      text-align: center;
+      position: relative;
+      color: #888;
+      box-shadow: 0px 1px 5px #8080803d;
+      background: #8080801f;
+      border-radius: 0.5em;
+    }
+    .drag-calendar .cal-cell[selected='selected'][data-v-5af1977c],
+    .drag-calendar .month-cell[selected='selected'][data-v-5af1977c] {
+      padding: 1.2rem 0.1rem !important;
+      font-size: 9px;
+      background-color: #423869 !important;
+      border-color: #423869;
+    }
+    .drag-calendar .days .cell.today .day-number[data-v-5af1977c] {
+      color: #888;
+      text-decoration: none;
+    }
+    .drag-calendar .cal-cell[selected=selected] .cell-content .day-number[data-v-5af1977c], .drag-calendar .month-cell[selected=selected] .cell-content .day-number[data-v-5af1977c] {
+      color: #ffffff;
+    }
+    .drag-calendar
+      .cal-cell[selected='selected']
+      .cell-content
+      div[data-v-5af1977c],
+    .drag-calendar
+      .month-cell[selected='selected']
+      .cell-content
+      div[data-v-5af1977c] {
+      font-size: 9px;
+      font-weight: 400;
+    }
+    .cell-content {
+      display: table;
+      margin: 0 auto;
+      .day {
+        display: table-header-group;
+        font-weight: 500;
+      }
+      .day-number {
+        top:7px;
+        font-weight: 500;
+      }
+    }
+    .months {
+      display: none !important;
+    }
+    .arrow.left.top {
+      display: none;
+    }
+    .arrow.right.top {
+      display: none;
+    }
+    .arrow.bottom.left {
+      display: none;
+    }
+    .arrow.bottom.right {
+      display: none;
+    }
+  }
   .ant-modal-footer {
     padding: 0px 45px 30px 45px !important;
     border-top: none !important;
@@ -174,6 +247,11 @@ font-size: 12px;
  .ant-select-search--inline{
 display: none;
   }
+}
+.selectedSlot{
+  border: 2px solid black;
+    height: 40px;
+    border-radius: 5px;
 }
 }
 @media screen and (max-width: 1024px) {

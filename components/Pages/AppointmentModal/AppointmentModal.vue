@@ -16,7 +16,7 @@
           <h3 class="mb-3">Telehealth Appointment</h3>
           <!--START TELEHEALTH APPOINTMENT COLUMN -->
           <a-col class="mt-2" :span="24">
-            <nuxt-link to="/specialist" @click.native="hideModal">
+            <nuxt-link to="/registered-patients" @click.native="hideModal">
               <div class="telehealth-row">
                 <a-row>
                   <!-- /images/Dashboard/micro.svg -->
@@ -43,7 +43,7 @@
               </div>
             </nuxt-link>
             <!--START VIDEO CALL LINK-->
-            <nuxt-link to="/specialist" @click.native="hideModal">
+            <nuxt-link to="/registered-patients" @click.native="hideModal">
               <div class="mt-3 telehealth-row">
                 <a-row>
                   <a-col :xs="24" :sm="24" :md="8" :lg="8" :xl="5">
@@ -96,7 +96,7 @@ export default {
     ])
   },
   mounted() {
-    this.$root.$on('modules/appointment-modal', this.showAppointmentModal)
+    this.$root.$on('appointment-modal', this.showAppointmentModal)
   },
 
   methods: {

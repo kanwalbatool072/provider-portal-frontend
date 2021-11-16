@@ -8,6 +8,33 @@
     @close="handleCancel"
   >
     <h3 class="font-600 px-3 mt-3">Select Available Slots</h3>
+    <a-row :gutter="16" class="px-3 mx-1">
+      <a-col id="month-picker" :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+        <DraggableCal
+          :past-is-disabled="false"
+          :months="12"
+          class="fs-small font-400"
+        ></DraggableCal> </a-col
+    ></a-row>
+    <a-row class="scheduler_btn">
+      <a-col :xs="24" :sm="24" :md="22" :lg="22" :xl="22" class="pt-2">
+        <VueCtkDateTimePicker
+          v-model="dateRange"
+          :no-keyboard="true"
+          format="YYYY-MM-DD"
+          formatted="||"
+          :no-header="true"
+          :auto-close="false"
+          :no-button="true"
+          :inline="true"
+          :range="true"
+          :no-button-now="true"
+          :no-shortcuts="true"
+          :disabled-dates="disableDates"
+          @input="onRangeSelect"
+        ></VueCtkDateTimePicker>
+      </a-col>
+    </a-row>
     <!--START AVAILABLE SLOTS DIV -->
     <div
       v-for="(slot, get_index) in getAvailableSlots"
@@ -26,6 +53,7 @@
             v-model="selectedSlot"
             default-value="c"
             button-style="solid"
+            @change="onChange"
           >
             <a-radio-button
               class="mx-1 mt-2 fs-small slots-time"
@@ -44,14 +72,13 @@
     <!--END  AVAILABLE SLOTS DIV -->
 
     <!--START SYMPTOMS ROW -->
-    <a-row class="px-3 mt-3 mx-1">
-      <h4 class="pb-3 pt-2 mb-0 font-600">Symptoms</h4>
-
+    <a-row class="mt-3 mx-1 selectedSlot px-3 py-2">
       <!--START FEVER COLUMN -->
-      <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
-        <a-select v-model="value" mode="multiple" style="width: 100%">
-          <a-select-option value="fever"> Fever </a-select-option>
-        </a-select>
+      <a-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12">
+        {{ selectedDate }}
+      </a-col>
+      <a-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12" align="right"
+        >{{ selectedSlot }}
       </a-col>
       <!--START FEVER COLUMN -->
     </a-row>
@@ -68,7 +95,7 @@
           :loading="loading"
           @click="handleAvailableSlots('')"
         >
-          Continue
+          Save & Continue
         </a-button>
       </nuxt-link>
     </template>
@@ -80,15 +107,23 @@
 <script>
 // STORE
 import { mapGetters, mapActions } from 'vuex'
-
+import DraggableCal from 'vue-draggable-cal'
+import VueCtkDateTimePicker from 'vue-ctk-date-time-picker'
+import 'vue-ctk-date-time-picker/dist/vue-ctk-date-time-picker.css'
 export default {
   // LOAD COMPONENTS
-  components: {},
+  components: {
+    DraggableCal,
+    VueCtkDateTimePicker
+  },
   data() {
     return {
       loading: false,
       selectedSlot: '',
-      value: ['china', 'Cough & Cold ', 'Dizzy']
+      value: ['china', 'Cough & Cold ', 'Dizzy'],
+      dateRange: {},
+      disableDates: ['2021-11-18', '2021-11-19', '2021-11-20'],
+      selectedDate: ''
     }
   },
   computed: {
@@ -97,11 +132,6 @@ export default {
       'getAvailableSlots'
     ]),
 
-    watch: {
-      value(val) {
-        // console.log(`selected:`, val)
-      }
-    },
     // Call Anything On runtime
 
     isAvailable: {
@@ -132,12 +162,43 @@ export default {
     //     this.loading = false
     //   }, 1000)
     // },
-
+    onChange() {
+      console.log(this.selectedSlot)
+    },
     handleCancel(e) {
       this.handleAvailableSlots('')
+    },
+    onRangeSelect(range) {
+      console.log(range)
+      this.selectedDate = range.start
+      console.log(this.selectedDate)
+      // if (range.start && range.end)
+      //   this.calendar.changeView('timeGridWeek', {
+      //     start: range.start,
+      //     end: range.end
+      //   })
     }
   }
 }
 </script>
 <!-- ************************** STYLE  ************************* -->
-<style lang="scss"></style>
+<style lang="scss">
+.datepicker-day.disabled {
+  background: #e4e5e5 !important;
+}
+.datepicker-day.first {
+  .datepicker-day-effect {
+    background: #42295a !important;
+  }
+}
+.datepicker-day.between {
+  .datepicker-day-effect {
+    background: #42295a !important;
+  }
+}
+.datepicker-day.last {
+  .datepicker-day-effect {
+    background: #42295a !important;
+  }
+}
+</style>
