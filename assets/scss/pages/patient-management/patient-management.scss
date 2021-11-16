@@ -11,39 +11,15 @@
             }
           }
         }
-        .ant-radio-button-wrapper {
-          background: #aca5c7;
-          color: #ffffff;
-          margin-left: 10px;
-        }
         .demo-profile-card{
-            border-radius: 18px;
-textarea.ant-input {
+            border-radius: 12px;
+      textarea.ant-input {
     height: auto;
     background-color: #F5F7F9 !important;
 }
 label.ant-form-item-no-colon {
     font-weight: 600;
 }
-.ant-radio-button-wrapper {
-    height: 55px;
-    line-height: 50px;
-    width: 65px;
-    padding: 0;
-    text-align: center;
-}
-.slots-time { 
-     background-color: #F5F7F9 ;
-    border-radius: 8px;
-    border-color:#F5F7F9 ;
-}
-.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
-    background: #423869;
-    border-color: #423869;
-    color: #ffffff;
-}
-
-  
 }
 button.ant-btn {
     height: 45px;
@@ -79,9 +55,20 @@ button.ant-btn {
         padding: 5px;
     }
   }
-  .Insurance {
+  //draft 
+.signature {
+    background: transparent;
+    border-radius: 8px;
+}
+i.anticon.anticon-delete {
+  font-size: 20px;
+  color: #423869;
+}
+
+  // insurance
+  .insurance {
   .insurance-card {
-    border-radius: 8px !important;
+    border-radius: 12px !important;
     .ant-card-body {
         padding: 10px;
     }
@@ -101,8 +88,8 @@ button.ant-btn {
     }
   }
   .ant-card-actions {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     background: #B4ACD3;
     p{
     color: #ffffff !important;
