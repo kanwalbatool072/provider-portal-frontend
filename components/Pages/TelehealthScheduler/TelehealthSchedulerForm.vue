@@ -1,14 +1,15 @@
 <!-- ************************** TEMPLATE  ************************* -->
 <template>
   <!--START APPOINTMENT SECTION  -->
-  <div class="appointment-form">
+  <div>
     <!--START APPOINTMENT FORM CARD  -->
-    <a-card :bordered="false">
+    <a-card :bordered="false" class="appointment-form">
       <!--START FORM MODAL -->
       <a-form-model
         ref="appointmentForm"
         :hide-required-mark="true"
         :model="appointmentForm"
+        :rules="rules"
         label-align="left"
       >
         <!--START FULL NAME ROW -->
@@ -414,7 +415,7 @@
             <a-button
               type="primary"
               class="px-5 my-4 mt-5"
-              @click="handleConfirmationModal('')"
+              @click="bookAppointment"
               >Book Appointment</a-button
             >
           </a-col>
@@ -449,11 +450,101 @@ export default {
         apptType: '',
         apptGroup: '',
         problem: ''
+      },
+      rules: {
+        date: [{ required: true, message: 'This field is Required' }],
+        timeFrom: [
+          {
+            required: true,
+            message: 'This field is Required'
+          }
+        ],
+        timeTo: [
+          {
+            required: true,
+            message: 'This field is Required'
+          }
+        ],
+        timeiDuration: [
+          {
+            required: true,
+            message: 'This field is Required'
+          }
+        ],
+        provider: [
+          {
+            required: true,
+            message: 'This field is Required'
+          }
+        ],
+        location: [
+          {
+            required: true,
+            message: 'This field is Required'
+          }
+        ],
+        serviceProfile: [
+          {
+            required: true,
+            message: 'This field is Required'
+          }
+        ],
+        apptStatus: [
+          {
+            required: true,
+            message: 'This field is Required'
+          }
+        ],
+        visitReason: [
+          {
+            required: true,
+            message: 'This field is Required'
+          }
+        ],
+        apptType: [
+          {
+            required: true,
+            message: 'This field is Required'
+          }
+        ],
+        apptGroup: [
+          {
+            required: true,
+            message: 'This field is Required'
+          }
+        ],
+        problem: [
+          {
+            required: true,
+            message: 'This field is Required'
+          }
+        ]
       }
     }
   },
   methods: {
-    moment
+    moment,
+    async bookAppointment() {
+      console.log('inside function')
+      await this.$refs.appointmentForm.validate(valid => {
+        if (valid) {
+          console.log('inside validation')
+          this.loading = true
+          this.disabled = true
+          setTimeout(async () => {
+            this.loading = false
+            this.disabled = false
+
+            // Show Notification Popup
+            this.$notification.success({
+              message: 'Successfull'
+            })
+
+            await this.$refs.appointmentForm.resetFields()
+          }, 1000)
+        }
+      })
+    }
   }
   // Call Anything On runtime
 }
