@@ -217,48 +217,4 @@ export default {
 }
 </script>
 <!-- ************************** STYLE  ************************* -->
-<style lang="scss">
-#location {
-  .add-padding {
-    padding-top: 100px;
-  }
-  .add-btn {
-    height: 47px;
-  }
-  .ant-modal-close-icon {
-    padding: 4px;
-    background-color: #423869;
-    border-radius: 17px;
-    color: white;
-    font-size: 12px;
-    position: absolute;
-    top: 12px;
-    right: 12px;
-  }
-  .ant-modal-content {
-    border-radius: 17px;
-
-    // .ant-dropdown > .ant-dropdown-placement-topLeft {
-    //   min-width: 300px !important;
-    // }
-  }
-}
-.other-country-row {
-  width: 100%;
-}
-.custum-dropdown-style {
-  width: 350px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  .ant-dropdown-menu {
-    right: 20px;
-  }
-}
-.dropdown-a {
-  width: 100%;
-  display: block;
-  .anticon-down {
-    position: absolute;
-    right: 2px;
-  }
-}
-</style>
+<style lang="scss"></style>

@@ -119,23 +119,4 @@ export default {
 }
 </script>
 <!-- ************************** STYLE  ************************* -->
-<style lang="scss">
-#languages {
-  .add-btn {
-    height: 47px;
-  }
-  .ant-modal-close-icon {
-    padding: 4px;
-    background-color: #423869;
-    border-radius: 17px;
-    color: white;
-    font-size: 12px;
-    position: absolute;
-    top: 12px;
-    right: 12px;
-  }
-  .ant-modal-content {
-    border-radius: 17px;
-  }
-}
-</style>
+<style lang="scss"></style>

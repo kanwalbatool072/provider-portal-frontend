@@ -1,0 +1,171 @@
+#reviews-modal {
+    .ant-btn-rating {
+      border-radius: 35px;
+    }
+  
+    .add-btn {
+      height: 47px;
+    }
+    .ant-modal-close {
+      padding: 0px;
+      .ant-modal-close-icon {
+        padding: 4px;
+        background-color: #423869;
+        border-radius: 17px;
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+    }
+    .ant-modal-content {
+      padding: 20px;
+      .ant-modal-header {
+        padding: 20px;
+        border-bottom: 0px solid #e8e8e8;
+        .ant-modal-title {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      .ant-modal-body {
+        padding: 0px;
+      }
+    }
+    .modal-card {
+      padding: 0px;
+      .ant-card-body {
+        padding: 0px;
+        .telehealth-row {
+          background-color: rgba(192, 192, 192, 0.1);
+          padding: 8px;
+          border-radius: 10px;
+          .clinic-appoint-ment-img {
+            width: 50px;
+          }
+        }
+      }
+    }
+    .ant-rate-star {
+      font-size: 25px;
+      width: 55px;
+      margin-left: 6px;
+      padding-left: 6px;
+    }
+    .ant-modal-content {
+      border-radius: 17px;
+    }
+    .ant-input {
+      background-color: #f7f7f7;
+      border: none;
+      height: 120px;
+      padding-left: 17px;
+    }
+  }
+  #location {
+    .add-padding {
+      padding-top: 100px;
+    }
+    .add-btn {
+      height: 47px;
+    }
+    .ant-modal-close-icon {
+      padding: 4px;
+      background-color: #423869;
+      border-radius: 17px;
+      color: white;
+      font-size: 12px;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+    }
+    .ant-modal-content {
+      border-radius: 17px;
+  
+      // .ant-dropdown > .ant-dropdown-placement-topLeft {
+      //   min-width: 300px !important;
+      // }
+    }
+  }
+  .other-country-row {
+    width: 100%;
+  }
+  .custum-dropdown-style {
+    width: 380px;
+  
+    .ant-dropdown-menu {
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+      right: 20px;
+      border-radius:6px;
+    }
+  }
+  .dropdown-a {
+    width: 100%;
+    display: block;
+    .anticon-down {
+      position: absolute;
+      right: 2px;
+    }
+  }
+  #languages {
+    .add-btn {
+      height: 47px;
+    }
+    .ant-modal-close-icon {
+      padding: 4px;
+      background-color: #423869;
+      border-radius: 17px;
+      color: white;
+      font-size: 12px;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+    }
+    .ant-modal-content {
+      border-radius: 17px;
+    }
+  }
+  #add-call {
+    .ant-input {
+      background-color: #f5f5f5;
+      border: antiquewhite;
+      border-radius: 12px;
+      height: 42px;
+  
+      padding-left: 48px;
+    }
+  
+    .add-btn {
+      height: 35px;
+      border-radius: 20px;
+    }
+  
+    .anticon-search {
+      margin-right: 310px;
+      font-size: 26px;
+      color: rgb(124, 118, 118);
+    }
+    .ant-list-item-meta-content {
+      margin-top: 16px;
+    }
+    .ant-checkbox-inner {
+      border-radius: 28px;
+    }
+    .ant-list-split .ant-list-item {
+      border-bottom: none;
+    }
+    .ant-modal-close {
+      padding: 0px;
+      .ant-modal-close-icon {
+        padding: 4px;
+        background-color: #423869;
+        border-radius: 17px;
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+      }
+    }
+  }

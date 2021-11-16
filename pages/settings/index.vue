@@ -17,4 +17,6 @@ export default {
 }
 </script>
 <!-- ************************** STYLES  ************************* -->
-<style></style>
+<style lang="scss">
+@import '~/assets/scss/pages/setting/setting.scss';
+</style>

@@ -152,48 +152,4 @@ export default {
 }
 </script>
 <!-- ************************** STYLE  ************************* -->
-<style lang="scss">
-#add-call {
-  .ant-input {
-    background-color: #f5f5f5;
-    border: antiquewhite;
-    border-radius: 12px;
-    height: 42px;
-
-    padding-left: 48px;
-  }
-
-  .add-btn {
-    height: 35px;
-    border-radius: 20px;
-  }
-
-  .anticon-search {
-    margin-right: 310px;
-    font-size: 26px;
-    color: rgb(124, 118, 118);
-  }
-  .ant-list-item-meta-content {
-    margin-top: 16px;
-  }
-  .ant-checkbox-inner {
-    border-radius: 28px;
-  }
-  .ant-list-split .ant-list-item {
-    border-bottom: none;
-  }
-  .ant-modal-close {
-    padding: 0px;
-    .ant-modal-close-icon {
-      padding: 4px;
-      background-color: #423869;
-      border-radius: 17px;
-      color: white;
-      font-size: 12px;
-      position: absolute;
-      top: 12px;
-      right: 12px;
-    }
-  }
-}
-</style>
+<style lang="scss"></style>
