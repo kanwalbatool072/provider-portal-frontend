@@ -72,7 +72,7 @@
     <!--END  AVAILABLE SLOTS DIV -->
 
     <!--START SYMPTOMS ROW -->
-    <a-row class="mt-3 mx-1 selectedSlot px-3 py-2">
+    <a-row class="mt-3 mx-4 selectedSlot px-3 py-2">
       <!--START FEVER COLUMN -->
       <a-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12">
         {{ selectedDate }}
@@ -182,23 +182,4 @@ export default {
 }
 </script>
 <!-- ************************** STYLE  ************************* -->
-<style lang="scss">
-.datepicker-day.disabled {
-  background: #e4e5e5 !important;
-}
-.datepicker-day.first {
-  .datepicker-day-effect {
-    background: #42295a !important;
-  }
-}
-.datepicker-day.between {
-  .datepicker-day-effect {
-    background: #42295a !important;
-  }
-}
-.datepicker-day.last {
-  .datepicker-day-effect {
-    background: #42295a !important;
-  }
-}
-</style>
+<style lang="scss"></style>
