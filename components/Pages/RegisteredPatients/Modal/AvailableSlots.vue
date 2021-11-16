@@ -86,14 +86,13 @@
 
     <!-- MODAL FOOTER -->
     <template slot="footer">
-      <nuxt-link to="/book-appointment">
+      <nuxt-link to="/telehealth-scheduler">
         <a-button
           class="add-btn"
           html-type="submit"
           block
           type="primary"
           :loading="loading"
-          @click="handleAvailableSlots('')"
         >
           Save & Continue
         </a-button>

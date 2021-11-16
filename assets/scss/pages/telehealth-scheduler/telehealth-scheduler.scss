@@ -1,0 +1,144 @@
+#telehealth-scheduler{
+    .ant-card{
+        border-radius: 8px;
+    }
+.ant-input,
+.ant-input-number,
+.ant-time-picker-input {
+  border-radius: 9px;
+  overflow: hidden;
+  background-color: transparent !important;
+  height: 42px;
+
+}
+textarea.ant-input {
+    height: auto;
+    background-color: #F5F7F9 !important;
+    color: #434141;
+    border-color: #8E93B745;
+}
+label.ant-form-item-no-colon {
+    font-weight: 600;
+    font-size: 16px;
+}
+.ant-select {
+    .ant-select-selection {
+        border-radius: 9px;
+        overflow: hidden;
+        background-color: transparent !important;
+        height: 42px;
+     
+    }
+}
+.ant-calendar-picker {
+    // width: 100%;
+    .ant-calendar-picker-icon {
+        color: #9E99B2;
+    }
+}
+.ant-radio-button-wrapper {
+    height: 55px;
+    line-height: 50px;
+    width: 65px;
+    padding: 0;
+    text-align: center;
+}
+.slots-time { 
+     background-color: #F5F7F9 ;
+    border-radius: 8px;
+    border-color:#F5F7F9 ;
+}
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
+    background: #423869;
+    border-color: #423869;
+    color: #ffffff;
+}
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:active {
+    background: #423869;
+    border-color: #423869;
+    color: #ffffff;
+}
+
+    button.ant-btn {
+        height: 45px;
+    }
+    .telehealth-appointment {
+        .ant-card {
+            border-radius: 4px;
+        }
+        .ant-card-body {
+            padding: 10px;
+        }
+        .appointment-text {
+            color: #02100F;
+        }
+    }
+    .up-coming-schedule {
+        .ant-card {
+            border-radius: 12px;
+        }
+        .ant-card-body {
+            padding: 20px;
+        }
+        .telehealth-appointment {
+            .ant-card {
+                border-radius: 4px;
+            }
+            .ant-card-body {
+                padding: 10px;
+                background-color: #FAF9FF;
+            }
+        }
+    }
+}
+#confirmation {
+
+    button.ant-btn {
+        height: 50px;
+        border-radius: 4px;
+    }  
+    i.anticon.anticon-close.ant-modal-close-icon {
+        display: none;
+    }
+    .ant-modal-content {
+        border-radius: 12px;
+    }
+}
+#official-consent {
+    .ant-card {
+        border-radius: 4px;
+    }
+    .ant-card-body {
+        padding: 15px 30px;
+    }
+        textarea.ant-input {
+            background-color: #F5F7F9 !important;
+     
+        }
+        button.ant-btn {
+            height: 50px;
+            border-radius: 4px;
+        }  
+        .ant-modal-close {
+            padding: 0px;
+            .ant-modal-close-icon {
+              padding: 4px;
+              background-color: #423869;
+              border-radius: 15px;
+              color: white;
+              font-size: 12px;
+            }
+          }
+}
+@media screen and (max-width: 1024px) {
+    #confirmation  {
+      .ant-modal{     
+         width: 40% !important;
+      }
+    }
+    #official-consent   {
+        .ant-modal{     
+           width: 65% !important;
+        }
+      }
+  }
