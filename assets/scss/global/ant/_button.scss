@@ -40,3 +40,8 @@
 //     border-color: #F0FF0E;
 //     color: #212121; 
 // }
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    background-color: #423869;
+    color: #ffffff;
+    border-color: #423869;
+}

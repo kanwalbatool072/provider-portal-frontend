@@ -3,7 +3,7 @@
   <!--START DOCTER  SECTION-->
   <div class="doctor-card" @click="showSpecialist">
     <!--START HOVERABLE CARD-->
-    <a-card hoverable>
+    <a-card hoverable :bordered="false">
       <!--START DOCTER IMAGE LIST ROW-->
       <a-row class="pb-3">
         <!--START ICON COLUMN -->

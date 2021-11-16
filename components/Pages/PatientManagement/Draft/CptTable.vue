@@ -10,7 +10,7 @@
       @change="handleChange"
     >
       <span slot="delete">
-        <a-icon type="delete" />
+        <a-icon type="delete" theme="filled" />
       </span>
     </a-table>
   </div>
@@ -56,7 +56,6 @@ export default {
           title: 'Title',
           dataIndex: 'title',
           key: 'title',
-          with: 25,
           sorter: (a, b) => a.age - b.age,
           sortOrder: sortedInfo.columnKey === 'title' && sortedInfo.order
         },
@@ -64,15 +63,13 @@ export default {
         {
           title: 'Value',
           dataIndex: 'value',
-          key: 'value',
-          with: 90
+          key: 'value'
         },
         {
           title: '',
           dataIndex: 'del',
           key: 'del',
-          scopedSlots: { customRender: 'delete' },
-          with: 30
+          scopedSlots: { customRender: 'delete' }
         }
       ]
       return columns
