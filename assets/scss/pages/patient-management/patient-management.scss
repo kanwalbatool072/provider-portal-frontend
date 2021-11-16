@@ -12,7 +12,7 @@
           }
         }
         .demo-profile-card{
-            border-radius: 12px;
+            border-radius: 8px;
       textarea.ant-input {
     height: auto;
     background-color: #F5F7F9 !important;
@@ -26,7 +26,7 @@ button.ant-btn {
     border-radius: 4px;
 }
     .edit-profile-picture {
-            border-radius: 18px;
+            border-radius: 8px;
             padding-bottom: 25px;
         .ant-card-body {
             padding: 10px; 
@@ -34,7 +34,7 @@ button.ant-btn {
         }
     }
     .profile-picture {
-        border-radius: 18px;
+        border-radius: 8px;
         .profile-pic{                     
             width: 150px;
              border-radius: 50%; 
@@ -68,7 +68,7 @@ i.anticon.anticon-delete {
   // insurance
   .insurance {
   .insurance-card {
-    border-radius: 12px !important;
+    border-radius: 8px !important;
     .ant-card-body {
         padding: 10px;
     }
@@ -88,8 +88,8 @@ i.anticon.anticon-delete {
     }
   }
   .ant-card-actions {
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     background: #B4ACD3;
     p{
     color: #ffffff !important;
@@ -99,4 +99,16 @@ i.anticon.anticon-more {
     font-size: 20px;
 }
 }
+}
+#document {
+  .ant-card.ant-card-bordered {
+    width: 100%;
+  }
+  .listCard {
+    border-radius: 8px;
+  }
+  .description {
+    display: flex;
+    align-items: center;
+  }
 }

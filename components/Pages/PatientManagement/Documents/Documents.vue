@@ -7,7 +7,7 @@
       <!--START EDIT PROFILE COLUMN -->
       <a-col :xs="24" :sm="24" :md="18" :lg="18" :xl="16">
         <!--COMPONENT -->
-        <DocumentProfileForm />
+        <DocumentList />
       </a-col>
       <!--END EDIT PROFILE COLUMN -->
       <!--START EDIT PROFILE PICTURE -->
@@ -24,11 +24,11 @@
 </template>
 <!-- ************************** SCRIPT  ************************* -->
 <script>
-import DocumentProfileForm from './DocumentProfileForm'
+import DocumentList from './DocumentList'
 import DocumentProfilePicture from './DocumentProfilePicture'
 export default {
   components: {
-    DocumentProfileForm,
+    DocumentList,
     DocumentProfilePicture
   }
 }

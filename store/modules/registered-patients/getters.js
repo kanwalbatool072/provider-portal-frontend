@@ -184,5 +184,8 @@ export default {
       }
     ]
     return slotData
+  },
+  getDocumentList(state) {
+    return state.documentList
   }
 }
