@@ -3,7 +3,7 @@
   <!--START EDIT PROFILE SECTION -->
   <div class="edit-profile-form">
     <!--START EDIT PROFILE CARD -->
-    <a-card :bordered="false">
+    <a-card :bordered="false" class="profile-form-card">
       <!--START FORM MODEL-->
       <a-form-model
         ref="editProfile"

@@ -3,7 +3,7 @@
   <!--START EDIT PROFILE-PICTURE SECTION -->
   <div class="edit-profile-picture">
     <!--START EDIT PROFILE PICTURE CARD  -->
-    <a-card :bordered="false">
+    <a-card :bordered="false" class="edit-profile-card">
       <!--START EDIT PROFILE PICTURE ROW-->
       <a-row>
         <a-col :span="24" align="center">
@@ -21,29 +21,9 @@
       <!--START DRIVING LICENSE ROW  -->
       <a-row class="mt-4">
         <a-col :span="24" align="center">
-          <a-button type="primary" class="px-4">
+          <a-button type="primary" class="px-4 license-btn">
             <img src="/images/Dashboard/camera.svg" class="camera-icon" />
-            Driving License
-          </a-button>
-        </a-col>
-      </a-row>
-      <!--END DRIVING LICENSE ROW  -->
-      <!--START INC CARD FRONT ROW  -->
-      <a-row class="mt-2">
-        <a-col :span="24" align="center">
-          <a-button type="primary" class="px-4">
-            <img src="/images/Dashboard/camera.svg" class="camera-icon" />
-            Ins. Card Front
-          </a-button>
-        </a-col>
-      </a-row>
-      <!--END INC CARD FRONT ROW  -->
-      <!--START DRIVING LICENSE ROW  -->
-      <a-row class="mt-2">
-        <a-col :span="24" align="center">
-          <a-button type="primary" class="px-4">
-            <img src="/images/Dashboard/camera.svg" class="camera-icon" />
-            Ins. Card Back
+            License
           </a-button>
         </a-col>
       </a-row>
