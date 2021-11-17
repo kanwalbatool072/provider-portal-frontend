@@ -36,10 +36,7 @@
         <img src="/images/icons/Group 57034.svg" alt="" />
         <span class="nav-text">Documents</span>
       </a-menu-item>
-      <a-menu-item key="5" @click="$router.push('/payments')">
-        <img src="/images/icons/Group 57035.svg" alt="" />
-        <span class="nav-text">Payments</span>
-      </a-menu-item>
+
       <a-menu-item key="6" @click="$router.push('/settings')">
         <img src="/images/icons/Group 57036.svg" alt="" />
         <span class="nav-text">Settings</span>

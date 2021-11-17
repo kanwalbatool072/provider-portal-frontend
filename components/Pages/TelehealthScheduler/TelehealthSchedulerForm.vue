@@ -425,15 +425,19 @@
     </a-card>
     <!--START APPOINTMENT FORM CARD  -->
     <Confirmation />
-    <OfficialConsent />
+    <!-- <OfficialConsent /> -->
   </div>
   <!--END APPOINTMENT SECTION   -->
 </template>
 <!-- ************************** SCRIPT  ************************* -->
 <script>
 import moment from 'moment'
-
+import { mapActions } from 'vuex'
+import Confirmation from './Modal/Confirmation.vue'
 export default {
+  components: {
+    Confirmation
+  },
   data() {
     return {
       selectedSlot: '',
@@ -523,8 +527,10 @@ export default {
     }
   },
   methods: {
+    ...mapActions('modules/telehealth-scheduler', ['handleConfirmationModal']),
     moment,
     async bookAppointment() {
+      this.handleConfirmationModal()
       console.log('inside function')
       await this.$refs.appointmentForm.validate(valid => {
         if (valid) {
