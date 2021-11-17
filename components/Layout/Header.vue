@@ -23,7 +23,7 @@
       <a-col v-if="notification_icon" :span="4" class="text-right mb-4">
         <a-badge status="warning">
           <!-- <a href="#" class="head-example" /> -->
-          <nuxt-link to="/view-all-notifications">
+          <nuxt-link to="/all-notifications">
             <a-icon type="bell" theme="filled" />
           </nuxt-link>
 

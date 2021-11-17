@@ -8,12 +8,20 @@
     @close="handleCancel"
   >
     <h3 class="font-600 px-3 mt-3">Select Available Slots</h3>
-    <a-row :gutter="16" class="px-3 mx-1">
-      <a-col id="month-picker" :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+    <a-row :gutter="16" class="px-2 mx-1">
+      <a-col
+        id="month-picker"
+        :xs="24"
+        :sm="24"
+        :md="24"
+        :lg="24"
+        :xl="24"
+        class="p-0"
+      >
         <DraggableCal
           :past-is-disabled="false"
           :months="12"
-          class="fs-small font-400"
+          class="fs-small font-400 m-0 dragable-month"
         ></DraggableCal> </a-col
     ></a-row>
     <a-row class="scheduler_btn px-3 mx-1">

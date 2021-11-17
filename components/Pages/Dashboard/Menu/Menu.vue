@@ -39,8 +39,10 @@
 <!-- ************************** SCRIPT  ************************* -->
 <script>
 import { mapGetters } from 'vuex'
+
 export default {
   name: 'Menu',
+  components: {},
   // data() {
   //   return {
   //     data,
@@ -54,18 +56,11 @@ export default {
       if (title == 'Edit profile') {
         this.$router.push('/edit-profile')
       }
-      if (title == 'Call Recording') {
-        this.$router.push('/recordings')
+      if (title == 'Patient Management') {
+        this.$router.push('/patient-management')
       }
-      if (title == 'Timestamp') {
-        this.$router.push('/time-stamp')
-      }
-
-      if (title == 'Prescription/Lab Report') {
-        this.$router.push('/e-prescriptions')
-      }
-      if (title == 'Education Center') {
-        this.$router.push('/patient-education')
+      if (title == 'Telehealth Scheduler') {
+        this.$root.$emit('appointment-modal')
       }
     }
   }

@@ -1,78 +1,35 @@
 #edit-profile{
-    .ant-card{
-        border-radius: 18px;
-        
+    .profile-form-card{
+        border-radius: 8px;
+        .ant-card-body {
+            padding: 8px;
+        }
     }
-.ant-input,
-.ant-input-number,
-.ant-time-picker-input {
-  border-radius: 9px;
-  overflow: hidden;
-  background-color: transparent !important;
-  height: 42px;
 
-}
-textarea.ant-input {
-    height: auto;
-    background-color: #F5F7F9 !important;
-    color: #434141;
-    border-color: #8E93B745;
-}
-label.ant-form-item-no-colon {
-    font-weight: 600;
-}
-.ant-select {
-    .ant-select-selection {
-        border-radius: 9px;
-        overflow: hidden;
-        background-color: transparent !important;
-        height: 42px;
-     
+    label.ant-form-item-no-colon {
+        font-weight: 600;
     }
-}
 .ant-calendar-picker {
     // width: 100%;
     .ant-calendar-picker-icon {
         color: #9E99B2;
     }
 }
-.ant-radio-button-wrapper {
-    height: 55px;
-    line-height: 50px;
-    width: 65px;
-    padding: 0;
-    text-align: center;
-}
-.slots-time { 
-     background-color: #F5F7F9 ;
-    border-radius: 8px;
-    border-color:#F5F7F9 ;
-}
-.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
-    background: #423869;
-    border-color: #423869;
-    color: #ffffff;
-}
-
     button.ant-btn {
         height: 45px;
     }
     .edit-profile-picture {
-        .ant-card {
-            border-radius: 18px;
+        .edit-profile-card {
+            border-radius: 8px;
             padding-bottom: 25px
         }
         .ant-card-body {
             padding: 10px;
-            .ant-row{
-                .ant-col{
                     .profile-pic{
                         
                             width: 150px;
                              border-radius: 50%; 
                              border: 5px solid #423869;
-                        
-
                     }
                     .camera-icon{
                         margin-right:20px;
@@ -88,11 +45,11 @@ label.ant-form-item-no-colon {
                         color: white;
                         padding: 5px;
                     }
+                    .license-btn {
+                        width: 60%;
+                        text-align: left;
+                    }
                 }
-               
-            }
-            
-        }
     }
 
 }

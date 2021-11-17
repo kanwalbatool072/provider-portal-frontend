@@ -184,7 +184,7 @@
       font-size: 9px;
       font-weight: 400;
     }
- 
+
     .cell-content {
       display: table;
       margin: 0 auto;
@@ -261,8 +261,11 @@ display: none;
 }
 .datepicker-day.disabled {
   background: #e4e5e5 !important;
-  height: 30px;
-  border-radius: 5px;
+  height: 31px;
+  margin-top: 5px;
+}
+span.datepicker-day-effect {
+  background: #423869 !important;
 }
 .datepicker-day.first {
   .datepicker-day-effect {
@@ -279,7 +282,12 @@ display: none;
     background: #42295a !important;
   }
 }
-
+.dragable-month {
+  width: 100%;
+}
+.datepicker-controls.flex.align-center.justify-content-center {
+  display: none !important;
+}
 }
 @media screen and (max-width: 1024px) {
   #available-slots {
