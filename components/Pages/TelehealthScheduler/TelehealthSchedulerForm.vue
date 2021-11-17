@@ -9,7 +9,6 @@
         ref="appointmentForm"
         :hide-required-mark="true"
         :model="appointmentForm"
-        :rules="rules"
         label-align="left"
       >
         <!--START FULL NAME ROW -->
@@ -47,7 +46,7 @@
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
               :label="'From'"
-              prop="timeFrom"
+              prop="from"
               has-feedback
               :colon="false"
               :label-col="{
@@ -66,11 +65,21 @@
               }"
             >
               <a-time-picker
-                v-model="appointmentForm.timeFrom"
-                style="width: 100%"
-                :default-value="moment('12:00', 'HH:mm')"
-                format="HH:mm"
-              />
+                v-model="appointmentForm.from"
+                :default-value="appointmentForm.from"
+                :open="openFrom"
+                format="HH:mm a"
+                @openChange="handleOpenChange"
+              >
+                <a-button
+                  slot="addon"
+                  size="small"
+                  type="primary"
+                  @click="handleClose"
+                >
+                  Ok
+                </a-button>
+              </a-time-picker>
             </a-form-model-item>
           </a-col>
           <!--END MOBILE NUMBER COLUMN -->
@@ -78,7 +87,7 @@
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
               :label="'To'"
-              prop="timeTo"
+              prop="to"
               has-feedback
               :colon="false"
               :label-col="{
@@ -97,11 +106,20 @@
               }"
             >
               <a-time-picker
-                v-model="appointmentForm.timeTo"
-                style="width: 100%"
-                :default-value="moment('12:00', 'HH:mm')"
-                format="HH:mm"
-              />
+                v-model="appointmentForm.to"
+                :default-value="appointmentForm.to"
+                format="HH:mm a"
+                :open.sync="openTo"
+              >
+                <a-button
+                  slot="addon"
+                  size="small"
+                  type="primary"
+                  @click="handleClose"
+                >
+                  Ok
+                </a-button>
+              </a-time-picker>
             </a-form-model-item>
           </a-col>
           <!--END DATE OF BIRTH COLUMN  -->
@@ -109,7 +127,7 @@
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
               :label="'Duration'"
-              prop="timeiDuration"
+              prop="duration"
               has-feedback
               :colon="false"
               :label-col="{
@@ -127,10 +145,7 @@
                 xs: 24
               }"
             >
-              <a-input
-                v-model="appointmentForm.timeiDuration"
-                style="width: 100%"
-              >
+              <a-input v-model="appointmentForm.duration" style="width: 100%">
               </a-input>
               <!-- <a-time-picker
                 v-model="appointmentForm.timeiDuration"
@@ -423,6 +438,7 @@
       </a-form-model>
       <!--END FORM MODAL  -->
     </a-card>
+
     <!--START APPOINTMENT FORM CARD  -->
     <Confirmation />
     <!-- <OfficialConsent /> -->
@@ -441,11 +457,13 @@ export default {
   data() {
     return {
       selectedSlot: '',
+      openFrom: false,
+      openTo: false,
       appointmentForm: {
         date: '',
-        timeFrom: '',
-        timeTo: '',
-        timeiDuration: '',
+        from: moment('12:15', 'HH:mm'),
+        to: moment('12:30', 'HH:mm'),
+        duration: '',
         provider: '',
         location: '',
         serviceProfile: '',
@@ -454,102 +472,35 @@ export default {
         apptType: '',
         apptGroup: '',
         problem: ''
-      },
-      rules: {
-        date: [{ required: true, message: 'This field is Required' }],
-        timeFrom: [
-          {
-            required: true,
-            message: 'This field is Required'
-          }
-        ],
-        timeTo: [
-          {
-            required: true,
-            message: 'This field is Required'
-          }
-        ],
-        timeiDuration: [
-          {
-            required: true,
-            message: 'This field is Required'
-          }
-        ],
-        provider: [
-          {
-            required: true,
-            message: 'This field is Required'
-          }
-        ],
-        location: [
-          {
-            required: true,
-            message: 'This field is Required'
-          }
-        ],
-        serviceProfile: [
-          {
-            required: true,
-            message: 'This field is Required'
-          }
-        ],
-        apptStatus: [
-          {
-            required: true,
-            message: 'This field is Required'
-          }
-        ],
-        visitReason: [
-          {
-            required: true,
-            message: 'This field is Required'
-          }
-        ],
-        apptType: [
-          {
-            required: true,
-            message: 'This field is Required'
-          }
-        ],
-        apptGroup: [
-          {
-            required: true,
-            message: 'This field is Required'
-          }
-        ],
-        problem: [
-          {
-            required: true,
-            message: 'This field is Required'
-          }
-        ]
       }
     }
   },
   methods: {
     ...mapActions('modules/telehealth-scheduler', ['handleConfirmationModal']),
     moment,
-    async bookAppointment() {
+    bookAppointment() {
       this.handleConfirmationModal()
-      console.log('inside function')
-      await this.$refs.appointmentForm.validate(valid => {
-        if (valid) {
-          console.log('inside validation')
-          this.loading = true
-          this.disabled = true
-          setTimeout(async () => {
-            this.loading = false
-            this.disabled = false
-
-            // Show Notification Popup
-            this.$notification.success({
-              message: 'Successfull'
-            })
-
-            await this.$refs.appointmentForm.resetFields()
-          }, 1000)
-        }
-      })
+    },
+    handleOpenChange(open) {
+      console.log('open', open)
+      this.openFrom = open
+    },
+    async handleClose() {
+      this.openFrom = false
+      this.openTo = false
+      await this.getDuration()
+    },
+    getDuration() {
+      if (this.appointmentForm.to && this.appointmentForm.from) {
+        // start time and end time
+        const startTime = moment(this.appointmentForm.from)
+        const endTime = moment(this.appointmentForm.to)
+        // calculate total duration
+        const duration = moment.duration(endTime.diff(startTime))
+        // assign total duration
+        this.appointmentForm.duration =
+          parseInt(duration.asMinutes()) + ' Minutes'
+      }
     }
   }
   // Call Anything On runtime

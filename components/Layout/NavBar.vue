@@ -10,7 +10,8 @@
           class="user-photo"
         />
         <div class="user-name">
-          <span>John Wicks</span>
+          <p class="mb-0 mt-1">John Wicks</p>
+          <span class="john-text">Provider</span>
         </div>
       </div>
     </nuxt-link>

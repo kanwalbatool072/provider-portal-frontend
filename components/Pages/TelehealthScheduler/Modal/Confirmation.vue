@@ -1,7 +1,7 @@
 <!-- ************************** TEMPLATE  ************************* -->
 <template>
   <!--START CONFIRMATION MODAL" -->
-  <a-modal id="confirmation" v-model="isConfirm" width="30%" :footer="false">
+  <a-modal id="confirmation" v-model="isConfirm" width="35%" :footer="false">
     <!--START APPOINTMENT MODAL ICON ROW" -->
     <a-row class="px-4 pt-4 pb-3">
       <!--START DAVID JAMES COLUMN" -->
@@ -44,16 +44,18 @@
       <!--END CANCEL BUTTON COLUMN -->
       <!--START JOIN BUTTON COLUMN -->
       <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12" block>
-        <a-button
-          class="add-btn"
-          html-type="submit"
-          block
-          type="primary"
-          :loading="loading"
-          @click="showConfirmationModal('')"
-        >
-          Join Call
-        </a-button>
+        <nuxt-link to="/vcare">
+          <a-button
+            class="add-btn"
+            html-type="submit"
+            block
+            type="primary"
+            :loading="loading"
+            @click="showConfirmationModal('')"
+          >
+            Join Call
+          </a-button>
+        </nuxt-link>
       </a-col>
       <!--END JOIN BUTTON COLUMN -->
     </a-row>
@@ -95,10 +97,7 @@ export default {
   },
   // Call actions method
   methods: {
-    ...mapActions('modules/telehealth-scheduler', [
-      'handleConfirmationModal',
-      'handleOfficialConsent'
-    ]),
+    ...mapActions('modules/telehealth-scheduler', ['handleConfirmationModal']),
 
     // async handleSave() {
     //   this.loading = true
@@ -119,7 +118,6 @@ export default {
       this.handleConfirmationModal('')
     },
     showConfirmationModal() {
-      this.handleOfficialConsent('')
       this.handleConfirmationModal('')
     }
   }

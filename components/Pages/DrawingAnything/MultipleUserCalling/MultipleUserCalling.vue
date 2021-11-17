@@ -173,7 +173,7 @@
 <!-- ************************** SCRIPT  ************************* -->
 <script>
 import { mapActions } from 'vuex'
-import Addcall from '@/components/Pages/Settings/Modals/Addcall'
+import Addcall from '@/components/Pages/DrawingAnything/Modal/Addcall'
 export default {
   components: {
     Addcall

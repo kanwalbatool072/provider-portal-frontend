@@ -7,59 +7,27 @@
       <a-row :gutter="24" class="mt-3">
         <!--SEARCH DOCUMENTS COLUMN -->
         <a-col :xs="15" :sm="18" :md="20" :lg="16" :xl="16">
-          <h4
-            class="mt-4 fs-normal font-600 pointer"
+          <h3
+            class="mt-4 fs-extra-large font-600 pointer"
             @click="handleLanguagesModal('')"
           >
             Change Language
-          </h4>
+          </h3>
         </a-col>
       </a-row>
 
       <a-divider />
-      <h4
-        class="mt-3 fs-normal font-600 pointer"
+      <h3
+        class="mt-3 fs-extra-large font-600 pointer"
         @click="handleLocationModal('')"
       >
         Change Location
-      </h4>
+      </h3>
       <a-divider />
-      <h4 class="mt-3 fs-normal font-600 pointer">
+      <h3 class="mt-3 fs-extra-large font-600 pointer">
         Change Timing
-      </h4>
+      </h3>
 
-      <a-row :gutter="24" class="mt-5">
-        <!--SEARCH DOCUMENTS COLUMN -->
-        <a-col :xs="15" :sm="18" :md="20" :lg="18" :xl="18">
-          <span class="fs-normal">Receive notifications </span>
-        </a-col>
-        <!-- ENDS SEARCH DOCUMENTS COLUMN -->
-
-        <!-- BADGE COLUMN -->
-        <a-col :xs="7" :sm="6" :md="4" :lg="6" :xl="6">
-          <div>
-            <a-switch v-model="show" />
-          </div>
-        </a-col>
-        <!-- END BADGE COLUMN COLUMN -->
-      </a-row>
-      <a-divider />
-
-      <a-row :gutter="24" class="mt-4">
-        <!--SEARCH DOCUMENTS COLUMN -->
-        <a-col :xs="15" :sm="18" :md="20" :lg="18" :xl="18">
-          <span class="fs-normal">Receive newsletters </span>
-        </a-col>
-        <!-- ENDS SEARCH DOCUMENTS COLUMN -->
-
-        <!-- BADGE COLUMN -->
-        <a-col :xs="7" :sm="6" :md="4" :lg="6" :xl="6">
-          <div>
-            <a-switch />
-          </div>
-        </a-col>
-        <!-- END BADGE COLUMN COLUMN -->
-      </a-row>
       <a-divider />
       <a-row :gutter="24" class="mt-4 mb-5 pb-5">
         <!--SEARCH DOCUMENTS COLUMN -->
