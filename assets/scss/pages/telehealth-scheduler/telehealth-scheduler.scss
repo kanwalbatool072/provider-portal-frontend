@@ -111,7 +111,9 @@ label.ant-form-item-no-colon {
     }
 }
 #confirmation {
-
+h3{
+    font-size: 24px;
+}
     button.ant-btn {
         height: 50px;
         border-radius: 4px;
@@ -121,6 +123,14 @@ label.ant-form-item-no-colon {
     }
     .ant-modal-content {
         border-radius: 12px;
+    }
+    .appointment-text {
+        font-size: 20px;
+    justify-content: center;
+    font-weight: 400;
+    font-family: 'Poppins';
+    color: #02100F;
+    opacity: 0.5;
     }
 }
 #official-consent {
@@ -161,3 +171,4 @@ label.ant-form-item-no-colon {
         }
       }
   }
+ 

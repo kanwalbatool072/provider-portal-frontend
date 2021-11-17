@@ -1,0 +1,47 @@
+#drawing {
+    .ant-card {
+       border-radius: 10px;
+    }
+    .blue-calling-card.ant-card {
+        background-color: #2B1D3C;
+        .ant-tabs {
+            color: #7C7C7C;
+        .ant-tabs-nav .ant-tabs-tab {
+            margin: 0;
+            padding: 5px 30px;
+            .anticon {
+                margin: 0;
+            }
+            .ant-tabs-tab-active {
+                color: white;
+            }
+          
+        }
+    }
+        .ant-tabs-ink-bar {
+            background-color: #2BC184;
+        }
+        .ant-tabs-nav .ant-tabs-tab-active {
+            color: white;
+            }
+            .meeting-duration {
+                color: #FFFFFF;
+                opacity: 0.49;
+            }
+            .meeting-txt {
+                color: #FFFFFF;
+                opacity: 1;
+            }
+         
+    }
+    .meeting-icon-box.ant-card {
+        background-color: #2B1D3C;
+        border-radius: 26px;
+        p {
+            color: #ffffff;
+        }
+        .exit-meeting{
+            color: #2BC184;
+        }
+    }
+}

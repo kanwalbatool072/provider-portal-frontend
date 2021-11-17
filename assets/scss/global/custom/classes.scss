@@ -466,6 +466,9 @@
 .bg-success {
   background-color: $background-success;
 }
+.fs-normal{
+  font-size:$font-size-normal;
+}
 .fs-xl {
   font-size: $font-size-extra-large;
 }
@@ -591,7 +594,7 @@
 .font-playfairdisplay {
   font-family: $font-family-playfairdisplay;
 }
-// .font-poppins {
-//   font-family: $font-family-poppins;
-// }
+.font-poppins {
+  font-family: $font-family-poppins;
+}
 

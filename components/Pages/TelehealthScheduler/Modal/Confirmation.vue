@@ -20,10 +20,12 @@
             v-for="(list, index) in getConfirmationList"
             :key="index"
           >
-            <span>{{ list.bookingId }}</span>
-            <h4 class="font-600 text-right">
+            <span class="fs-normal font-500 font-poppins">{{
+              list.bookingId
+            }}</span>
+            <span class="fs-normal font-600 font-poppins">
               {{ list.idNumber }}
-            </h4>
+            </span>
           </a-list-item>
         </a-list>
       </a-col>
@@ -124,4 +126,6 @@ export default {
 }
 </script>
 <!-- ************************** STYLE  ************************* -->
-<style lang="scss"></style>
+<style lang="scss">
+@import '~/assets/scss/pages/telehealth-scheduler/telehealth-scheduler.scss';
+</style>
