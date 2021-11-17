@@ -1,0 +1,102 @@
+#vcare-meeting {
+    .vcare-img {
+      background-image: url("/images/Vcarecalling/family-physician-general-practitioner-main-d.svg");
+      border-radius: 10px;
+      background-size: cover;
+      p {
+          color: #ffffff;
+          opacity: 0.8;
+      }
+    }
+    .time-stamp-group {
+        .ant-card {
+            border-radius: 10px;
+        }
+        .start-appt {
+            .ant-card-body {
+                padding: 18px 24px;
+            background-color: #F1F0F5;
+            border-radius: 5px;
+    
+            }
+        }
+            .start {
+                .ant-card-body {
+                padding: 18px 24px;
+                background-color: #faf9fb;
+                border-radius: 5px;
+                color: #a5a5a5;
+                opacity: 35;
+        
+                }
+        }
+    }
+    .meeting {
+        .ant-card {
+            border-radius: 10px;
+          
+        } 
+        .ant-card-body {
+            padding: 15px 24px;
+        }
+        .meeting-list {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .vcare-right{
+        .chat-header.ant-card {
+        
+            border-radius: 8px 8px 0 0px;
+            box-shadow: 0px 4px 15px #A8A8A826;
+            line-height: 1;
+            z-index: 1;
+        
+        .ant-card-body {
+            padding: 10px 10px;
+        }
+        .green-online-img {
+            position: absolute;
+            bottom: 2px;
+            right: 20px;
+        }
+    }
+        .vcare-chat.ant-card {
+            margin-top: -3px;
+            z-index: 0;
+            border-radius: 0px 0px 8px 8px;
+    
+            .today-text {
+                opacity: 0.3;
+            }
+            .para {
+                opacity: 0.7;
+            }
+        }
+        .blue-card.ant-card {
+            background-color: #423869;
+            width: 40%;
+            float: right;
+            border-radius: 5px;
+            opacity: 1;
+            color: #ffffff;
+            text-align: left;
+            .ant-card-body {
+                padding: 15px 18px;
+            }
+        }
+        .blue-card.medicine.ant-card {
+            width: 68%;
+            input.ant-input {
+                background-color: #F2F1F4;
+                height: 45px;
+            }
+        }
+        .ant-input { 
+            background-color: #F2F1F4;
+            border: none;
+            border-radius: 5px;
+            height: 46px;
+        }
+    }
+    }
