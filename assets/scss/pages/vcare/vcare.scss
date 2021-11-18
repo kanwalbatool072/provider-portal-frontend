@@ -10,6 +10,7 @@
 .time-stamp-group {
     .ant-card {
         border-radius: 10px;
+     
     }
     .start-appt {
         .ant-card-body {
@@ -42,6 +43,8 @@
         display: flex;
         align-items: center;
     }
+ 
+    
 }
 .vcare-right{
     
@@ -99,4 +102,38 @@
         height: 46px;
     }
 }
+}
+@media screen and (max-width: 1024px) {
+    #v-care {
+        .meeting {
+            
+           
+            .ant-card-body {
+                padding:  15px;
+            }
+          
+            .ant-card-body{
+                h4{
+                    font-size: 12px;
+                }
+               
+            }
+            
+        }
+
+        .time-stamp-group {
+            .ant-card {
+                
+                    padding-bottom: 0rem !important;
+                
+                p{
+                    font-size: 12px;
+                }
+            }
+            .ant-card-body{
+                padding: 14px;
+            }
+        }
+      
+    }
 }

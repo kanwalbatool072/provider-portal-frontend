@@ -15,9 +15,7 @@
       </a-col>
       <!--END INPUT SERACH  COLUMN -->
       <!--START DATE PICKER COLUMN -->
-      <a-col class="mb-4" :xs="6" :sm="6" :md="6" :lg="5" :xl="4">
-        <a-date-picker v-if="date_picker" placeholder="dd/mm/yy" />
-      </a-col>
+      <a-col class="mb-4" :xs="6" :sm="6" :md="6" :lg="5" :xl="4"> </a-col>
       <!--END DATE PICKER COLUMN -->
       <!--START BADGES COLUMN -->
       <a-col

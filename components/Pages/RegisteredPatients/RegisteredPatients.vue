@@ -5,7 +5,7 @@
     <!--START DOCTER LIST ROW  -->
     <a-row :gutter="16">
       <!--AVAILABLE SPECIALIST -->
-      <a-col :xs="24" :sm="24" :md="24" :lg="16" :xl="16">
+      <a-col :xs="24" :sm="24" :md="24" :lg="15" :xl="16">
         <AvailableSpecialist />
       </a-col>
       <!--START DOCTER LIST COLUMN  -->

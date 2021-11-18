@@ -4,7 +4,7 @@
   <div class="patient-management mb-5 pb-5">
     <!--START AVAILABE LIST ROW -->
     <a-row>
-      <a-col :xs="24" :sm="24" :md="16" :lg="16" :xl="16">
+      <a-col :xs="24" :sm="24" :md="16" :lg="15" :xl="16">
         <a-row :gutter="16" class="my-3">
           <!--START ALL AVAILABE SPECIALIST COLUMN  -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
