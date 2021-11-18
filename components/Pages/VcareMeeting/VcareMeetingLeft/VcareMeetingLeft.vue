@@ -96,7 +96,6 @@
       <!--END MEETING COMPONENT COLUMN  -->
     </a-row>
     <!--END COMPONENTS ROW -->
-    <ShareReview />
   </div>
 
   <!--END VCARE LEFT SECTION" -->
@@ -106,13 +105,11 @@
 import { mapActions } from 'vuex'
 import Meeting from './Meeting.vue'
 import TimestamGroup from './TimestampGroup.vue'
-import ShareReview from './ShareReview'
 export default {
   // COMPONENTS
   components: {
     TimestamGroup,
-    Meeting,
-    ShareReview
+    Meeting
   },
   data() {
     return {

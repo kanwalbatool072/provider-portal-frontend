@@ -12,7 +12,7 @@
       >
         <a-card class="appointment-card" :bordered="false">
           <span class="text-white">{{ list.title }}</span>
-          <p class="m-0 fs-xl font-600 text-white pt-4 mt-3">
+          <p class="fs-xl font-600 text-white pt-4 pb-3 m-0">
             {{ list.subTitle }}
           </p>
         </a-card>
@@ -35,11 +35,11 @@ export default {
   width: 100%;
   border-radius: 25px;
   align-items: center;
-  background-image: linear-gradient(to right, #423869, #423869a6);
+  background-image: linear-gradient(to right, #766aa2, #7b6fe1);
   background-size: cover;
   padding: 15px;
   .appointment-card {
-    background: #ffffff63;
+    background: #f0f8ff3b;
     border-radius: 16px;
   }
 }
