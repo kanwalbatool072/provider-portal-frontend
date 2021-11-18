@@ -6,6 +6,7 @@
       <!--LOGIN IMAGES COLUMN-->
       <a-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12" class="resigter-img">
         <div class="resigter-bg pl-5 pr-4 ml-2 mr-2">
+          <p class="provider-app-text">Provider App</p>
           <p class="mb-4 mr-5 pr-5 text-justify fs-small">
             This system may only be accessed by authorized users, and each user
             can only view data associated with their specific account. By
@@ -21,7 +22,14 @@
       <!--END LOGIN IMAGES COLUMN-->
 
       <!--LOGIN FORM COLUMN-->
-      <a-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12" class="p-5">
+      <a-col
+        :xs="24"
+        :sm="24"
+        :md="24"
+        :lg="12"
+        :xl="12"
+        class="p-5 vcare-login"
+      >
         <a-form-model
           ref="resigterForm"
           :model="resigterForm"
@@ -137,7 +145,7 @@ export default {
   },
   // CALL ANYTHING ON RUN TIME
   computed: {
-    ...mapGetters('auth', ['setValidation'])
+    ...mapGetters('modules/auth', ['setValidation'])
   },
   // CALL ACTION METHOD
   methods: {
@@ -172,6 +180,12 @@ export default {
     background-image: url('/images/1.png');
     background-size: cover;
     height: 100vh;
+    .provider-app-text {
+      position: absolute;
+      bottom: 205px;
+      right: 130px;
+      font-size: 1.8rem;
+    }
   }
   .resigter-line {
     width: 20px;
@@ -197,6 +211,31 @@ export default {
     background-color: #04c6ff;
     color: white;
     border: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .login-cridentials-box {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 3rem 2rem !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .resigter-img {
+    display: none;
+  }
+  .resigter-line {
+    top: 115px !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .login-cridentials-box {
+    padding: 3rem 0rem !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .vcare-login {
+    padding: 3rem 1.5rem !important;
   }
 }
 </style>
