@@ -39,7 +39,7 @@ export default {
   background-size: cover;
   padding: 15px;
   .appointment-card {
-    background: #f0f8ff3b;
+    background: #c5bcf369;
     border-radius: 16px;
   }
 }

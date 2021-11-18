@@ -1,9 +1,9 @@
 <!-- ************************** TEMPLATE  ************************* -->
 <template>
   <!--START EDIT PROFILE-PICTURE SECTION -->
-  <div class="demo-profile-picture">
+  <div class="demo-profile-picture pt-2">
     <!--START EDIT PROFILE PICTURE CARD  -->
-    <a-card class="insurance-card">
+    <a-card class="insurance-card mt-5">
       <!--START DOCTER IMAGE LIST ROW-->
       <a-row class="pb-3">
         <!--START ICON COLUMN -->
