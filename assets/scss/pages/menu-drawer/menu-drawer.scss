@@ -2,11 +2,18 @@
     .ant-drawer-content-wrapper{
         .ant-drawer-content{
             background-color: #42295a;
-            // .ant-drawer-body{
-            //     .user-photo{
-            //         margin-left: 70px;
-            //     }
-            // }
+            .ant-drawer-body{
+                .ant-menu-dark{
+                    background-color: #42295a;
+               .ant-menu-item{
+                   height: 70px;
+                   padding:10px;
+               }
+               .ant-menu-item-selected{
+               background-color:  #423869 !important
+               }
+                }
+            }
           
         }
       
