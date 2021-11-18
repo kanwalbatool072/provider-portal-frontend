@@ -81,6 +81,7 @@ export default {
     }
   },
   mounted() {
+    this.$root.$on('close-menu-drawer', this.closeDrawr)
     this.$root.$on('hide-notification-icon', this.hideNotificationIcon)
     this.$root.$on('hide-search-filed', this.hideSearchFiesld)
     this.$root.$on('show-date-picker', val => {
@@ -95,6 +96,9 @@ export default {
     }
   },
   methods: {
+    closeDrawr() {
+      this.visibleDrawer = false
+    },
     showNavDrawer() {
       this.visibleDrawer = !this.visibleDrawer
     },
