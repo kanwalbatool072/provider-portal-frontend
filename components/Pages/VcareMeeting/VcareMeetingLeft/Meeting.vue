@@ -13,18 +13,18 @@
         :gutter="16"
       >
         <!--START IMAGE LIST COLUMN -->
-        <a-col :xs="24" :sm="24" :md="20" :lg="9" :xl="5">
+        <a-col :xs="24" :sm="24" :md="20" :lg="8" :xl="5">
           <img :src="list.image" class="mt-1" />
         </a-col>
         <!--END IMAGE LIST COLUMN  -->
         <!--START TITTLE  COLUMN-->
-        <a-col :xs="24" :sm="24" :md="20" :lg="12" :xl="17">
+        <a-col :xs="24" :sm="24" :md="20" :lg="13" :xl="17">
           <h4 class="mb-0 fs-small">{{ list.title }}</h4>
           <p class="mb-0 fs-small" style="opacity: 1">{{ list.description }}</p>
         </a-col>
         <!--START TITTLE COLUMN -->
         <!--START LIST DOT IMAGE COLUMN -->
-        <a-col :xs="24" :sm="24" :md="20" :lg="4" :xl="2" align="end">
+        <a-col :xs="24" :sm="24" :md="20" :lg="3" :xl="2" align="end">
           <img :src="list.dotimage" />
         </a-col>
         <!--END LIST DOT IMAGE COLUMN -->

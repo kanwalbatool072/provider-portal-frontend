@@ -2,6 +2,7 @@
     .vcare-img {
       background-image: url("/images/Vcarecalling/family-physician-general-practitioner-main-d.svg");
       border-radius: 10px;
+      background-position: center;
       background-size: cover;
       p {
           color: #ffffff;
@@ -99,4 +100,37 @@
             height: 46px;
         }
     }
+    }
+    @media screen and (max-width: 1024px) {
+        #vcare-meeting {
+            .meeting {
+                
+               
+              
+              
+                .ant-card-body{
+                    padding:  15px;
+                    h4{
+                        font-size: 12px;
+                    }
+                   
+                }
+                
+            }
+    
+            .time-stamp-group {
+                .ant-card {
+                    
+                        padding-bottom: 0rem !important;
+                    
+                    p{
+                        font-size: 12px;
+                    }
+                }
+                .ant-card-body{
+                    padding: 14px;
+                }
+            }
+          
+        }
     }
