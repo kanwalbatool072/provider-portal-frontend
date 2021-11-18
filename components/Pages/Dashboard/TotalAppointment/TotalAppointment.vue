@@ -4,8 +4,8 @@
       <a-col
         v-for="(list, key) in apptList"
         :key="key"
-        :xs="24"
-        :sm="24"
+        :xs="12"
+        :sm="12"
         :md="12"
         :lg="12"
         :xl="12"
