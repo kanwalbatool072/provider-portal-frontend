@@ -5,14 +5,14 @@
     <!--START EDIT PROFILE ROW -->
     <a-row :gutter="24">
       <!--START EDIT PROFILE COLUMN -->
-      <a-col :xs="24" :sm="24" :md="18" :lg="16" :xl="16">
+      <a-col :xs="24" :sm="24" :md="18" :lg="15" :xl="16">
         <h3 class="font-600 fs-extra-large px-2 pb-2">Edit Profile</h3>
         <!--COMPONENT -->
         <EditProfileForm />
       </a-col>
       <!--END EDIT PROFILE COLUMN -->
       <!--START EDIT PROFILE PICTURE -->
-      <a-col :xs="24" :sm="24" :md="6" :lg="8" :xl="8">
+      <a-col :xs="24" :sm="24" :md="6" :lg="9" :xl="8">
         <h3 class="font-600 px-2 pb-2"></h3>
         <!--START EDIT PROFILE ROW -->
         <a-row :gutter="[16, 16]" class="my-4 py-2">
