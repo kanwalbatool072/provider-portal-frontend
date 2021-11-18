@@ -20,19 +20,12 @@
             class="py-4 font-500"
           />
           <a-row :gutter="16" class="pt-5">
-            <a-col
-              :xs="24"
-              :sm="24"
-              :md="3"
-              :lg="3"
-              :xl="3"
-              class="pl-4 pointer"
-            >
+            <a-col :xs="3" :sm="3" :md="3" :lg="3" :xl="3" class="pl-4 pointer">
               <img src="/images/Vcarecalling/view attendees.svg" />
             </a-col>
             <a-col
-              :xs="24"
-              :sm="24"
+              :xs="18"
+              :sm="18"
               :md="18"
               :lg="18"
               :xl="18"
@@ -41,8 +34,8 @@
               <img src="/images/Vcarecalling/Bottom Bar.png" height="50px" />
             </a-col>
             <a-col
-              :xs="24"
-              :sm="24"
+              :xs="3"
+              :sm="3"
               :md="3"
               :lg="3"
               :xl="3"
