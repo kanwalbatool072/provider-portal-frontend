@@ -6,10 +6,10 @@
       <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
         <a-card class="listCard py-0">
           <a-row :gutter="16" class="description">
-            <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="3">
+            <a-col :xs="24" :sm="24" :md="24" :lg="4" :xl="3">
               <img :src="item.avatar" />
             </a-col>
-            <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="19">
+            <a-col :xs="24" :sm="24" :md="24" :lg="19" :xl="19">
               <p class="mb-0 font-600">{{ item.title }}</p>
               <span class="doc-list-text">{{ item.description }}</span>
             </a-col>

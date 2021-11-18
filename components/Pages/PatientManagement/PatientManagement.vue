@@ -58,7 +58,7 @@
     >
       <!--START DOCUMENTS BUTTONS  ROW-->
       <a-row class="px-1" :gutter="16">
-        <a-col :xs="10" :sm="10" :md="18" :lg="13" :xl="10">
+        <a-col :xs="10" :sm="10" :md="18" :lg="14" :xl="10">
           <!--SEARCH DOCUMENTS COLUMN -->
           <a-card class="clinic-documents-btn" :bordered="false">
             <a-button
