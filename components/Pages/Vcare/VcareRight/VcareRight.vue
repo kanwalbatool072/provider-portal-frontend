@@ -2,9 +2,9 @@
   <div class="vcare-right">
     <a-card class="chat-header" :bordered="false">
       <a-row :gutter="16">
-        <a-col :xs="24" :sm="24" :md="24" :lg="16" :xl="18">
+        <a-col :xs="24" :sm="24" :md="18" :lg="16" :xl="18">
           <a-row>
-            <a-col :xs="24" :sm="24" :md="24" :lg="8" :xl="6">
+            <a-col :xs="24" :sm="24" :md="6" :lg="8" :xl="6">
               <div class="online-icon">
                 <img src="/images/Vcarecalling/Rectangle 13.svg" />
                 <img
@@ -13,13 +13,13 @@
                 />
               </div>
             </a-col>
-            <a-col :xs="24" :sm="24" :md="24" :lg="16" :xl="18" class="pt-2">
+            <a-col :xs="24" :sm="24" :md="18" :lg="16" :xl="18" class="pt-2">
               <h4 class="mb-0 font-600">Dr. David James</h4>
               <span class="fs-extra-small">Orthopedic Surgeon</span>
             </a-col>
           </a-row>
         </a-col>
-        <a-col :xs="24" :sm="24" :md="24" :lg="8" :xl="6"
+        <a-col :xs="24" :sm="24" :md="6" :lg="8" :xl="6"
           ><a-row :gutter="16" class="pt-2 mt-1 pointer">
             <a-col :xs="24" :sm="8" :md="8" :lg="8" :xl="10" class="pl-3">
               <img src="/images/Appointment/search.svg" />

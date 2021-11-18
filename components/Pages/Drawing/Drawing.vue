@@ -77,7 +77,7 @@ export default {
     matchWidth() {
       const width = this.$refs.infoBox.clientWidth
       console.log(width)
-      this.width = width
+      // this.width = width
       alert(width)
     },
     // handleResize() {

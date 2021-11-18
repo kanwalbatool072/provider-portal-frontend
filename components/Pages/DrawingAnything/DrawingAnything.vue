@@ -124,7 +124,6 @@ export default {
       const width = this.$refs.infoBox.clientWidth
       console.log(width)
       this.width = width
-      alert(width)
     },
     // handleResize() {
     //   this.height = window.innerHeight
