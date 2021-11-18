@@ -4,19 +4,20 @@
       :placement="placement"
       :closable="true"
       :visible="visible"
+      class="menu-drawer"
       @close="onClose"
     >
-      <div id="NavBar">
+      <div>
         <nuxt-link to="/edit-profile">
           <div class="user-info">
             <img
               src="/images/Dashboard/john_wicks.svg"
               alt="John Wicks"
-              class="user-photo"
+              class="user-photo ml-5 pl-5"
             />
             <div class="user-name">
-              <p class="mb-0 mt-1">John Wicks</p>
-              <span class="john-text">Provider</span>
+              <p class="mb-0 mt-1 text-white ml-5 pl-5">John Wicks</p>
+              <span class="john-text ml-5 pl-5 text-white">Provider</span>
             </div>
           </div>
         </nuxt-link>
@@ -87,3 +88,6 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+@import '~/assets/scss/pages/menu-drawer/menu-drawer.scss';
+</style>

@@ -13,6 +13,6 @@ export default {
 }
 </script>
 
-<style lang="sass">
-@import '~/assets/scss/pages/dashboard/dashboard.scss'
+<style lang="scss">
+@import '~/assets/scss/pages/dashboard/dashboard.scss';
 </style>

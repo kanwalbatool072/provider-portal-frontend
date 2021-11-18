@@ -319,3 +319,28 @@
     padding-bottom: 4.5rem !important;
   }
   
+}
+@media screen and(max-width:576px) {
+  .new-patient-list{
+    margin-top: 20px;
+  }
+  
+}
+@media screen and(max-width:425px) {
+  .new-patient-list{
+    margin-top: 20px;
+  }
+  .text-white{
+    font-size: 13px;
+  }
+  
+}
+@media screen and(max-width:375px) {
+  .new-patient-list{
+    margin-top: 20px;
+  }
+  .text-white{
+    font-size: 12px;
+  }
+  
+}
