@@ -14,13 +14,29 @@
               :md="24"
               :lg="24"
               :xl="24"
-              class="text-center py-5 my-5"
+              class="text-center"
             >
-              <img src="/images/Vcarecalling/drawing.svg" />
+              <div ref="infoBox" class="drawin-canvas">
+                <canvas
+                  id="myCanvas"
+                  ref="myCanvas"
+                  :height="height"
+                  :width="width"
+                  @mousemove="draw"
+                  @mousedown="beginDrawing"
+                  @mouseup="stopDrawing"
+                />
+              </div>
             </a-col>
             <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" align="end">
-              <img src="/images/Drawing/blue-icon.svg" />
-              <img src="/images/Drawing/grey-icon.svg" />
+              <img
+                src="/images/Drawing/blue-icon.svg"
+                @click="pikColor('#423869')"
+              />
+              <img
+                src="/images/Drawing/grey-icon.svg"
+                @click="pikColor('white')"
+              />
             </a-col>
           </a-row>
         </a-card>
@@ -78,10 +94,88 @@ import MultipleUserCalling from './MultipleUserCalling/MultipleUserCalling.vue'
 export default {
   components: {
     MultipleUserCalling
+  },
+  data() {
+    return {
+      lineColor: '#423869',
+      x: 0,
+      y: 0,
+      isDrawing: false,
+      canvas: null,
+      height: 600,
+      width: 700,
+      margin: 200
+    }
+  },
+  watch: {},
+  mounted() {
+    this.matchWidth()
+    // window.addEventListener('resize', this.handleResize)
+    // this.handleResize()
+
+    const c = this.$refs.myCanvas
+
+    this.canvas = c.getContext('2d')
+    this.canvas.strokeStyle = 'green'
+    this.canvas.lineWidth = 40
+  },
+  methods: {
+    matchWidth() {
+      const width = this.$refs.infoBox.clientWidth
+      console.log(width)
+      this.width = width
+      alert(width)
+    },
+    // handleResize() {
+    //   this.height = window.innerHeight
+    //   this.width = window.innerWidth - this.margin
+    // },
+    pikColor(color) {
+      this.lineColor = color
+    },
+    drawLine(x1, y1, x2, y2) {
+      const ctx = this.canvas
+      ctx.beginPath()
+      ctx.strokeStyle = this.lineColor
+      //   ctx.font = "50px Roboto";
+      ctx.lineWidth = 5
+      ctx.moveTo(x1, y1)
+      ctx.lineTo(x2, y2)
+      ctx.stroke()
+      ctx.closePath()
+    },
+    draw(e) {
+      if (this.isDrawing) {
+        this.drawLine(this.x, this.y, e.offsetX, e.offsetY)
+        this.x = e.offsetX
+        this.y = e.offsetY
+      }
+    },
+    beginDrawing(e) {
+      this.x = e.offsetX
+      this.y = e.offsetY
+      this.isDrawing = true
+    },
+    stopDrawing(e) {
+      if (this.isDrawing) {
+        this.drawLine(this.x, this.y, e.offsetX, e.offsetY)
+        this.x = 0
+        this.y = 0
+        this.isDrawing = false
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss">
+.drawin-canvas {
+  width: 400px;
+  height: 600px;
+}
+// #myCanvas {
+//   border: 1px solid grey;
+// }
+
 @import '~/assets/scss/pages/multiple-user-calling/multiple-user-calling.scss';
 </style>
