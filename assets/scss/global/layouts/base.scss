@@ -33,3 +33,9 @@ html {
   }
  
 }
+@media screen and(max-width:768px) {
+  .ant-layout-sider{
+display: none;
+  }
+  
+}
