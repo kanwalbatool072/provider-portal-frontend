@@ -40,7 +40,7 @@
              .ant-list-item-meta-description {
               margin-top: 0px;
               padding-top: 0px;
-              font-size: 10px;
+              font-size: 0.625rem;
               line-height: 1.5;
             }
          
@@ -84,7 +84,7 @@
             display: none;
         }
         h2{
-          font-size:18px;
+          font-size:1.125rem;
           font-weight: 600;
           letter-spacing: 1px;
         }
@@ -170,7 +170,7 @@
            .ant-list-item-meta-description {
             margin-top: 0px;
             padding-top: 0px;
-            font-size: 10px;
+            font-size: 0.625rem;
           }
         .ant-list-item-meta-avatar {
           width: 45px;
@@ -222,7 +222,7 @@
     }
     .ant-list-item-meta-title {
       
-      font-size: 14px;
+      font-size: 0.875rem;
       // line-height: 13px;
       font-weight: 500;
     }
@@ -246,7 +246,7 @@
       background-color: #423869;
       border-radius: 15px;
       color: white;
-      font-size: 12px;
+      font-size: 0.75rem;
       position: absolute;
       top: 11px;
       right: 12px;
@@ -274,3 +274,25 @@
     }
   }
 }
+@media screen and (max-width:1024px) {
+  .appt-text{
+    padding-bottom:0px !important;
+  }
+  .appointment-card {
+    .ant-card-body {
+      padding: 24px 10px !important;
+    }
+  }
+  
+}
+// @media screen and (max-width:768px) {
+//   .appt-text{
+//     padding-bottom:0px !important;
+//   }
+//   .appointment-card {
+//     .ant-card-body {
+//       padding: 24px 10px !important;
+//     }
+//   }
+  
+// }

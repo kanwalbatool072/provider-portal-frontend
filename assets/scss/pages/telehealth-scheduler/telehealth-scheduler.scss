@@ -8,13 +8,13 @@
         padding: 10px !important;
     }
     .sub-heading{
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
     color: #02100F;
     opacity: 0.6;
     }
     .btn-sub-heading{
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 400;
     color: white;
     opacity: 0.6;
@@ -38,7 +38,7 @@ textarea.ant-input {
 }
 label.ant-form-item-no-colon {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .ant-select {
     .ant-select-selection {
@@ -112,7 +112,7 @@ label.ant-form-item-no-colon {
 }
 #confirmation {
 h3{
-    font-size: 24px;
+    font-size: 1.5rem;
 }
     button.ant-btn {
         height: 50px;
@@ -125,7 +125,7 @@ h3{
         border-radius: 12px;
     }
     .appointment-text {
-        font-size: 20px;
+        font-size: 1.25rem;
     justify-content: center;
     font-weight: 400;
     font-family: 'Poppins';
@@ -155,7 +155,7 @@ h3{
               background-color: #423869;
               border-radius: 15px;
               color: white;
-              font-size: 12px;
+              font-size: 0.75rem;
             }
           }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="dashbaord">
     <a-row :gutter="24">
-      <a-col :xs="24" :sm="24" :md="16" :lg="16" :xl="16">
+      <a-col :xs="24" :sm="24" :md="13" :lg="14" :xl="16">
         <a-row>
           <TotalAppointment />
         </a-row>
@@ -12,7 +12,7 @@
           <Notification />
         </a-row>
       </a-col>
-      <a-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8"
+      <a-col :xs="24" :sm="24" :md="11" :lg="10" :xl="8"
         ><a-row>
           <NewPatient />
         </a-row>

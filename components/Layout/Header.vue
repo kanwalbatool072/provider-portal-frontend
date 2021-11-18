@@ -5,7 +5,7 @@
     <!--START INPUT SERACH  ROW -->
     <a-row :gutter="16" type="flex" align="middle">
       <!--START INPUT SERACH  COLUMN -->
-      <a-col :xs="16" :sm="16" :md="16" :lg="15" :xl="16" class="search-bar">
+      <a-col :xs="16" :sm="16" :md="12" :lg="15" :xl="16" class="search-bar">
         <a-input-search
           v-if="search_filed"
           class="ant-input"
@@ -15,12 +15,20 @@
       </a-col>
       <!--END INPUT SERACH  COLUMN -->
       <!--START DATE PICKER COLUMN -->
-      <a-col class="mb-4" :xs="15" :sm="18" :md="7" :lg="5" :xl="4">
+      <a-col class="mb-4" :xs="15" :sm="18" :md="6" :lg="5" :xl="4">
         <a-date-picker v-if="date_picker" placeholder="dd/mm/yy" />
       </a-col>
       <!--END DATE PICKER COLUMN -->
       <!--START BADGES COLUMN -->
-      <a-col v-if="notification_icon" :span="4" class="text-right mb-4">
+      <a-col
+        v-if="notification_icon"
+        :xs="15"
+        :sm="18"
+        :md="6"
+        :lg="4"
+        :xl="4"
+        class="text-right mb-4"
+      >
         <a-badge status="warning">
           <!-- <a href="#" class="head-example" /> -->
           <nuxt-link to="/all-notifications">
@@ -44,19 +52,25 @@
       <!--END BADGES COLUMN -->
     </a-row>
     <!--END INPUT SERACH ROW -->
+    <NavBarDrawer :visible="visibleDrawer" />
   </div>
   <!--END LAYOUT HEADER -->
 </template>
 <!-- ************************** SCRIPT  ************************* -->
 <script>
+import NavBarDrawer from './NavBarDrawer.vue'
 export default {
   name: 'Header',
+  components: {
+    NavBarDrawer
+  },
   data() {
     return {
       date_picker: false,
       route_name: '',
       search_filed: true,
-      notification_icon: true
+      notification_icon: true,
+      visibleDrawer: false
     }
   },
   mounted() {
@@ -74,6 +88,9 @@ export default {
     }
   },
   methods: {
+    showNavDrawer() {
+      this.visibleDrawer = !this.visibleDrawer
+    },
     hideSearchFiesld() {
       // console.log('i am from drawing')
       this.search_filed = !this.search_filed

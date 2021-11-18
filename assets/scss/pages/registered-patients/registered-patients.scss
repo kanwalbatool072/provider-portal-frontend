@@ -2,7 +2,7 @@
   .doctor-card {
     h2 {
       color: #1F2127;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 1.2;
       font-weight: medium;
     }
@@ -11,7 +11,7 @@
       opacity: 1;
     }
     p {
-      font-size: 13px;
+      font-size: 0.813rem;
       letter-spacing: 0.65px;
     }
   }
@@ -29,10 +29,10 @@
         }
     }
     i.anticon.anticon-more {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .ant-rate {
-        font-size: 15px;
+        font-size: 0.938rem;
     }
     .rating {
         .ant-card-body {
@@ -83,7 +83,7 @@
         .drag-calendar .cal-cell[selected='selected'][data-v-5af1977c],
         .drag-calendar .month-cell[selected='selected'][data-v-5af1977c] {
           padding: 1.2rem 0.1rem !important;
-          font-size: 9px;
+          font-size: 0.563rem;
           background-color: #423869 !important;
           border-color: #423869;
         }
@@ -102,7 +102,7 @@
           .month-cell[selected='selected']
           .cell-content
           div[data-v-5af1977c] {
-          font-size: 9px;
+          font-size: 0.563rem;
           font-weight: 400;
         }
         .cell-content {
@@ -162,7 +162,7 @@
     .drag-calendar .cal-cell[selected='selected'][data-v-5af1977c],
     .drag-calendar .month-cell[selected='selected'][data-v-5af1977c] {
       padding: 1.2rem 0.1rem !important;
-      font-size: 9px;
+      font-size: 0.563rem;
       background-color: #423869 !important;
       border-color: #423869;
     }
@@ -181,7 +181,7 @@
       .month-cell[selected='selected']
       .cell-content
       div[data-v-5af1977c] {
-      font-size: 9px;
+      font-size: 0.563rem;
       font-weight: 400;
     }
 
@@ -231,7 +231,7 @@
     background-color: #423869;
     border-radius: 15px;
     color: white;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 .ant-select-selection--multiple {
@@ -246,7 +246,7 @@ border-radius: 5px;
 background-color: #E5E3F4;
 line-height: 30px;
 color: #A7A2BF;
-font-size: 12px;
+font-size: 0.75rem;
   }
  .ant-select-search--inline{
 display: none;

@@ -6,13 +6,13 @@
         :key="key"
         :xs="24"
         :sm="24"
-        :md="24"
+        :md="12"
         :lg="12"
         :xl="12"
       >
         <a-card class="appointment-card" :bordered="false">
           <span class="text-white">{{ list.title }}</span>
-          <p class="fs-xl font-600 text-white pt-4 pb-3 m-0">
+          <p class="fs-xl font-600 text-white pt-4 pb-3 m-0 appt-text">
             {{ list.subTitle }}
           </p>
         </a-card>
