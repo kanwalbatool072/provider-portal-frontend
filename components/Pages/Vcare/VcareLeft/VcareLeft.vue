@@ -23,7 +23,7 @@
             <a-col
               :xs="24"
               :sm="24"
-              :md="24"
+              :md="3"
               :lg="3"
               :xl="3"
               class="pl-4 pointer"
@@ -33,7 +33,7 @@
             <a-col
               :xs="24"
               :sm="24"
-              :md="24"
+              :md="18"
               :lg="18"
               :xl="18"
               class="pointer pt-3"
@@ -43,7 +43,7 @@
             <a-col
               :xs="24"
               :sm="24"
-              :md="24"
+              :md="3"
               :lg="3"
               :xl="3"
               class="pr-5 pt-4 mt-2"
