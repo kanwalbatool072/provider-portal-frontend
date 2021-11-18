@@ -283,16 +283,23 @@
       padding: 24px 10px !important;
     }
   }
+  .menu-card{
+    padding-bottom: 2.5rem !important;
+  }
+  
   
 }
-// @media screen and (max-width:768px) {
-//   .appt-text{
-//     padding-bottom:0px !important;
-//   }
-//   .appointment-card {
-//     .ant-card-body {
-//       padding: 24px 10px !important;
-//     }
-//   }
+@media screen and (max-width:768px) {
+  .appt-text{
+    padding-bottom:0px !important;
+  }
+  .appointment-card {
+    .ant-card-body {
+      padding: 24px 10px !important;
+    }
+  }
+  .menu-card{
+    padding-bottom: 4.5rem !important;
+  }
   
-// }
+}

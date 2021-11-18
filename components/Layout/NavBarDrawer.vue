@@ -78,9 +78,9 @@ export default {
     // showDrawer() {
     //   this.visible = true
     // },
-    // onClose() {
-    //   this.visible = false
-    // },
+    onClose() {
+      this.$root.$emit('close-menu-drawer')
+    },
     onChange(e) {
       this.placement = e.target.value
     }
