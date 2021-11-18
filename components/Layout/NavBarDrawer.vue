@@ -60,6 +60,7 @@
         <!-- <AppointmentModal /> -->
       </div>
     </a-drawer>
+    <AppointmentModal />
   </div>
 </template>
 <script>
@@ -76,9 +77,9 @@ export default {
     }
   },
   methods: {
-    // showDrawer() {
-    //   this.visible = true
-    // },
+    showModal() {
+      this.$root.$emit('appointment-modal')
+    },
     onClose() {
       this.$root.$emit('close-menu-drawer')
     },

@@ -60,7 +60,7 @@
       </a-row>
     </div>
     <a-row :gutter="24" class="pt-4">
-      <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+      <a-col :xs="24" :sm="124" :md="12" :lg="12" :xl="12">
         <TimestamGroup />
       </a-col>
       <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
