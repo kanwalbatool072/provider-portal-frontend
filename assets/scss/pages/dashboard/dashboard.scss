@@ -285,6 +285,15 @@
   }
   
 }
+@media screen and (max-width:768px) {
+  #modal-appointment{
+    .ant-modal-content{
+      width: 145%;
+    }
+  
+  }
+  
+}
 // @media screen and (max-width:768px) {
 //   .appt-text{
 //     padding-bottom:0px !important;
