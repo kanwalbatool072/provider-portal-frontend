@@ -2,7 +2,7 @@
   <div>
     <a-drawer
       :placement="placement"
-      :closable="false"
+      :closable="true"
       :visible="visible"
       @close="onClose"
     >

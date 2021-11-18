@@ -24,7 +24,7 @@
         v-if="notification_icon"
         :xs="15"
         :sm="18"
-        :md="6"
+        :md="4"
         :lg="4"
         :xl="4"
         class="text-right mb-4"
@@ -48,6 +48,13 @@
             @click="$router.push('view-all-notifications')"
           /> -->
         </a-badge>
+      </a-col>
+      <a-col :md="2" class="mb-4">
+        <a-icon
+          type="menu-unfold"
+          class="toggler-icon"
+          @click="showNavDrawer"
+        />
       </a-col>
       <!--END BADGES COLUMN -->
     </a-row>
