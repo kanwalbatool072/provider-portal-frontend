@@ -15,12 +15,12 @@
         <a-row class="mt-2">
           <h3 class="mb-3">Telehealth Appointment</h3>
           <!--START TELEHEALTH APPOINTMENT COLUMN -->
-          <a-col class="mt-2" :span="24">
+          <a-col class="mt-2" :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
             <nuxt-link to="/registered-patients" @click.native="hideModal">
               <div class="telehealth-row">
                 <a-row>
                   <!-- /images/Dashboard/micro.svg -->
-                  <a-col :xs="24" :sm="24" :md="8" :lg="8" :xl="5">
+                  <a-col :xs="24" :sm="8" :md="6" :lg="6" :xl="5">
                     <img
                       src="/images/Specialist/voice.svg"
                       class="clinic-appoint-ment-img"
@@ -29,9 +29,9 @@
                   <!--START AUDIO CALL COLUMN -->
                   <a-col
                     :xs="24"
-                    :sm="24"
-                    :md="16"
-                    :lg="8"
+                    :sm="16"
+                    :md="18"
+                    :lg="18"
                     :xl="19"
                     class="pt-1"
                   >
@@ -46,7 +46,7 @@
             <nuxt-link to="/registered-patients" @click.native="hideModal">
               <div class="mt-3 telehealth-row">
                 <a-row>
-                  <a-col :xs="24" :sm="24" :md="8" :lg="8" :xl="5">
+                  <a-col :xs="24" :sm="24" :md="6" :lg="6" :xl="5">
                     <img
                       src="/images/Specialist/videocall.svg"
                       class="clinic-appoint-ment-img"
@@ -55,8 +55,8 @@
                   <a-col
                     :xs="24"
                     :sm="24"
-                    :md="16"
-                    :lg="8"
+                    :md="18"
+                    :lg="18"
                     :xl="19"
                     class="pt-1"
                   >
