@@ -22,7 +22,7 @@
         <!--END VCARE CALLING COLUMN -->
 
         <!--START VCARE ATTENDES COLUMN -->
-        <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" class="pt-5">
+        <!-- <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" class="pt-5">
           <a-row :gutter="16" class="pt-5 mt-5">
             <div class="pt-5 mt-5">
               <div class="pt-5 mt-5">
@@ -36,7 +36,7 @@
                 >
                   <img src="/images/Vcarecalling/view attendees.svg" />
                 </a-col>
-                <!--START VIDEO-CALL MESSAGE END CALL COLUMN -->
+
                 <a-col
                   :xs="24"
                   :sm="24"
@@ -51,8 +51,7 @@
                     @click="handleShareReviewModal('')"
                   />
                 </a-col>
-                <!--END VIDEO-CALL MESSAGE END CALL COLUMN -->
-                <!--START THREE DOTS  COLUMN -->
+
                 <a-col
                   :xs="24"
                   :sm="24"
@@ -73,12 +72,63 @@
                     @click="showDrawingPage"
                   />
                 </a-col>
-                <!--END THREE DOTS COLUMN -->
+              </div>
+            </div>
+          </a-row>
+        </a-col> -->
+        <!--END VCARE ATTENDES COLUMN -->
+        <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" class="pt-5">
+          <a-row :gutter="16" class="pt-5 mt-5">
+            <div class="pt-5 mt-5">
+              <div class="pt-5 mt-5">
+                <a-col
+                  :xs="3"
+                  :sm="3"
+                  :md="3"
+                  :lg="3"
+                  :xl="3"
+                  class="pl-4 pointer"
+                >
+                  <img src="/images/Vcarecalling/view attendees.svg" />
+                </a-col>
+                <a-col
+                  :xs="17"
+                  :sm="18"
+                  :md="18"
+                  :lg="18"
+                  :xl="18"
+                  class="pointer pt-3"
+                >
+                  <img
+                    src="/images/Vcarecalling/Bottom Bar.png"
+                    height="50px"
+                    @click="handleShareReviewModal('')"
+                  />
+                </a-col>
+                <a-col
+                  :xs="4"
+                  :sm="3"
+                  :md="3"
+                  :lg="3"
+                  :xl="3"
+                  class="pr-5 pt-4 mt-2"
+                >
+                  <img
+                    src="/images/Vcarecalling/Group 57059.svg"
+                    height="30px"
+                    @click="showVideoController"
+                  />
+                  <img
+                    v-if="showController"
+                    src="/images/Vcarecalling/video_controller.png"
+                    class="video-controller"
+                    @click="showDrawingPage"
+                  />
+                </a-col>
               </div>
             </div>
           </a-row>
         </a-col>
-        <!--END VCARE ATTENDES COLUMN -->
       </a-row>
       <!--END VCARE CALLING ROW -->
     </div>

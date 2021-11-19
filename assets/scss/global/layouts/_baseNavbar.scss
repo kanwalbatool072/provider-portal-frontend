@@ -80,3 +80,32 @@
       }
     }
   }
+  @media screen and (max-width:768px) {
+    .user-info {
+      text-align: center;
+      padding: 30px 0;
+      .user-photo {
+        margin: 0 !important;
+        padding: 0 !important;
+     
+    }
+    p {
+      margin-left: 0 !important;
+    padding-left: 0 !important; 
+    }
+    span {
+      margin-left: 0 !important;
+      padding-left: 0 !important; 
+    }
+  }
+    li.ant-menu-item {
+      padding-left: 0 !important;
+      border-radius: 8px;
+      img {
+        padding-left: 15px;
+    }
+    span.nav-text {
+      padding-left: 20px;
+    }
+  }
+  }
