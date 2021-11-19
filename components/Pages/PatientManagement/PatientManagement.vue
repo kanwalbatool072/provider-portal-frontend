@@ -58,7 +58,7 @@
     >
       <!--START DOCUMENTS BUTTONS  ROW-->
       <a-row class="px-1" :gutter="16">
-        <a-col :xs="10" :sm="10" :md="18" :lg="14" :xl="10">
+        <a-col :xs="24" :sm="24" :md="24" :lg="14" :xl="10">
           <!--SEARCH DOCUMENTS COLUMN -->
           <a-card class="clinic-documents-btn" :bordered="false">
             <a-button
@@ -152,6 +152,7 @@ export default {
   methods: {
     enableBtns() {
       this.enableBtn = false
+      this.btnName = 'all_demo'
     },
     changePaymentType(btnName) {
       // console.log(btnName)

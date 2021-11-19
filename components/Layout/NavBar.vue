@@ -29,7 +29,7 @@
         <img
           src="/images/icons/Group 57033.svg"
           alt=""
-          @click="$router.push('/registered-patients')"
+          @click="$router.push('/patients')"
         />
         <span class="nav-text">Patients</span>
       </a-menu-item>
