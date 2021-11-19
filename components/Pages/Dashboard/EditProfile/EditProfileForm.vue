@@ -124,7 +124,7 @@
           </a-col>
           <!--END LAST NAME COLUMN -->
         </a-row>
-        <a-row :gutter="24" class="px-4 pt-2">
+        <a-row :gutter="24" class="px-4 ">
           <!--START SUFFIX COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
