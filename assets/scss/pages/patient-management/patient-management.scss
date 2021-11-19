@@ -94,9 +94,9 @@ i.anticon.anticon-more {
   #patient-management{
     .patient-management{
       .clinic-documents-btn{
-        width: 500px;
-        .documents-btn{
-          width: 23%;
+        // width: 500px;
+        .ant-btn{
+          width: 24%;
         }
       }
       
@@ -109,8 +109,9 @@ i.anticon.anticon-more {
     .patient-management{
       .clinic-documents-btn{
         
-        .documents-btn{
-          width: 21%;
+        .ant-btn{
+          margin-top: 10px;
+          width: 49%;
         }
       }
       
