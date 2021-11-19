@@ -44,3 +44,39 @@
     }
   }
   
+  #modal-appointment {
+    .ant-modal-close {
+      padding: 0px;
+      .ant-modal-close-icon {
+        padding: 4px;
+        background-color: #423869;
+        border-radius: 15px;
+        color: white;
+        font-size: 0.75rem;
+        position: absolute;
+        top: 11px;
+        right: 12px;
+      }
+    }
+    .ant-modal-content {
+      padding: 20px;
+      border-radius: 12px;
+      .ant-modal-body {
+        padding: 10px;
+      }
+    }
+    .modal-card {
+      padding: 0px;
+      .ant-card-body {
+        padding: 10px;
+        .telehealth-row {
+          background-color: rgba(192, 192, 192, 0.1);
+          padding: 8px;
+          border-radius: 10px;
+          .clinic-appoint-ment-img {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
