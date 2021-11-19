@@ -23,14 +23,14 @@
             :class="active_index == index ? 'change-background' : ''"
             @click="chageClass(index)"
           >
-            <a-col :xs="4" :sm="3" :md="8" :lg="8" :xl="1" class="pr-1">
+            <a-col :xs="4" :sm="2" :md="2" :lg="1" :xl="1" class="pr-1">
               <img :src="data.notefication_img" />
             </a-col>
             <a-col
-              :xs="18"
-              :sm="16"
-              :md="16"
-              :lg="8"
+              :xs="20"
+              :sm="18"
+              :md="18"
+              :lg="16"
               :xl="21"
               class="pt-1 pl-5"
             >
