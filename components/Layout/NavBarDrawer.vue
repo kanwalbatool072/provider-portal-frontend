@@ -23,7 +23,7 @@
         </nuxt-link>
 
         <a-menu theme="dark" mode="inline">
-          <a-menu-item key="1" @click="$router.push('/dashboard')">
+          <a-menu-item key="1" @click="handlePageLinks('dashboard')">
             <img src="/images/icons/Group 57031.svg" alt="" />
             <span class="nav-text">Dashboard</span>
           </a-menu-item>
@@ -31,27 +31,23 @@
             <img src="/images/icons/Group 57032.svg" alt="" />
             <span class="nav-text">Appointments</span>
           </a-menu-item>
-          <a-menu-item key="3">
-            <img
-              src="/images/icons/Group 57033.svg"
-              alt=""
-              @click="$router.push('/registered-patients')"
-            />
+          <a-menu-item key="3" @click="handlePageLinks('registered-patients')">
+            <img src="/images/icons/Group 57033.svg" alt="" />
             <span class="nav-text">Patients</span>
           </a-menu-item>
-          <a-menu-item key="4" @click="$router.push('/patient-management')">
+          <a-menu-item key="4" @click="handlePageLinks('patient-management')">
             <img src="/images/icons/Group 57034.svg" alt="" />
             <span class="nav-text">Documents</span>
           </a-menu-item>
 
-          <a-menu-item key="6" @click="$router.push('/settings')">
+          <a-menu-item key="6" @click="handlePageLinks('settings')">
             <img src="/images/icons/Group 57036.svg" alt="" />
             <span class="nav-text">Settings</span>
           </a-menu-item>
           <a-menu-item
             key="7"
             class="logout"
-            @click="$router.push('/auth/login')"
+            @click="handlePageLinks('auth/login')"
           >
             <img src="/images/icons/logoutk.svg" alt="" />
             <span class="nav-text">Log Out</span>
@@ -76,6 +72,10 @@ export default {
     }
   },
   methods: {
+    handlePageLinks(val) {
+      this.$root.$emit('close-menu-drawer')
+      this.$router.push(`/${val}`)
+    },
     showModal() {
       this.$root.$emit('appointment-modal')
     },

@@ -179,7 +179,9 @@
               </a-select>
             </a-form-model-item>
           </a-col>
-          <!--END SUFFIX  COLUMN -->
+        </a-row>
+        <!--END SUFFIX  COLUMN -->
+        <a-row :gutter="24" class="px-4 ">
           <!--START DATE OF BIRTH  COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
