@@ -32,7 +32,7 @@
       <a-row :gutter="24" class="mt-4 mb-5 pb-5">
         <!--SEARCH DOCUMENTS COLUMN -->
         <a-col :xs="15" :sm="18" :md="20" :lg="18" :xl="18">
-          <span class="lang-text">Receive special offers </span>
+          <span class="lang-text">Receive notifications </span>
         </a-col>
         <!-- ENDS SEARCH DOCUMENTS COLUMN -->
 
