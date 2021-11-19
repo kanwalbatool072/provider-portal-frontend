@@ -14,7 +14,6 @@
           :md="11"
           :lg="8"
           :xl="6"
-          @click="handleAvailableSlots('')"
         >
           <PatientCard :doctor-list="doctor" />
         </a-col>

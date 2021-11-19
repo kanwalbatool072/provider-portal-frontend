@@ -41,6 +41,7 @@
 <!-- ************************** SCRIPT  ************************* -->
 <script>
 // SCRIPT
+import { mapActions } from 'vuex'
 export default {
   // PROPS
   props: {
@@ -50,11 +51,17 @@ export default {
     }
   },
   methods: {
+    ...mapActions('modules/specialist', ['handleAvailableSlots']),
     showSpecialist(val) {
-      if (val) {
+      if (val == true) {
         this.$router.push('/patient-management')
-      } else {
-        this.$root.$emit('show-specialist-details')
+        setTimeout(() => {
+          this.$root.$emit('enable-btns')
+        }, 300)
+      }
+      if (val == false) {
+        this.handleAvailableSlots()
+        // this.$root.$emit('show-specialist-details')
       }
     }
   }

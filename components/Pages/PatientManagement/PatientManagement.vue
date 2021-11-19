@@ -64,6 +64,7 @@
             <a-button
               type="primary"
               :class="btnName != 'all_demo' ? 'documents-btn' : ''"
+              :disabled="enableBtn"
               @click="changePaymentType('all_demo')"
             >
               Demographics</a-button
@@ -73,6 +74,7 @@
               type="primary"
               class="ml-1"
               :class="btnName != 'insurance' ? 'documents-btn' : ''"
+              :disabled="enableBtn"
               @click="changePaymentType('insurance')"
             >
               Insurance</a-button
@@ -81,6 +83,7 @@
               type="primary"
               class="ml-1"
               :class="btnName != 'draft' ? 'documents-btn' : ''"
+              :disabled="enableBtn"
               @click="changePaymentType('draft')"
             >
               Draft</a-button
@@ -126,22 +129,30 @@ export default {
     Documents
     //    SubmitDocument
   },
+
   data() {
     return {
       btnName: 'documents',
       documentsForm: {
         document: null
-      }
+      },
+      enableBtn: true
     }
   },
   // Call Anything On runtime
   computed: {},
+  mounted() {
+    this.$root.$on('enable-btns', this.enableBtns)
+  },
   //
   // mounted() {
   //   this.$root.$on('show-unsign-document', this.showUnsignDoc)
   // },
 
   methods: {
+    enableBtns() {
+      this.enableBtn = false
+    },
     changePaymentType(btnName) {
       // console.log(btnName)
       // console.log('helo')
