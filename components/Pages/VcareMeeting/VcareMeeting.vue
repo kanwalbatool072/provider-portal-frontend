@@ -5,12 +5,12 @@
     <!--START DOCTER LIST ROW  -->
     <a-row :gutter="24">
       <!--START DOCTER LIST COLUMN  -->
-      <a-col :xs="24" :sm="24" :md="18" :lg="15" :xl="16">
+      <a-col :xs="24" :sm="24" :md="24" :lg="15" :xl="16">
         <VcareMeetingLeft />
       </a-col>
       <!--END  DOCTER LIST COLUMN  -->
       <!--START DOCTER DETAIL COLUMN  -->
-      <a-col :xs="24" :sm="24" :md="6" :lg="9" :xl="8">
+      <a-col :xs="24" :sm="24" :md="24" :lg="9" :xl="8">
         <VcareMeetingRight />
       </a-col>
       <!--END  DOCTER DETAIL COLUMN  -->

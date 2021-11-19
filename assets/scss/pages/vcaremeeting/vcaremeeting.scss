@@ -11,40 +11,62 @@
     }
     .time-stamp-group {
         .ant-card {
-            border-radius: 10px;
+          border-radius: 10px;
         }
-        .start-appt {
-            .ant-card-body {
-                padding: 18px 24px;
-            background-color: #F1F0F5;
-            border-radius: 5px;
-    
-            }
-        }
-            .start {
-                .ant-card-body {
-                padding: 18px 24px;
-                background-color: #faf9fb;
-                border-radius: 5px;
-                color: #a5a5a5;
-                opacity: 35;
-        
-                }
-        }
-    }
-    .meeting {
-        .ant-card {
-            border-radius: 10px;
-          
-        } 
         .ant-card-body {
-            padding: 15px 24px;
+          padding: 15px 24px;
         }
-        .meeting-list {
+        .time-stamp-group-scroll {
+          height: 400px;
+          overflow-y: scroll;
+          .start-appt {
+            .ant-card-body {
+              padding: 18px 24px;
+              background-color: #f1f0f5;
+              border-radius: 5px;
+            }
+          }
+          .start {
+            .ant-card-body {
+              padding: 18px 24px;
+              background-color: #faf9fb;
+              border-radius: 5px;
+              color: #a5a5a5;
+              opacity: 35;
+            }
+          }
+        }
+        .time-stamp-group-scroll::-webkit-scrollbar {
+          display: none;
+        }
+        .time-stamp-group-scroll {
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
+        }
+      }
+      .meeting {
+        .ant-card {
+          border-radius: 10px;
+        }
+        .ant-card-body {
+          padding: 15px 24px;
+        }
+        .meeting-scroll {
+          height: 400px;
+          overflow-y: scroll;
+          .meeting-list {
             display: flex;
             align-items: center;
+          }
         }
-    }
+        .meeting-scroll::-webkit-scrollbar {
+          display: none;
+        }
+        .meeting-scroll {
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
+        }
+      }
     .vcare-right{
         .chat-header.ant-card {
         
@@ -104,33 +126,138 @@
     @media screen and (max-width: 1024px) {
         #vcare-meeting {
             .meeting {
-                
-               
-              
-              
-                .ant-card-body{
-                    padding:  15px;
-                    h4{
-                        font-size: 12px;
-                    }
-                   
+                .ant-card-body {
+                  padding: 15px;
+                  h4 {
+                    font-size: 12px;
+                  }
                 }
-                
-            }
-    
-            .time-stamp-group {
+              }
+          
+              .time-stamp-group {
                 .ant-card {
-                    
-                        padding-bottom: 0rem !important;
-                    
-                    p{
-                        font-size: 12px;
-                    }
+                  padding-bottom: 0rem !important;
+          
+                  p {
+                    font-size: 12px;
+                  }
                 }
-                .ant-card-body{
-                    padding: 14px;
+                .ant-card-body {
+                  padding: 14px;
                 }
-            }
+              }
           
         }
     }
+    @media screen and(max-width:786px) {
+        #vcare-meeting {
+        .meeting {
+            .ant-card-body {
+              padding: 15px;
+            }
+      
+            .ant-card-body {
+              h4 {
+                font-size: 12px;
+              }
+            }
+          }
+      
+          .time-stamp-group {
+            .ant-card {
+              padding-bottom: 0rem !important;
+      
+              p {
+                font-size: 12px;
+              }
+            }
+            .ant-card-body {
+              padding: 14px;
+            }
+          }
+          .vcare-right {
+            margin-top: 20px;
+            .blue-card.ant-card {
+              width: 25%;
+            }
+            .blue-card.medicine.ant-card {
+              width: 40%;
+            }
+          }
+        }
+        
+    }
+    @media screen and (max-width: 576px) {
+        #vcare-meeting {
+          .meeting {
+            .ant-card-body {
+              padding: 15px;
+            }
+      
+            .ant-card-body {
+              h4 {
+                font-size: 12px;
+              }
+            }
+          }
+      
+          .time-stamp-group {
+            .ant-card {
+              padding-bottom: 0rem !important;
+      
+              p {
+                font-size: 12px;
+              }
+            }
+            .ant-card-body {
+              padding: 14px;
+            }
+          }
+          .vcare-right {
+            margin-top: 20px;
+            .blue-card.ant-card {
+              width: 25%;
+            }
+            .blue-card.medicine.ant-card {
+              width: 46%;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 425px) {
+        #vcare-meeting {
+          .meeting {
+            .ant-card-body {
+              padding: 15px;
+            }
+      
+            .ant-card-body {
+              h4 {
+                font-size: 12px;
+              }
+            }
+          }
+      
+          .time-stamp-group {
+            .ant-card {
+              padding-bottom: 0rem !important;
+      
+              p {
+                font-size: 12px;
+              }
+            }
+            .ant-card-body {
+              padding: 14px;
+            }
+          }
+          .vcare-right {
+            margin-top: 20px;
+            .blue-card.ant-card {
+              width: 40%;
+            }
+            .blue-card.medicine.ant-card {
+              width: 80%;
+            }
+          }
+        }
+      }

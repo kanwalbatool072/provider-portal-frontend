@@ -137,7 +137,7 @@ export default {
     return {
       loading: false,
       loginForm: {
-        email: 'patient@demo.com',
+        email: 'Provider@signupdemo.com',
         password: '123'
       }
     }
