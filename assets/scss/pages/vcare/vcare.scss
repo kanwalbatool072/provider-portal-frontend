@@ -122,6 +122,9 @@
 }
 @media screen and (max-width: 1024px) {
   #v-care {
+    .vcare-img{
+      margin-top: 15px;
+    }
     .meeting {
       .ant-card-body {
         padding: 15px;
@@ -155,6 +158,9 @@
 }
 @media screen and (max-width: 768px) {
   #v-care {
+    .vcare-img{
+      margin-top: 15px;
+    }
     .meeting {
       .ant-card-body {
         padding: 15px;
@@ -192,6 +198,9 @@
 }
 @media screen and (max-width: 576px) {
     #v-care {
+      .vcare-img{
+        margin-top: 15px;
+      }
       .meeting {
         .ant-card-body {
           padding: 15px;
@@ -229,6 +238,9 @@
   }
   @media screen and (max-width: 425px) {
     #v-care {
+      .vcare-img{
+        margin-top: 15px;
+      }
       .meeting {
         .ant-card-body {
           padding: 15px;

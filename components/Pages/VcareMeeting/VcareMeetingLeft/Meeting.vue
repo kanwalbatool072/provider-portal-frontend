@@ -6,29 +6,25 @@
     <!--START MEETING CARD -->
     <a-card :bordered="false">
       <!--START MEETING LIST ROW -->
-      <a-row
-        v-for="(list, index) in meetingList"
-        :key="index"
-        class="mb-1 meeting-list"
-        :gutter="16"
-      >
-        <!--START IMAGE LIST COLUMN -->
-        <a-col :xs="24" :sm="24" :md="20" :lg="8" :xl="5">
-          <img :src="list.image" class="mt-1" />
-        </a-col>
-        <!--END IMAGE LIST COLUMN  -->
-        <!--START TITTLE  COLUMN-->
-        <a-col :xs="24" :sm="24" :md="20" :lg="13" :xl="17">
-          <h4 class="mb-0 fs-small">{{ list.title }}</h4>
-          <p class="mb-0 fs-small" style="opacity: 1">{{ list.description }}</p>
-        </a-col>
-        <!--START TITTLE COLUMN -->
-        <!--START LIST DOT IMAGE COLUMN -->
-        <a-col :xs="24" :sm="24" :md="20" :lg="3" :xl="2" align="end">
-          <img :src="list.dotimage" />
-        </a-col>
-        <!--END LIST DOT IMAGE COLUMN -->
-      </a-row>
+      <div class="meeting-scroll">
+        <a-row
+          v-for="(list, index) in meetingList"
+          :key="index"
+          class="mb-1 meeting-list"
+          :gutter="16"
+        >
+          <a-col :xs="5" :sm="5" :md="5" :lg="7" :xl="5">
+            <img :src="list.image" class="mt-1" />
+          </a-col>
+          <a-col :xs="16" :sm="17" :md="16" :lg="13" :xl="17">
+            <h4 class="mb-0 fs-small">{{ list.title }}</h4>
+            <p class="mb-0 fs-small">{{ list.description }}</p>
+          </a-col>
+          <a-col :xs="3" :sm="2" :md="3" :lg="2" :xl="2" align="end">
+            <img :src="list.dotimage" />
+          </a-col>
+        </a-row>
+      </div>
       <!--END MEETING_LIST ROW -->
     </a-card>
     <!--END MEETING CARD -->
