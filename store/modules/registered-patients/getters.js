@@ -5,47 +5,56 @@ export default {
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor1.svg'
+        image: '/images/Specialist/doctor1.svg',
+        scheduled: false
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor2.svg'
+        image: '/images/Specialist/doctor2.svg',
+        scheduled: false
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor3.svg'
+        image: '/images/Specialist/doctor3.svg',
+        scheduled: false
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor1.svg'
+        image: '/images/Specialist/doctor1.svg',
+        scheduled: false
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor2.svg'
+        image: '/images/Specialist/doctor2.svg',
+        scheduled: false
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor4.svg'
+        image: '/images/Specialist/doctor4.svg',
+        scheduled: false
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor1.svg'
+        image: '/images/Specialist/doctor1.svg',
+        scheduled: false
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor2.svg'
+        image: '/images/Specialist/doctor2.svg',
+        scheduled: false
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor4.svg'
+        image: '/images/Specialist/doctor4.svg',
+        scheduled: false
       }
     ]
     return cardsData

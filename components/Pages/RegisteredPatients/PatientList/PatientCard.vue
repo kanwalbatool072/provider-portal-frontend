@@ -1,7 +1,7 @@
 <!-- ************************** TEMPLATE  ************************* -->
 <template>
   <!--START DOCTER  SECTION-->
-  <div class="doctor-card" @click="showSpecialist">
+  <div class="doctor-card" @click="showSpecialist(doctorList.scheduled)">
     <!--START HOVERABLE CARD-->
     <a-card hoverable :bordered="false">
       <!--START DOCTER IMAGE LIST ROW-->
@@ -41,6 +41,7 @@
 <!-- ************************** SCRIPT  ************************* -->
 <script>
 // SCRIPT
+import { mapActions } from 'vuex'
 export default {
   // PROPS
   props: {
@@ -50,8 +51,18 @@ export default {
     }
   },
   methods: {
-    showSpecialist() {
-      this.$root.$emit('show-specialist-details')
+    ...mapActions('modules/specialist', ['handleAvailableSlots']),
+    showSpecialist(val) {
+      if (val == true) {
+        this.$router.push('/patient-management')
+        setTimeout(() => {
+          this.$root.$emit('enable-btns')
+        }, 300)
+      }
+      if (val == false) {
+        this.handleAvailableSlots()
+        // this.$root.$emit('show-specialist-details')
+      }
     }
   }
 }

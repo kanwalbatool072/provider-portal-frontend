@@ -7,14 +7,13 @@
       <a-row :gutter="[24, 24]" class="my-0">
         <!--START DOCTER CARD  COLUMN-->
         <a-col
-          v-for="(doctor, index) in doctorList"
+          v-for="(doctor, index) in data"
           :key="index"
           :xs="24"
           :sm="11"
           :md="11"
           :lg="8"
           :xl="6"
-          @click="handleAvailableSlots('')"
         >
           <PatientCard :doctor-list="doctor" />
         </a-col>
@@ -39,6 +38,12 @@ export default {
   components: {
     PatientCard,
     AvailableSlots
+  },
+  props: {
+    data: {
+      type: Array,
+      default: null
+    }
   },
   // CALL ANYTHING ON RUN TIME
   computed: {
