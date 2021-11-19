@@ -162,6 +162,7 @@ export default {
               message: 'Register Successfully!'
             })
           }, 1000)
+          this.$router.push('/auth/login')
         }
       })
     }

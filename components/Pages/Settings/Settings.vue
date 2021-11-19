@@ -3,12 +3,12 @@
   <!--SETTINGS-->
   <div class="settings pb-5 mb-5">
     <a-row class="mb-5 pb-5">
-      <h3 class="fs-extra-large font-600">Settings</h3>
+      <h3 class="setting-text font-600">Settings</h3>
       <a-row :gutter="24" class="mt-3">
         <!--SEARCH DOCUMENTS COLUMN -->
         <a-col :xs="15" :sm="18" :md="20" :lg="16" :xl="16">
           <h3
-            class="mt-4 fs-extra-large font-600 pointer"
+            class="mt-4 lang-text font-600 pointer"
             @click="handleLanguagesModal('')"
           >
             Change Language
@@ -18,13 +18,13 @@
 
       <a-divider />
       <h3
-        class="mt-3 fs-extra-large font-600 pointer"
+        class="mt-3 lang-text font-600 pointer"
         @click="handleLocationModal('')"
       >
         Change Location
       </h3>
       <a-divider />
-      <h3 class="mt-3 fs-extra-large font-600 pointer">
+      <h3 class="mt-3 flang-text font-600 pointer">
         Change Timing
       </h3>
 
@@ -32,7 +32,7 @@
       <a-row :gutter="24" class="mt-4 mb-5 pb-5">
         <!--SEARCH DOCUMENTS COLUMN -->
         <a-col :xs="15" :sm="18" :md="20" :lg="18" :xl="18">
-          <span>Receive special offers </span>
+          <span class="lang-text">Receive special offers </span>
         </a-col>
         <!-- ENDS SEARCH DOCUMENTS COLUMN -->
 
