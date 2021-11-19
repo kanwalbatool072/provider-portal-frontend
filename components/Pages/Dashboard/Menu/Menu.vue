@@ -58,6 +58,9 @@ export default {
       }
       if (title == 'Patient Management') {
         this.$router.push('/patient-management')
+        setTimeout(() => {
+          this.$root.$emit('enable-btns')
+        }, 300)
       }
       if (title == 'Telehealth Scheduler') {
         this.$root.$emit('appointment-modal')

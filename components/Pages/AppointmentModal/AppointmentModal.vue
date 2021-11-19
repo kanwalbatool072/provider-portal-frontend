@@ -16,7 +16,7 @@
           <h3 class="mb-3">Telehealth Appointment</h3>
           <!--START TELEHEALTH APPOINTMENT COLUMN -->
           <a-col class="mt-2" :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
-            <nuxt-link to="/registered-patients" @click.native="hideModal">
+            <nuxt-link to="/scheduled-patient" @click.native="hideModal">
               <div class="telehealth-row">
                 <a-row>
                   <!-- /images/Dashboard/micro.svg -->

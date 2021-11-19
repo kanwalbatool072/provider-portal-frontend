@@ -1,7 +1,7 @@
 <template>
   <div id="registered-patients">
     <RegisteredPatients
-      title="All Scheduled Patients"
+      title="All Registered Patients"
       :patient-data="scheduledList"
     />
   </div>

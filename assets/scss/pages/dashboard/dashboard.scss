@@ -277,6 +277,9 @@
   }
 }
 @media screen and (max-width:1024px) {
+  .text-white{
+     font-size: 0.9rem;
+  }
   .appt-text{
     padding-bottom:0px !important;
   }
@@ -299,9 +302,12 @@
   }
   
   }
-  .appt-text{
-    padding-bottom:0px !important;
-  }
+  .text-white{
+    font-size: 1.125rem;
+ }
+ .appt-text{
+   padding-bottom:0px !important;
+ }
   .appointment-card {
     .ant-card-body {
       padding: 24px 10px !important;

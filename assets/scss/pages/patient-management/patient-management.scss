@@ -111,7 +111,37 @@ i.anticon.anticon-more {
         
         .ant-btn{
           margin-top: 10px;
-          width: 49%;
+          width: 48%;
+        }
+      }
+      
+  
+    }
+  } 
+}
+@media screen and(max-width:425px){
+  #patient-management{
+    .patient-management{
+      .clinic-documents-btn{
+        
+        .ant-btn{
+          margin-top: 10px;
+          width: 44%;
+        }
+      }
+      
+  
+    }
+  } 
+}
+@media screen and(max-width:375px){
+  #patient-management{
+    .patient-management{
+      .clinic-documents-btn{
+        
+        .ant-btn{
+          margin-top: 10px;
+          width: 38%;
         }
       }
       
