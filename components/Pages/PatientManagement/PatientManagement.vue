@@ -128,7 +128,7 @@ export default {
   },
   data() {
     return {
-      btnName: 'all_demo',
+      btnName: 'documents',
       documentsForm: {
         document: null
       }
