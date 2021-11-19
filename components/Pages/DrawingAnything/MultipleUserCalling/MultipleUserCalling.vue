@@ -32,16 +32,16 @@
           <p class="meeting-txt">48m 20s</p>
           <a-card class="meeting-icon-box px-4">
             <a-row :gutter="16" class="text-center">
-              <a-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+              <a-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8">
                 <img src="/images/Drawing/projector.svg" />
                 <p>PRESENT</p>
               </a-col>
-              <a-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+              <a-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8">
                 <img src="/images/Drawing/video-camera.svg" />
                 <p>VIDEO</p>
               </a-col>
 
-              <a-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+              <a-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8">
                 <img src="/images/Drawing/microphone.svg" />
 
                 <p>MUTE</p>
@@ -63,7 +63,7 @@
             <a-icon type="android" />
             11
           </span>
-          <img src="/images/Drawing/multipleuser.svg" />
+          <img src="/images/Drawing/multipleuser.svg" class="calling-img" />
           <a-row>
             <a-col
               :xs="24"
@@ -84,16 +84,16 @@
           <p class="meeting-txt">48m 20s</p>
           <a-card class="meeting-icon-box px-4 meeting-card-lg">
             <a-row :gutter="16" class="text-center">
-              <a-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
+              <a-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8">
                 <img src="/images/Drawing/projector.svg" />
                 <p>PRESENT</p>
               </a-col>
-              <a-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
+              <a-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8">
                 <img src="/images/Drawing/video-camera.svg" />
                 <p>VIDEO</p>
               </a-col>
 
-              <a-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
+              <a-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8">
                 <img src="/images/Drawing/microphone.svg" />
 
                 <p>MUTE</p>
@@ -115,7 +115,7 @@
             <a-icon type="android" />
             info
           </span>
-          <img src="/images/Drawing/multipleuser.svg" />
+          <img src="/images/Drawing/multipleuser.svg" class="calling-img" />
           <a-row>
             <a-col
               :xs="24"

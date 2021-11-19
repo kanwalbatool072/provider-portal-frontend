@@ -47,15 +47,15 @@
     </a-row>
     <!-- END MULTIPLE USER ROW -->
     <!--START ATTENDES ROW -->
-    <a-row :gutter="16" class="pt-5 px-5 mx-5 padding-xs">
+    <a-row :gutter="16" class="pt-5 px-5 mx-5 meeting-video-call">
       <!--START ATTENDES COLUMN-->
-      <a-col :xs="8" :sm="6" :md="3" :lg="3" :xl="4" class="pl-5">
+      <a-col :xs="7" :sm="6" :md="3" :lg="3" :xl="4" class="pl-5">
         <img src="/images/Vcarecalling/view attendees.svg" />
       </a-col>
       <!-- END ATTENDES COLUMN -->
       <!--START BOTTOM BAR CALLING -->
       <a-col
-        :xs="8"
+        :xs="13"
         :sm="16"
         :md="18"
         :lg="18"
@@ -67,7 +67,7 @@
       <!-- END BOTTOM BAR CALLING -->
       <!--START VCARE COLUMN  -->
       <a-col
-        :xs="8"
+        :xs="4"
         :sm="2"
         :md="3"
         :lg="3"
