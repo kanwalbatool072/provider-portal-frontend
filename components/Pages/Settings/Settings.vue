@@ -24,7 +24,7 @@
         Change Location
       </h3>
       <a-divider />
-      <h3 class="mt-3 flang-text font-600 pointer">
+      <h3 class="mt-3 lang-text font-600 pointer">
         Change Timing
       </h3>
 
