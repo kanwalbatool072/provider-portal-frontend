@@ -5,7 +5,7 @@
     <!--START MULTIPLE USER CALLING -->
     <a-row :gutter="24">
       <a-col :xs="24" :sm="11" :md="11" :lg="14" :xl="16">
-        <h3 class="font-600">Draw Ag</h3>
+        <h3 class="font-600">Draw Anything</h3>
         <a-card :bordered="false">
           <a-row>
             <a-col
