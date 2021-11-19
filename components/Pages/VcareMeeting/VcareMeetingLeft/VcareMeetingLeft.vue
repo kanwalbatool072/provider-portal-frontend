@@ -92,7 +92,7 @@
                   <img src="/images/Vcarecalling/view attendees.svg" />
                 </a-col>
                 <a-col
-                  :xs="18"
+                  :xs="17"
                   :sm="18"
                   :md="18"
                   :lg="18"
@@ -106,7 +106,7 @@
                   />
                 </a-col>
                 <a-col
-                  :xs="3"
+                  :xs="4"
                   :sm="3"
                   :md="3"
                   :lg="3"
