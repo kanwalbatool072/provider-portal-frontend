@@ -16,11 +16,11 @@
           <a-col :xs="5" :sm="5" :md="5" :lg="7" :xl="5">
             <img :src="list.image" class="mt-1" />
           </a-col>
-          <a-col :xs="16" :sm="17" :md="16" :lg="13" :xl="17">
+          <a-col :xs="16" :sm="17" :md="16" :lg="13" :xl="16">
             <h4 class="mb-0 fs-small">{{ list.title }}</h4>
             <p class="mb-0 fs-small">{{ list.description }}</p>
           </a-col>
-          <a-col :xs="3" :sm="2" :md="3" :lg="2" :xl="2" align="end">
+          <a-col :xs="3" :sm="2" :md="3" :lg="2" :xl="3" align="end">
             <img :src="list.dotimage" />
           </a-col>
         </a-row>
