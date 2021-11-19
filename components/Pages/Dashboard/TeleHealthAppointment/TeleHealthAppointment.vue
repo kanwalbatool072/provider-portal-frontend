@@ -1,5 +1,5 @@
 <template>
-  <div class="tele-health-appointment mt-2 pt-1">
+  <div class="tele-health-appointment mt-2 pt-2">
     <a-card
       class="chart-container mt-1"
       title="Telehealth Appointment"

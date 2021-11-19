@@ -43,7 +43,7 @@
               </div>
             </nuxt-link>
             <!--START VIDEO CALL LINK-->
-            <nuxt-link to="/registered-patients" @click.native="hideModal">
+            <nuxt-link to="/scheduled-patient" @click.native="hideModal">
               <div class="mt-3 telehealth-row">
                 <a-row>
                   <a-col :xs="24" :sm="24" :md="6" :lg="6" :xl="5">
@@ -111,7 +111,7 @@ export default {
         this.$router.push('/specialist')
       }
       if (title == 'Video Call') {
-        this.$router.push('/specialist')
+        this.$router.push('/scheduled-patient')
       }
     }
     // handleOk(e) {

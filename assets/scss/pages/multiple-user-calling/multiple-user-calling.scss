@@ -47,3 +47,15 @@
     
 }
 
+@media screen and(max-width:1024px) {
+    #drawing {
+        .meeting-icon-box{
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            .ant-card-body{
+                padding: 0px;
+            }
+        }
+    }
+    
+}

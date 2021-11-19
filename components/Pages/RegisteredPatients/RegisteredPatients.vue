@@ -6,7 +6,7 @@
     <a-row :gutter="16">
       <!--AVAILABLE SPECIALIST -->
       <a-col :xs="24" :sm="24" :md="24" :lg="15" :xl="16">
-        <AvailableSpecialist />
+        <AvailableSpecialist :title="title" />
       </a-col>
       <!--START DOCTER LIST COLUMN  -->
       <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
@@ -28,6 +28,12 @@ export default {
   components: {
     PatientList,
     AvailableSpecialist
+  },
+  props: {
+    title: {
+      type: String,
+      default: ''
+    }
   },
   data() {
     return {

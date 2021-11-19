@@ -1,6 +1,6 @@
 <template>
   <div id="registered-patients">
-    <RegisteredPatients />
+    <RegisteredPatients title="All Registered Patients" />
   </div>
 </template>
 
