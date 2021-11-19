@@ -152,6 +152,7 @@ export default {
   methods: {
     enableBtns() {
       this.enableBtn = false
+      this.btnName = 'all_demo'
     },
     changePaymentType(btnName) {
       // console.log(btnName)
