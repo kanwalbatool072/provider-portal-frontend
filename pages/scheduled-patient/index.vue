@@ -2,7 +2,7 @@
   <div id="registered-patients">
     <RegisteredPatients
       title="All Scheduled Patients"
-      :patient-data="scheduledList"
+      :patient-data="doctorList"
     />
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
     RegisteredPatients
   },
   computed: {
-    ...mapGetters('modules/scheduled-patient', ['scheduledList'])
+    ...mapGetters('modules/registered-patients', ['doctorList'])
   }
 }
 </script>
