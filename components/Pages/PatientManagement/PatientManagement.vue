@@ -7,7 +7,7 @@
       <a-col :xs="24" :sm="24" :md="16" :lg="15" :xl="16">
         <a-row :gutter="16" class="my-3">
           <!--START ALL AVAILABE SPECIALIST COLUMN  -->
-          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+          <a-col :xs="12" :sm="12" :md="6" :lg="12" :xl="12">
             <h3 v-if="btnName == 'all_demo'" class="font-600 fs-extra-large">
               Demographics
             </h3>
