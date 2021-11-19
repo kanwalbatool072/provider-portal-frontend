@@ -300,10 +300,10 @@
             </a-form-model-item>
           </a-col>
           <!--END ADDRESS COLUMN -->
-        </a-row>
-        <!--END PATIENT ID ROW -->
-        <!--START ADDRESS ROW -->
-        <a-row :gutter="24" class="px-4">
+
+          <!--END PATIENT ID ROW -->
+          <!--START ADDRESS ROW -->
+
           <!--START CITY COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -358,10 +358,10 @@
             </a-form-model-item>
           </a-col>
           <!--END ADDRESS COLUMN -->
-        </a-row>
-        <!--END ADDRESS ROW -->
-        <!--START ZIP ROW -->
-        <a-row :gutter="24" class="px-4 mt-0">
+
+          <!--END ADDRESS ROW -->
+          <!--START ZIP ROW -->
+
           <!--START ZIP COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
