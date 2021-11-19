@@ -6,6 +6,12 @@
       background-color: #f7f7f7;
       border: none;
       height: 40px;
+      .ant-input-search-icon{
+        font-size: 18px;
+      }
+    }
+    ::placeholder{
+      color:#434141
     }
     .ant-calendar-picker-input.ant-input {
       border-radius:10px;
