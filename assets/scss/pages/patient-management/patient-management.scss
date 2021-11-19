@@ -93,12 +93,28 @@ i.anticon.anticon-more {
 @media screen and(max-width:768px){
   #patient-management{
     .patient-management{
-      .ant-btn {
-   
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-        width: 104%;
-  }
+      .clinic-documents-btn{
+        width: 500px;
+        .documents-btn{
+          width: 23%;
+        }
+      }
+      
+  
+    }
+  } 
+}
+@media screen and(max-width:576px){
+  #patient-management{
+    .patient-management{
+      .clinic-documents-btn{
+        
+        .documents-btn{
+          width: 21%;
+        }
+      }
+      
+  
     }
   } 
 }
