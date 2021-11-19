@@ -67,7 +67,6 @@
             </a-form-model-item>
           </a-col>
           <!--END FIRST NAME COLUMN -->
-
           <!--START MIDDLE NAME COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -122,7 +121,6 @@
             </a-form-model-item>
           </a-col>
           <!--END LAST NAME COLUMN -->
-
           <!--START SUFFIX COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -150,7 +148,6 @@
             </a-form-model-item>
           </a-col>
           <!--END SUFFIX  COLUMN -->
-
           <!--START SUFFIX COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -245,7 +242,6 @@
             </a-form-model-item>
           </a-col>
           <!--END GENDER COLUMN -->
-
           <!--START SSN COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
