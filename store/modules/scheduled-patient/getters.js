@@ -1,51 +1,60 @@
 export default {
   // Get cardsData
-  doctorList(state) {
+  scheduledList(state) {
     const cardsData = [
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor1.svg'
+        image: '/images/Specialist/doctor1.svg',
+        scheduled: true
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor2.svg'
+        image: '/images/Specialist/doctor2.svg',
+        scheduled: true
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor3.svg'
+        image: '/images/Specialist/doctor3.svg',
+        scheduled: true
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor1.svg'
+        image: '/images/Specialist/doctor1.svg',
+        scheduled: true
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor2.svg'
+        image: '/images/Specialist/doctor2.svg',
+        scheduled: true
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor4.svg'
+        image: '/images/Specialist/doctor4.svg',
+        scheduled: true
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor1.svg'
+        image: '/images/Specialist/doctor1.svg',
+        scheduled: true
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor2.svg'
+        image: '/images/Specialist/doctor2.svg',
+        scheduled: true
       },
       {
         title: 'Adrita Kha',
         email: '123458',
-        image: '/images/Specialist/doctor4.svg'
+        image: '/images/Specialist/doctor4.svg',
+        scheduled: true
       }
     ]
     return cardsData
@@ -185,7 +194,7 @@ export default {
     ]
     return slotData
   },
-  getDocumentList(state) {
+  getScheduledList(state) {
     return state.documentList
   }
 }

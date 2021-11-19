@@ -1,7 +1,7 @@
 <!-- ************************** TEMPLATE  ************************* -->
 <template>
   <!--START DOCTER  SECTION-->
-  <div class="doctor-card" @click="showSpecialist">
+  <div class="doctor-card" @click="showSpecialist(doctorList.scheduled)">
     <!--START HOVERABLE CARD-->
     <a-card hoverable :bordered="false">
       <!--START DOCTER IMAGE LIST ROW-->
@@ -50,8 +50,12 @@ export default {
     }
   },
   methods: {
-    showSpecialist() {
-      this.$root.$emit('show-specialist-details')
+    showSpecialist(val) {
+      if (val) {
+        this.$router.push('/patient-management')
+      } else {
+        this.$root.$emit('show-specialist-details')
+      }
     }
   }
 }
