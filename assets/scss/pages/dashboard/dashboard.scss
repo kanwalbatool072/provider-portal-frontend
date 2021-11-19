@@ -291,9 +291,9 @@
 }
 @media screen and (max-width:768px) {
   #modal-appointment{
-    .ant-modal-content {
+    .ant-modal {
  
-      width: 145%;
+      width: 50% !important;
   }
   
   }
