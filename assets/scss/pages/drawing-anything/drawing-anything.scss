@@ -108,5 +108,27 @@
       }
     }
   }
+  @media screen and(max-width:1024px) {
+    .drawing-anything {
+        .meeting-icon-box{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+          
+        }
+    }
+    
+}
+@media screen and(max-width:768px) {
+    .drawing-anything {
+        .multiple-user-calling{
+         .calling-img{
+             width: 100%;
+             margin-top: 31px;
+         }
+       
+        }
+    }
+    
+}
 
   

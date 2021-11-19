@@ -50,12 +50,37 @@
 @media screen and(max-width:1024px) {
     #drawing {
         .meeting-icon-box{
-            padding-left: 0px !important;
-            padding-right: 0px !important;
-            .ant-card-body{
-                padding: 0px;
-            }
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+          
         }
     }
     
 }
+@media screen and(max-width:768px) {
+    #drawing {
+        .multiple-user-calling{
+         .calling-img{
+             width: 100%;
+             margin-top: 31px;
+         }
+       
+        }
+    }
+    
+}
+// @media screen and(max-width:425px) {
+    
+//         .drawing-anything {
+//             .padding-xs {
+//                 padding-right: 0 !important;
+//                 padding-left: 0  !important;
+          
+//                 margin-right: 0  !important;
+//                 margin-left: 0  !important;
+//             }
+//         }
+    
+  
+    
+// }
