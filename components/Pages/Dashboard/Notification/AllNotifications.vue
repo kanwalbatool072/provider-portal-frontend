@@ -4,7 +4,7 @@
   <div id="view-all-notifications" class="pt-3 pb-5 mb-5">
     <!--START VIEW ALL NOTIFICATION ROW -->
     <a-row>
-      <a-col :span="22">
+      <a-col :xs="22" :sm="22" :md="22" :lg="22" :xl="22">
         <h1 class="fs-extera-large font-600">Notifications</h1>
       </a-col>
     </a-row>
@@ -12,7 +12,7 @@
 
     <!--START  NOTIFICATION IMAGE  ROW -->
     <a-row class="mt-0">
-      <a-col :span="24">
+      <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
         <a-row
           v-for="(data, index) in getNotifications"
           :key="index"
@@ -23,12 +23,12 @@
             :class="active_index == index ? 'change-background' : ''"
             @click="chageClass(index)"
           >
-            <a-col :xs="24" :sm="24" :md="8" :lg="8" :xl="1" class="pr-1">
+            <a-col :xs="4" :sm="3" :md="8" :lg="8" :xl="1" class="pr-1">
               <img :src="data.notefication_img" />
             </a-col>
             <a-col
-              :xs="24"
-              :sm="24"
+              :xs="18"
+              :sm="16"
               :md="16"
               :lg="8"
               :xl="21"
