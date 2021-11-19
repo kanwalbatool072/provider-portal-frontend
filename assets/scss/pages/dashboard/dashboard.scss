@@ -77,7 +77,7 @@
        .chart-container{
         overflow: hidden;
         width: 100%;
-       height: 440px;
+        height: 440px;
         border-radius: 15px;
         padding: 20px 0px;
         .apexcharts-menu-icon {
@@ -323,6 +323,18 @@
   }
   .text-white{
     font-size: 13px;
+  }
+  .chart-container {
+    .ant-card-head-title  {
+      padding: 0;
+      text-align: center;
+    }
+    .ant-card-extra {
+      position: absolute;
+      padding-top: 5px;
+      top: 50px;
+      left: 70px;
+  }
   }
   
 }

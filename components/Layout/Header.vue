@@ -5,7 +5,7 @@
     <!--START INPUT SERACH  ROW -->
     <a-row :gutter="16" type="flex" align="middle">
       <!--START INPUT SERACH  COLUMN -->
-      <a-col :xs="12" :sm="12" :md="12" :lg="15" :xl="16" class="search-bar">
+      <a-col :xs="16" :sm="12" :md="12" :lg="15" :xl="16" class="search-bar">
         <a-input-search
           v-if="search_filed"
           class="ant-input"
@@ -15,7 +15,7 @@
       </a-col>
       <!--END INPUT SERACH  COLUMN -->
       <!--START DATE PICKER COLUMN -->
-      <a-col class="mb-4" :xs="6" :sm="6" :md="6" :lg="5" :xl="4"> </a-col>
+      <a-col class="mb-4" :xs="2" :sm="6" :md="6" :lg="5" :xl="4"> </a-col>
       <!--END DATE PICKER COLUMN -->
       <!--START BADGES COLUMN -->
       <a-col
