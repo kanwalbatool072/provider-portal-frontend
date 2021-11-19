@@ -109,9 +109,9 @@ export default {
   },
   watch: {},
   mounted() {
-    this.matchWidth()
-    // window.addEventListener('resize', this.handleResize)
-    // this.handleResize()
+    // this.matchWidth()
+    // // window.addEventListener('resize', this.handleResize)
+    // // this.handleResize()
 
     const c = this.$refs.myCanvas
 
@@ -120,11 +120,11 @@ export default {
     this.canvas.lineWidth = 40
   },
   methods: {
-    matchWidth() {
-      const width = this.$refs.infoBox.clientWidth
-      console.log(width)
-      this.width = width
-    },
+    // matchWidth() {
+    //   const width = this.$refs.infoBox.clientWidth
+    //   console.log(width)
+    //   this.width = width
+    // },
     // handleResize() {
     //   this.height = window.innerHeight
     //   this.width = window.innerWidth - this.margin

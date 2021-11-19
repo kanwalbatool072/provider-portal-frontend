@@ -64,7 +64,12 @@
   </div>
 </template>
 <script>
+import AppointmentModal from '@/components/Pages/AppointmentModal/AppointmentModal'
+
 export default {
+  components: {
+    AppointmentModal
+  },
   props: {
     visible: {
       type: Boolean,

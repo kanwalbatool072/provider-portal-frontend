@@ -2,9 +2,9 @@
   <div class="vcare-right">
     <a-card class="chat-header" :bordered="false">
       <a-row :gutter="16">
-        <a-col :xs="24" :sm="16" :md="16" :lg="16" :xl="18">
+        <a-col :xs="16" :sm="16" :md="16" :lg="16" :xl="18">
           <a-row>
-            <a-col :xs="24" :sm="5" :md="4" :lg="8" :xl="6">
+            <a-col :xs="6" :sm="5" :md="4" :lg="8" :xl="6">
               <div class="online-icon">
                 <img src="/images/Vcarecalling/Rectangle 13.svg" />
                 <img
@@ -13,21 +13,21 @@
                 />
               </div>
             </a-col>
-            <a-col :xs="24" :sm="19" :md="20" :lg="16" :xl="18" class="pt-2">
+            <a-col :xs="18" :sm="19" :md="20" :lg="16" :xl="18" class="pt-2">
               <h4 class="mb-0 font-600">Dr. David James</h4>
               <span class="fs-extra-small">Orthopedic Surgeon</span>
             </a-col>
           </a-row>
         </a-col>
-        <a-col :xs="24" :sm="8" :md="8" :lg="8" :xl="6"
+        <a-col :xs="8" :sm="8" :md="8" :lg="8" :xl="6"
           ><a-row :gutter="16" class="pt-2 mt-1 pointer">
-            <a-col :xs="24" :sm="8" :md="8" :lg="8" :xl="10" class="pl-3">
+            <a-col :xs="8" :sm="8" :md="8" :lg="8" :xl="10" class="pl-3">
               <img src="/images/Appointment/search.svg" />
             </a-col>
-            <a-col class="pointer" :xs="24" :sm="8" :md="8" :lg="8" :xl="8">
+            <a-col class="pointer" :xs="8" :sm="8" :md="8" :lg="8" :xl="8">
               <img src="/images/Vcarecalling/setting.svg" />
             </a-col>
-            <a-col class="pointer" :xs="24" :sm="8" :md="8" :lg="8" :xl="6">
+            <a-col class="pointer" :xs="8" :sm="8" :md="8" :lg="8" :xl="6">
               <img src="/images/Vcarecalling/dots.svg" />
             </a-col>
           </a-row>
@@ -90,14 +90,14 @@
         <p class="today-text fs-small text-right">10:10 PM</p>
       </a-row>
       <a-row :gutter="8" class="mt-3">
-        <a-col :xs="24" :sm="24" :md="18" :lg="18" :xl="20">
+        <a-col :xs="22" :sm="22" :md="22" :lg="18" :xl="20">
           <a-input placeholder="Type message here">
             <span slot="prefix">
               <img src="/images/Vcarecalling/pin.svg" />
             </span>
           </a-input>
         </a-col>
-        <a-col :xs="24" :sm="24" :md="6" :lg="6" :xl="4">
+        <a-col :xs="2" :sm="2" :md="2" :lg="6" :xl="4">
           <img src="/images/Vcarecalling/Group 57009.svg" />
         </a-col>
       </a-row>

@@ -74,12 +74,6 @@ export default {
     this.canvas.lineWidth = 40
   },
   methods: {
-    matchWidth() {
-      const width = this.$refs.infoBox.clientWidth
-      console.log(width)
-      // this.width = width
-      alert(width)
-    },
     // handleResize() {
     //   this.height = window.innerHeight
     //   this.width = window.innerWidth - this.margin

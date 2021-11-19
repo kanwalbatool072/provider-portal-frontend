@@ -1,26 +1,25 @@
 <template>
   <div class="time-stamp-group">
     <h4 class="font-600">Timestamp Group</h4>
-    <a-card class="pb-5" :bordered="false">
-      <div class="">
+    <a-card :bordered="false">
+      <div class="time-stamp-group-scroll">
         <a-row
           v-for="(list, index) in getStartAppointment"
           :key="index"
           class="mb-4"
         >
           <a-col
-            :xs="24"
+            :xs="3"
             :sm="3"
             :md="4"
             :lg="4"
             :xl="3"
-            class="pt-3"
             :class="index == 0 || index == 1 ? 'start-appt' : 'start'"
           >
             <img :src="list.image" />
           </a-col>
           <a-col
-            :xs="24"
+            :xs="20"
             :sm="20"
             :md="20"
             :lg="20"
