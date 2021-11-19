@@ -23,34 +23,29 @@
             :class="active_index == index ? 'change-background' : ''"
             @click="chageClass(index)"
           >
-            <a-col :xs="4" :sm="2" :md="2" :lg="1" :xl="1" class="pr-1">
+            <a-col :xs="4" :sm="2" :md="2" :lg="2" :xl="2" class="pr-1">
               <img :src="data.notefication_img" />
             </a-col>
             <a-col
-              :xs="20"
-              :sm="18"
-              :md="18"
-              :lg="16"
-              :xl="21"
+              :xs="16"
+              :sm="20"
+              :md="20"
+              :lg="20"
+              :xl="20"
               class="pt-1 pl-5"
             >
               <h3 class="font-500 fs-medium mb-0 mt-1">{{ data.title }}</h3>
               <p class="mb-0 fs-small">{{ data.date }}</p>
             </a-col>
             <a-col
-              :xs="24"
-              :sm="24"
-              :md="8"
-              :lg="8"
+              :xs="4"
+              :sm="2"
+              :md="2"
+              :lg="2"
               :xl="2"
               align="end"
               class="pt-2"
             >
-              <!-- <img
-                v-if="active_index == index"
-                src="/images/Dashboard/delete.svg"
-                class="delete-icon pt-3"
-              /> -->
               <a-icon
                 v-if="active_index == index"
                 type="delete"
