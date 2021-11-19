@@ -4,7 +4,7 @@
   <div class="drawing-anything">
     <!--START MULTIPLE USER ROW -->
     <a-row :gutter="24">
-      <a-col :xs="24" :sm="11" :md="24" :lg="14" :xl="16">
+      <a-col :xs="24" :sm="24" :md="24" :lg="14" :xl="16">
         <h3 class="font-600">Draw Anything</h3>
         <a-card :bordered="false">
           <a-row>
@@ -41,22 +41,22 @@
           </a-row>
         </a-card>
       </a-col>
-      <a-col :xs="24" :sm="11" :md="24" :lg="10" :xl="8" class="mt-4 pt-2">
+      <a-col :xs="24" :sm="24" :md="24" :lg="10" :xl="8" class="mt-4 pt-2">
         <MultipleUserCalling />
       </a-col>
     </a-row>
     <!-- END MULTIPLE USER ROW -->
     <!--START ATTENDES ROW -->
-    <a-row :gutter="16" class="pt-5 px-5 mx-5">
+    <a-row :gutter="16" class="pt-5 px-5 mx-5 padding-xs">
       <!--START ATTENDES COLUMN-->
-      <a-col :xs="24" :sm="24" :md="3" :lg="3" :xl="4" class="pl-5">
+      <a-col :xs="8" :sm="6" :md="3" :lg="3" :xl="4" class="pl-5">
         <img src="/images/Vcarecalling/view attendees.svg" />
       </a-col>
       <!-- END ATTENDES COLUMN -->
       <!--START BOTTOM BAR CALLING -->
       <a-col
-        :xs="24"
-        :sm="24"
+        :xs="8"
+        :sm="16"
         :md="18"
         :lg="18"
         :xl="11"
@@ -67,8 +67,8 @@
       <!-- END BOTTOM BAR CALLING -->
       <!--START VCARE COLUMN  -->
       <a-col
-        :xs="24"
-        :sm="24"
+        :xs="8"
+        :sm="2"
         :md="3"
         :lg="3"
         :xl="3"

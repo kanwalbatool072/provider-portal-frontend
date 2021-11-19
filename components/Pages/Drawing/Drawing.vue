@@ -4,7 +4,7 @@
   <div class="drawing-anything">
     <!--START MULTIPLE USER CALLING -->
     <a-row :gutter="24">
-      <a-col :xs="24" :sm="11" :md="11" :lg="14" :xl="16">
+      <a-col :xs="24" :sm="24" :md="24" :lg="14" :xl="16">
         <h3 class="font-600">Draw Anything</h3>
         <a-card :bordered="false">
           <a-row>
@@ -39,7 +39,7 @@
           </a-row>
         </a-card>
       </a-col>
-      <a-col :xs="24" :sm="11" :md="11" :lg="10" :xl="8" class="mt-4 pt-2">
+      <a-col :xs="24" :sm="24" :md="24" :lg="10" :xl="8" class="mt-4 pt-2">
         <MultipleUserCalling />
       </a-col>
     </a-row>
