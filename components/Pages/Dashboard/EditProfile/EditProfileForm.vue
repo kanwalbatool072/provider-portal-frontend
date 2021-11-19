@@ -16,8 +16,8 @@
           <!--START PATIENT ID COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'Patient ID'"
-              prop="patientId"
+              :label="'Doctor ID'"
+              prop="docterId"
               has-feedback
               :colon="false"
               :label-col="{
@@ -35,7 +35,7 @@
                 xs: 24
               }"
             >
-              <a-input v-model="editProfile.patientId" placeholder="12345">
+              <a-input v-model="editProfile.docterId" placeholder="12345">
               </a-input>
             </a-form-model-item>
           </a-col>
@@ -150,6 +150,39 @@
             </a-form-model-item>
           </a-col>
           <!--END SUFFIX  COLUMN -->
+
+          <!--START SUFFIX COLUMN -->
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+            <a-form-model-item
+              :label="'Specialist'"
+              prop="specialist"
+              has-feedback
+              :colon="false"
+              :label-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+              :wrapper-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+            >
+              <a-select
+                v-model="editProfile.specialist"
+                default-value="Orthopedic"
+                style="width: 100%"
+              >
+                <a-select-option value="1"> Orthopedic </a-select-option>
+              </a-select>
+            </a-form-model-item>
+          </a-col>
+          <!--END SUFFIX  COLUMN -->
           <!--START DATE OF BIRTH  COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -240,10 +273,6 @@
             </a-form-model-item>
           </a-col>
           <!--END SSN COLUMN -->
-        </a-row>
-        <!--END PATIENT ID ROW -->
-        <!--START ADDRESS ROW -->
-        <a-row :gutter="24" class="px-4">
           <!--START ADDRESS COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -271,6 +300,10 @@
             </a-form-model-item>
           </a-col>
           <!--END ADDRESS COLUMN -->
+        </a-row>
+        <!--END PATIENT ID ROW -->
+        <!--START ADDRESS ROW -->
+        <a-row :gutter="24" class="px-4">
           <!--START CITY COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -298,38 +331,7 @@
             </a-form-model-item>
           </a-col>
           <!--END CITY COLUMN -->
-          <!--START COUNTRY COLUMN -->
-          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
-            <a-form-model-item
-              :label="'Country'"
-              prop="country"
-              has-feedback
-              :colon="false"
-              :label-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-              :wrapper-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-            >
-              <a-select
-                label-in-value
-                :default-value="{ key: 'USA' }"
-                style="width: 100%"
-              >
-                <a-select-option value="USA"> USA </a-select-option>
-              </a-select>
-            </a-form-model-item>
-          </a-col>
-          <!--START COUNTRY COLUMN -->
+
           <!--START STATE COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -413,6 +415,87 @@
             </a-form-model-item>
           </a-col>
           <!--END CELL PHONE COLUMN -->
+          <!--START CELL PHONE COLUMN  -->
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+            <a-form-model-item
+              :label="'NPI'"
+              prop="npi"
+              has-feedback
+              :colon="false"
+              :label-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+              :wrapper-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+            >
+              <a-input v-model="editProfile.npi" placeholder="1234"> </a-input>
+            </a-form-model-item>
+          </a-col>
+          <!--END CELL PHONE COLUMN -->
+          <!--START CELL PHONE COLUMN  -->
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+            <a-form-model-item
+              :label="'DEA'"
+              prop="dea"
+              has-feedback
+              :colon="false"
+              :label-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+              :wrapper-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+            >
+              <a-input v-model="editProfile.dea" placeholder="12345678">
+              </a-input>
+            </a-form-model-item>
+          </a-col>
+          <!--END CELL PHONE COLUMN -->
+
+          <!--START CELL PHONE COLUMN  -->
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+            <a-form-model-item
+              :label="'Tax ID'"
+              prop="tax_ID"
+              has-feedback
+              :colon="false"
+              :label-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+              :wrapper-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+            >
+              <a-input v-model="editProfile.tax_ID" placeholder="123456">
+              </a-input>
+            </a-form-model-item>
+          </a-col>
+          <!--END CELL PHONE COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
               :label="'Phone Number'"
@@ -468,6 +551,33 @@
             </a-form-model-item>
           </a-col>
           <!--END  EMAIL COLUMN  -->
+          <!--START SUFFIX COLUMN -->
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+            <a-form-model-item
+              :label="'Suffix'"
+              prop="suffix"
+              has-feedback
+              :colon="false"
+              :label-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+              :wrapper-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+            >
+              <a-input v-model="editProfile.suffix" placeholder="Suffix">
+              </a-input>
+            </a-form-model-item>
+          </a-col>
+          <!--END SUFFIX  COLUMN -->
         </a-row>
         <!--END ZIP ROW -->
       </a-form-model>
