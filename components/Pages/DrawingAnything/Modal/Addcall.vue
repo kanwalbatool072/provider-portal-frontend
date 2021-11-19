@@ -17,10 +17,10 @@
       >
         <a-row :gutter="24" class="pt-4">
           <!--LANGUAGE LIST COLUMN -->
-          <a-col :xs="24" :sm="24" :md="24" :lg="15" :xl="18">
+          <a-col :xs="24" :sm="24" :md="17" :lg="15" :xl="18">
             <h3 class="mt-3 px-4 font-600 pt-2">Add to Call</h3>
           </a-col>
-          <a-col class="mt-3" :xs="24" :sm="24" :md="24" :lg="3" :xl="6">
+          <a-col class="mt-3" :xs="24" :sm="24" :md="7" :lg="3" :xl="6">
             <a-button
               class="add-btn"
               html-type="submit"
