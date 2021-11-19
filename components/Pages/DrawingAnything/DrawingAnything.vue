@@ -47,7 +47,7 @@
     </a-row>
     <!-- END MULTIPLE USER ROW -->
     <!--START ATTENDES ROW -->
-    <a-row :gutter="16" class="pt-5 px-5 mx-5 padding-xs">
+    <a-row :gutter="16" class="pt-5 px-5 mx-5 meeting-video-call">
       <!--START ATTENDES COLUMN-->
       <a-col :xs="8" :sm="6" :md="3" :lg="3" :xl="4" class="pl-5">
         <img src="/images/Vcarecalling/view attendees.svg" />

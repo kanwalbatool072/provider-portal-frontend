@@ -69,18 +69,19 @@
     }
     
 }
-// @media screen and(max-width:425px) {
-    
-//         .drawing-anything {
-//             .padding-xs {
-//                 padding-right: 0 !important;
-//                 padding-left: 0  !important;
+@media screen and(max-width:425px) {
+  
+        .drawing-anything {
+            .meeting-video-call {
+                padding-right: 0rem !important;
+                padding-left: 0rem  !important;
           
-//                 margin-right: 0  !important;
-//                 margin-left: 0  !important;
-//             }
-//         }
+                margin-right: 0rem  !important;
+                margin-left: 0rem  !important;
+            }
+        }
+    }
+      
     
   
     
-// }
