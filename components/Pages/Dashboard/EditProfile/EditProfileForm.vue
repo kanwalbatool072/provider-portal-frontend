@@ -67,6 +67,8 @@
             </a-form-model-item>
           </a-col>
           <!--END FIRST NAME COLUMN -->
+        </a-row>
+        <a-row :gutter="24" class="px-4">
           <!--START MIDDLE NAME COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -121,6 +123,8 @@
             </a-form-model-item>
           </a-col>
           <!--END LAST NAME COLUMN -->
+        </a-row>
+        <a-row :gutter="24" class="px-4 pt-2">
           <!--START SUFFIX COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -244,6 +248,8 @@
             </a-form-model-item>
           </a-col>
           <!--END GENDER COLUMN -->
+        </a-row>
+        <a-row :gutter="24" class="px-4">
           <!--START SSN COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -298,10 +304,10 @@
             </a-form-model-item>
           </a-col>
           <!--END ADDRESS COLUMN -->
-
-          <!--END PATIENT ID ROW -->
-          <!--START ADDRESS ROW -->
-
+        </a-row>
+        <!--END PATIENT ID ROW -->
+        <!--START ADDRESS ROW -->
+        <a-row :gutter="24" class="px-4">
           <!--START CITY COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -356,10 +362,10 @@
             </a-form-model-item>
           </a-col>
           <!--END ADDRESS COLUMN -->
-
-          <!--END ADDRESS ROW -->
-          <!--START ZIP ROW -->
-
+        </a-row>
+        <!--END ADDRESS ROW -->
+        <!--START ZIP ROW -->
+        <a-row :gutter="24" class="px-4">
           <!--START ZIP COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -413,6 +419,8 @@
             </a-form-model-item>
           </a-col>
           <!--END CELL PHONE COLUMN -->
+        </a-row>
+        <a-row :gutter="24" class="px-4">
           <!--START CELL PHONE COLUMN  -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -466,7 +474,8 @@
             </a-form-model-item>
           </a-col>
           <!--END CELL PHONE COLUMN -->
-
+        </a-row>
+        <a-row :gutter="24" class="px-4">
           <!--START CELL PHONE COLUMN  -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -522,6 +531,8 @@
               </a-input>
             </a-form-model-item>
           </a-col>
+        </a-row>
+        <a-row :gutter="24" class="px-4">
           <!--START EMAIL COLUMN  -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
