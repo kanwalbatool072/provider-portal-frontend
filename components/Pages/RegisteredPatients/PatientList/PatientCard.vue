@@ -57,7 +57,7 @@ export default {
         this.$router.push('/patient-management')
         setTimeout(() => {
           this.$root.$emit('enable-btns')
-        }, 1000)
+        }, 300)
       }
       if (val == false) {
         this.handleAvailableSlots()

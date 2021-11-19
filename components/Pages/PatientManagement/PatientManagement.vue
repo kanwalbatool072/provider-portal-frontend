@@ -74,6 +74,7 @@
               type="primary"
               class="ml-1"
               :class="btnName != 'insurance' ? 'documents-btn' : ''"
+              :disabled="enableBtn"
               @click="changePaymentType('insurance')"
             >
               Insurance</a-button
@@ -82,6 +83,7 @@
               type="primary"
               class="ml-1"
               :class="btnName != 'draft' ? 'documents-btn' : ''"
+              :disabled="enableBtn"
               @click="changePaymentType('draft')"
             >
               Draft</a-button
