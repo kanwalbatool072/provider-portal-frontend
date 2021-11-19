@@ -6,7 +6,7 @@
     <a-card :bordered="false" class="profile-picture">
       <!--START EDIT PROFILE PICTURE ROW-->
       <a-row>
-        <a-col :span="24" align="center">
+        <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24" align="center">
           <img
             src="/images/Dashboard/dr_john.svg"
             alt=""
@@ -20,7 +20,7 @@
       <!--END EDIT PROFILE PICTURE ROW-->
       <!--START DRIVING LICENSE ROW  -->
       <a-row class="mt-4">
-        <a-col :span="24" align="center">
+        <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24" align="center">
           <a-button type="primary" class="px-4">
             Insurance Card Front
           </a-button>
@@ -29,7 +29,7 @@
       <!--END DRIVING LICENSE ROW  -->
       <!--START INC CARD FRONT ROW  -->
       <a-row class="mt-2">
-        <a-col :span="24" align="center">
+        <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24" align="center">
           <a-button type="primary" class="px-4 mb-2">
             Insurance Card Back
           </a-button>

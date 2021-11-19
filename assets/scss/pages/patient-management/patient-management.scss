@@ -90,6 +90,18 @@ i.anticon.anticon-more {
 }
 }
 }
+@media screen and(max-width:768px){
+  #patient-management{
+    .patient-management{
+      .ant-btn {
+   
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        width: 104%;
+  }
+    }
+  } 
+}
 #document {
   .ant-card.ant-card-bordered {
     width: 100%;

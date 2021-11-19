@@ -5,12 +5,12 @@
     <!--START AVAILABE LIST ROW -->
     <a-row :gutter="16">
       <!--START ALL AVAILABE SPECIALIST COLUMN  -->
-      <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+      <a-col :xs="24" :sm="12" :md="12" :lg="12" :xl="12">
         <h3 class="font-600 fs-extra-large">All Registered Patients</h3>
       </a-col>
       <!--END ALL AVAILABE SPECIALIST COLUMN -->
       <!--START MENU ITEM COLUMN -->
-      <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12" align="end">
+      <a-col :xs="24" :sm="12" :md="12" :lg="12" :xl="12" align="end">
         <span class="pr-2 fs-small">Sort by :</span>
         <a-dropdown :trigger="['click']">
           <a
