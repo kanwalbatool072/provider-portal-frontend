@@ -82,7 +82,7 @@
           </a-row>
           <p class="meeting-duration mt-4 mb-0">Meeting Duration</p>
           <p class="meeting-txt">48m 20s</p>
-          <a-card class="meeting-icon-box px-4">
+          <a-card class="meeting-icon-box px-4 meeting-card-lg">
             <a-row :gutter="16" class="text-center">
               <a-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8">
                 <img src="/images/Drawing/projector.svg" />
