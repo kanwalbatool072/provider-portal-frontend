@@ -11,7 +11,7 @@
         :xl="12"
       >
         <a-card class="appointment-card" :bordered="false">
-          <span class="text-white">{{ list.title }}</span>
+          <span class="text-white fs-normal">{{ list.title }}</span>
           <p class="fs-xl font-600 text-white pt-4 pb-3 m-0 appt-text">
             {{ list.subTitle }}
           </p>

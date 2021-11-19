@@ -67,7 +67,6 @@
             </a-form-model-item>
           </a-col>
           <!--END FIRST NAME COLUMN -->
-
           <!--START MIDDLE NAME COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -122,7 +121,6 @@
             </a-form-model-item>
           </a-col>
           <!--END LAST NAME COLUMN -->
-
           <!--START SUFFIX COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -150,7 +148,6 @@
             </a-form-model-item>
           </a-col>
           <!--END SUFFIX  COLUMN -->
-
           <!--START SUFFIX COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -182,7 +179,9 @@
               </a-select>
             </a-form-model-item>
           </a-col>
-          <!--END SUFFIX  COLUMN -->
+        </a-row>
+        <!--END SUFFIX  COLUMN -->
+        <a-row :gutter="24" class="px-4 ">
           <!--START DATE OF BIRTH  COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -245,7 +244,6 @@
             </a-form-model-item>
           </a-col>
           <!--END GENDER COLUMN -->
-
           <!--START SSN COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -300,10 +298,10 @@
             </a-form-model-item>
           </a-col>
           <!--END ADDRESS COLUMN -->
-        </a-row>
-        <!--END PATIENT ID ROW -->
-        <!--START ADDRESS ROW -->
-        <a-row :gutter="24" class="px-4">
+
+          <!--END PATIENT ID ROW -->
+          <!--START ADDRESS ROW -->
+
           <!--START CITY COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -358,10 +356,10 @@
             </a-form-model-item>
           </a-col>
           <!--END ADDRESS COLUMN -->
-        </a-row>
-        <!--END ADDRESS ROW -->
-        <!--START ZIP ROW -->
-        <a-row :gutter="24" class="px-4 mt-0">
+
+          <!--END ADDRESS ROW -->
+          <!--START ZIP ROW -->
+
           <!--START ZIP COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
