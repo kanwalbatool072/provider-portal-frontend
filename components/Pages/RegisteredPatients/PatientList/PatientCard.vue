@@ -60,7 +60,7 @@ export default {
         }, 300)
       }
       if (val == false) {
-        this.handleAvailableSlots()
+        this.handleAvailableSlots(true)
         // this.$root.$emit('show-specialist-details')
       }
     }

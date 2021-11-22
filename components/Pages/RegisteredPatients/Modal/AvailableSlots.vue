@@ -173,7 +173,7 @@ export default {
       console.log(this.selectedSlot)
     },
     handleCancel(e) {
-      this.handleAvailableSlots('')
+      this.handleAvailableSlots(false)
     },
     onRangeSelect(range) {
       console.log(range)

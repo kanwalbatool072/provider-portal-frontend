@@ -205,6 +205,7 @@ export default {
 
     .ant-input {
       height: 40px;
+      color: black;
     }
   }
   .ant-btn {
