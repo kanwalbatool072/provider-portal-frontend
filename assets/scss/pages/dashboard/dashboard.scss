@@ -277,6 +277,11 @@
   }
 }
 @media screen and (max-width:1024px) {
+  #modal-appointment{
+    .ant-modal {
+           width: 70% !important;
+  }
+}
   .text-white{
      font-size: 0.9rem;
   }
@@ -326,12 +331,7 @@
   .new-patient-list{
     margin-top: 20px;
   }
-  #modal-appointment{
-    .ant-modal {
- 
-      width: 70% !important;
-  }
-}
+
 }
 @media screen and(max-width:425px) {
   
