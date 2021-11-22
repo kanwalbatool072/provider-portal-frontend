@@ -189,6 +189,18 @@
       }
     }
   }
+  @media screen and (max-width:768px) {
+    #languages {
+      .ant-modal{
+        width: 50% !important;
+      }
+    }
+    #location {
+      .ant-modal{
+        width: 50% !important;
+      }
+    }
+  }
   @media screen and (max-width:576px) {
     #languages {
       .ant-modal{
