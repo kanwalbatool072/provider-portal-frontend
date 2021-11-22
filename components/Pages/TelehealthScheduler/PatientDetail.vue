@@ -32,8 +32,10 @@
         <a-col :xl="24" class="mt-2">
           <a-button block type="primary">
             <a-row>
-              <a-col :xl="12" align="left">Insurance </a-col>
-              <a-col :xl="12" align="right">
+              <a-col :xl="12" :lg="12" :md="12" :sm="12" :xs="12" align="left"
+                >Insurance
+              </a-col>
+              <a-col :xl="12" :lg="12" :md="12" :sm="12" :xs="12" align="right">
                 <span class="btn-sub-heading">Medicare</span>
               </a-col>
             </a-row>
@@ -42,8 +44,10 @@
         <a-col :xl="24">
           <a-button block type="primary" class="mt-2">
             <a-row>
-              <a-col :xl="12" align="left">Balance </a-col>
-              <a-col :xl="12" align="right"
+              <a-col :xl="12" :lg="12" :md="12" :sm="12" :xs="12" align="left"
+                >Balance
+              </a-col>
+              <a-col :xl="12" :lg="12" :md="12" :sm="12" :xs="12" align="right"
                 ><span class="btn-sub-heading">$20</span>
               </a-col>
             </a-row>

@@ -160,15 +160,25 @@ h3{
           }
 }
 @media screen and (max-width: 1024px) {
-    // #confirmation  {
-    //   .ant-modal{     
-    //      width: 40% !important;
-    //   }
-    // }
-    // #official-consent   {
-    //     .ant-modal{     
-    //        width: 65% !important;
-    //     }
-    //   }
+
+    #confirmation  {
+      .ant-modal{     
+         width: 40% !important;
+      }
+    }
+    #official-consent   {
+        .ant-modal{     
+           width: 65% !important;
+        }
+      }
+  }
+  @media screen and(max-width:768px) {
+    .patient-detail-card{
+        border-radius: 8px;
+     .ant-card-body{
+        padding:5px !important;
+    }
+}
+      
   }
  
