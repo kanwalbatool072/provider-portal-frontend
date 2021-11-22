@@ -3,7 +3,7 @@
   <!--START EDIT PROFILE-PICTURE SECTION -->
   <div class="demo-profile-picture">
     <!--START EDIT PROFILE PICTURE CARD  -->
-    <a-card class="insurance-card">
+    <a-card class="insurance-card" :bordered="false">
       <!--START DOCTER IMAGE LIST ROW-->
       <a-row class="pb-3">
         <!--START ICON COLUMN -->
