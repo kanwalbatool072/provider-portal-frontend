@@ -6,7 +6,7 @@
       id="modal-appointment"
       v-model="clinicAppointmentModal"
       centered
-      width="35%"
+      width="34%"
       :footer="false"
     >
       <!--START CLINICAL APPOINTMENT CARD -->
@@ -20,7 +20,7 @@
               <div class="telehealth-row">
                 <a-row>
                   <!-- /images/Dashboard/micro.svg -->
-                  <a-col :xs="8" :sm="6" :md="6" :lg="6" :xl="5">
+                  <a-col :xs="6" :sm="6" :md="6" :lg="6" :xl="5">
                     <img
                       src="/images/Specialist/voice.svg"
                       class="clinic-appoint-ment-img"
@@ -28,7 +28,7 @@
                   </a-col>
                   <!--START AUDIO CALL COLUMN -->
                   <a-col
-                    :xs="16"
+                    :xs="18"
                     :sm="16"
                     :md="18"
                     :lg="18"
@@ -46,14 +46,14 @@
             <nuxt-link to="/scheduled-patient" @click.native="hideModal">
               <div class="mt-3 telehealth-row">
                 <a-row>
-                  <a-col :xs="8" :sm="6" :md="6" :lg="6" :xl="5">
+                  <a-col :xs="6" :sm="6" :md="6" :lg="6" :xl="5">
                     <img
                       src="/images/Specialist/videocall.svg"
                       class="clinic-appoint-ment-img"
                     />
                   </a-col>
                   <a-col
-                    :xs="16"
+                    :xs="18"
                     :sm="16"
                     :md="18"
                     :lg="18"

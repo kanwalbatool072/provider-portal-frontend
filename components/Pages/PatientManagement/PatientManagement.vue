@@ -58,11 +58,12 @@
     >
       <!--START DOCUMENTS BUTTONS  ROW-->
       <a-row class="px-1" :gutter="16">
-        <a-col :xs="24" :sm="24" :md="20" :lg="14" :xl="10">
+        <a-col :xs="24" :sm="24" :md="18" :lg="16" :xl="11">
           <!--SEARCH DOCUMENTS COLUMN -->
           <a-card class="clinic-documents-btn" :bordered="false">
             <a-button
               type="primary"
+              class="ml-1"
               :class="btnName != 'all_demo' ? 'documents-btn' : ''"
               :disabled="enableBtn"
               @click="changePaymentType('all_demo')"
