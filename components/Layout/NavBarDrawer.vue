@@ -59,6 +59,7 @@
   </div>
 </template>
 <script>
+import { mapActions } from 'vuex'
 export default {
   props: {
     visible: {
@@ -72,9 +73,11 @@ export default {
     }
   },
   methods: {
+    ...mapActions('modules/specialist', ['handleAvailableSlots']),
     handlePageLinks(val) {
       this.$root.$emit('close-menu-drawer')
       this.$router.push(`/${val}`)
+      this.handleAvailableSlots(false)
     },
     showModal() {
       this.$root.$emit('appointment-modal')
