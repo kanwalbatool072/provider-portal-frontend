@@ -163,7 +163,7 @@ h3{
 
     #confirmation  {
       .ant-modal{     
-         width: 40% !important;
+         width: 42% !important;
       }
     }
     #official-consent   {
@@ -173,12 +173,35 @@ h3{
       }
   }
   @media screen and(max-width:768px) {
+    #confirmation  {
+        .ant-modal{     
+           width: 51% !important;
+        }
+      }
     .patient-detail-card{
         border-radius: 8px;
      .ant-card-body{
         padding:5px !important;
     }
 }
+      
+  }
+  @media screen and(max-width:576px) {
+    #confirmation  {
+        .ant-modal{     
+           width: 62% !important;
+        }
+      }
+ 
+      
+  }
+  @media screen and(max-width:425px) {
+    #confirmation  {
+        .ant-modal{     
+           width: 74% !important;
+        }
+      }
+ 
       
   }
  
