@@ -13,7 +13,7 @@
           align="center"
           class="pt-3"
         >
-          <img src="/images/Specialist/single_doctor.svg" style="width:100%" />
+          <img src="/images/Specialist/patient.svg" style="width:100%" />
         </a-col>
         <!--START IMAGE COLUMN-->
       </a-row>
