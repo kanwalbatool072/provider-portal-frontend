@@ -25,7 +25,7 @@
         ></DraggableCal> </a-col
     ></a-row>
     <a-row class="scheduler_btn px-3 mx-1">
-      <a-col :xs="24" :sm="24" :md="22" :lg="24" :xl="24" class="pt-2">
+      <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" class="pt-2">
         <VueCtkDateTimePicker
           v-model="dateRange"
           :no-keyboard="true"

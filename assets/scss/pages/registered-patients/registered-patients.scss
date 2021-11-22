@@ -296,3 +296,18 @@ span.datepicker-day-effect {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  #available-slots {
+    .ant-modal{     
+       width: 66% !important;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #available-slots {
+    .ant-modal{     
+       width: 70% !important;
+   
+    }
+  }
+}

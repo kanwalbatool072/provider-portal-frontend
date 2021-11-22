@@ -177,3 +177,27 @@
     font-size: 0.9rem;
     opacity: 1;
   }
+  @media screen and (max-width:1024px) {
+    #languages {
+      .ant-modal{
+        width: 40% !important;
+      }
+    }
+    #location {
+      .ant-modal{
+        width: 40% !important;
+      }
+    }
+  }
+  @media screen and (max-width:576px) {
+    #languages {
+      .ant-modal{
+        width: 60% !important;
+      }
+    }
+    #location {
+      .ant-modal{
+        width: 50% !important;
+      }
+    }
+  }
