@@ -294,7 +294,11 @@ span.datepicker-day-effect {
     .ant-modal{     
        width: 54% !important;
     }
+    .slots-time.ant-radio-button-wrapper {
+      width: 109px;
   }
+  }
+ 
 }
 @media screen and (max-width: 768px) {
   #available-slots {
