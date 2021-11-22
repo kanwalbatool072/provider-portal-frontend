@@ -8,7 +8,15 @@
     >
       <div>
         <a-row>
-          <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24" align="end">
+          <a-col
+            :xl="24"
+            :lg="24"
+            :md="24"
+            :sm="24"
+            :xs="24"
+            align="end"
+            class="clode-icon"
+          >
             <a-icon type="close" @click="onClose" />
           </a-col>
         </a-row>
