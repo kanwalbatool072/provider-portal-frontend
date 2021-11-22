@@ -10,8 +10,8 @@
           v-for="(doctor, index) in data"
           :key="index"
           :xs="24"
-          :sm="11"
-          :md="11"
+          :sm="12"
+          :md="12"
           :lg="8"
           :xl="6"
         >
