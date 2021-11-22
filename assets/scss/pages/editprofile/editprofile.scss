@@ -53,3 +53,68 @@
     }
 
 }
+@media screen and(max-width:1024px) {
+    #edit-profile
+    {
+        .edit-profile-picture 
+        {
+            .ant-card-body{
+                .anticon-plus{
+                    right:98px;
+                }
+            } 
+        }
+    }
+}
+@media screen and(max-width:768px) {
+    #edit-profile
+    {
+        .edit-profile-picture 
+        {
+            .ant-card-body{
+                .anticon-plus{
+                    right:80px;
+                }
+            } 
+        }
+    }
+}
+@media screen and(max-width:576px) {
+    #edit-profile
+    {
+        .edit-profile-picture 
+        {
+            .ant-card-body{
+                .anticon-plus{
+                    right:205px;
+                }
+            } 
+        }
+    }
+}
+@media screen and(max-width:425px) {
+    #edit-profile
+    {
+        .edit-profile-picture 
+        {
+            .ant-card-body{
+                .anticon-plus{
+                    right:137px;
+                }
+            } 
+        }
+    }
+}
+@media screen and(max-width:375px) {
+    #edit-profile
+    {
+        .edit-profile-picture 
+        {
+            .ant-card-body{
+                .anticon-plus{
+                    right:117px;
+                }
+            } 
+        }
+    }
+}
