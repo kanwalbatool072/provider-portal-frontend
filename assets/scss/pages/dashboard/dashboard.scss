@@ -325,7 +325,14 @@
 }
 
 @media screen and(max-width:576px) {
+  #modal-appointment{
+    .ant-modal {
+ 
+      width: 80% !important;
+    
+  }
   
+  }
   .new-patient-list{
     margin-top: 20px;
   }
