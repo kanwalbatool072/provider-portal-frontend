@@ -21,13 +21,7 @@
       <!--START DRIVING LICENSE ROW  -->
       <a-row class="mt-4">
         <a-col :span="24" align="center">
-          <a-upload
-            name="file"
-            :multiple="true"
-            action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
-            :headers="headers"
-            @change="handleChange"
-          >
+          <a-upload name="file" :multiple="false" @change="handleChange">
             <a-button type="primary" class="license-btn">
               <a-row>
                 <a-col :span="8" align="center">
@@ -55,6 +49,11 @@ export default {
 
   data() {
     return {}
+  },
+  methods: {
+    handleChange() {
+      console.log('CHanges')
+    }
   }
 }
 </script>
