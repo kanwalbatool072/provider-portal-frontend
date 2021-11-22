@@ -295,7 +295,7 @@ span.datepicker-day-effect {
        width: 54% !important;
     }
     .slots-time.ant-radio-button-wrapper {
-      width: 109px;
+      width: 109px !important;
   }
   }
  
@@ -305,6 +305,9 @@ span.datepicker-day-effect {
     .ant-modal{     
        width: 66% !important;
     }
+    .slots-time.ant-radio-button-wrapper {
+      width: 135px !important;
+  }
   }
 }
 @media screen and (max-width: 576px) {
@@ -313,5 +316,18 @@ span.datepicker-day-effect {
        width: 70% !important;
    
     }
+    .slots-time.ant-radio-button-wrapper {
+      width: 156px !important;
   }
+  }
+
+}
+@media screen and (max-width: 425px) {
+  #available-slots {
+    
+    .slots-time.ant-radio-button-wrapper {
+      width: 214px !important;
+  }
+  }
+
 }
