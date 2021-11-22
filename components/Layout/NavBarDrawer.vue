@@ -2,25 +2,27 @@
   <div>
     <a-drawer
       :placement="placement"
-      :closable="true"
+      :closable="false"
       :visible="visible"
       class="menu-drawer"
-      @close="onClose"
     >
       <div>
-        <nuxt-link to="/edit-profile">
-          <div class="user-info">
-            <img
-              src="/images/Dashboard/john_wicks.svg"
-              alt="John Wicks"
-              class="user-photo ml-5 pl-5"
-            />
-            <div class="user-name">
-              <p class="mb-0 mt-1 text-white ml-5 pl-5">John Wicks</p>
-              <span class="john-text ml-5 pl-5 text-white">Provider</span>
-            </div>
+        <a-row>
+          <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24" align="end">
+            <a-icon type="close" @click="onClose" />
+          </a-col>
+        </a-row>
+        <div class="user-info" @click="handlePageLinks('edit-profile')">
+          <img
+            src="/images/Dashboard/john_wicks.svg"
+            alt="John Wicks"
+            class="user-photo ml-5 pl-5"
+          />
+          <div class="user-name">
+            <p class="mb-0 mt-1 text-white ml-5 pl-5">John Wicks</p>
+            <span class="john-text ml-5 pl-5 text-white">Provider</span>
           </div>
-        </nuxt-link>
+        </div>
 
         <a-menu theme="dark" mode="inline">
           <a-menu-item key="1" @click="handlePageLinks('dashboard')">
@@ -59,6 +61,7 @@
   </div>
 </template>
 <script>
+import { mapActions } from 'vuex'
 export default {
   props: {
     visible: {
@@ -72,9 +75,11 @@ export default {
     }
   },
   methods: {
+    ...mapActions('modules/specialist', ['handleAvailableSlots']),
     handlePageLinks(val) {
       this.$root.$emit('close-menu-drawer')
       this.$router.push(`/${val}`)
+      this.handleAvailableSlots(false)
     },
     showModal() {
       this.$root.$emit('appointment-modal')
