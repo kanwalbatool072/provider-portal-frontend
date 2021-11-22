@@ -29,7 +29,7 @@
         <img
           src="/images/icons/Group 57033.svg"
           alt=""
-          @click="$router.push('/patients')"
+          @click="handlePages('/')"
         />
         <span class="nav-text">Patients</span>
       </a-menu-item>
@@ -53,14 +53,20 @@
 </template>
 <!-- ************************** SCRIPT  ************************* -->
 <script>
+import { mapActions } from 'vuex'
 import AppointmentModal from '@/components/Pages/AppointmentModal/AppointmentModal'
 
 export default {
   name: 'NavBar',
   components: { AppointmentModal },
   methods: {
+    ...mapActions('modules/specialist', ['handleAvailableSlots']),
     showModal() {
       this.$root.$emit('appointment-modal')
+    },
+    handlePages() {
+      this.$router.push('/patients')
+      this.handleAvailableSlots(false)
     }
   }
 }
