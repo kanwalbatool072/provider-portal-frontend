@@ -23,11 +23,8 @@
                   :height="height"
                   :width="width"
                   @mousemove="draw"
-                  @touchmove.passive="draw"
                   @mousedown="beginDrawing"
                   @mouseup="stopDrawing"
-                  @touchend="stopDrawing"
-                  @touchstaet="beginDrawing"
                 />
               </div>
             </a-col>
