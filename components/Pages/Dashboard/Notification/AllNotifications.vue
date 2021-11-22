@@ -17,7 +17,6 @@
           v-for="(data, index) in getNotifications"
           :key="index"
           class="mt-3 all-notifications-list"
-          :gutter="16"
         >
           <a-card
             :class="active_index == index ? 'change-background' : ''"
