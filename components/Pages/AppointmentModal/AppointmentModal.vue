@@ -20,7 +20,7 @@
               <div class="telehealth-row">
                 <a-row>
                   <!-- /images/Dashboard/micro.svg -->
-                  <a-col :xs="6" :sm="6" :md="6" :lg="6" :xl="5">
+                  <a-col :xs="6" :sm="5" :md="4" :lg="4" :xl="5">
                     <img
                       src="/images/Specialist/voice.svg"
                       class="clinic-appoint-ment-img"
@@ -46,7 +46,7 @@
             <nuxt-link to="/scheduled-patient" @click.native="hideModal">
               <div class="mt-3 telehealth-row">
                 <a-row>
-                  <a-col :xs="6" :sm="6" :md="6" :lg="6" :xl="5">
+                  <a-col :xs="6" :sm="5" :md="4" :lg="4" :xl="5">
                     <img
                       src="/images/Specialist/videocall.svg"
                       class="clinic-appoint-ment-img"

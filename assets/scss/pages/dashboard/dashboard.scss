@@ -279,9 +279,12 @@
 @media screen and (max-width:1024px) {
   #modal-appointment{
     .ant-modal {
-           width: 70% !important;
+ 
+      width: 50% !important;
+    
   }
-}
+  
+  }
   .text-white{
      font-size: 0.9rem;
   }
@@ -301,14 +304,7 @@
   
 }
 @media screen and (max-width:768px) {
-  #modal-appointment{
-    .ant-modal {
  
-      width: 50% !important;
-    
-  }
-  
-  }
   .text-white{
     font-size: 1.125rem;
  }
