@@ -94,9 +94,10 @@ i.anticon.anticon-more {
   #patient-management{
     .patient-management{
       .clinic-documents-btn{
-        // width: 500px;
+        width: 100% !important;
         .ant-btn{
           width: 23.5%;
+          padding:0px;
         }
       }
       
@@ -152,6 +153,9 @@ margin-top: 20px;
   } 
   .demo-profile-form{
     margin-top: 20px;
+      }
+      .demo-profile-picture{
+        margin-top: 20px;
       }
 }
 @media screen and(max-width:375px){
