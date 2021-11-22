@@ -280,7 +280,7 @@
   }
 }
   .text-white{
-     font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
   .appt-text{
     padding-bottom:0px !important;
@@ -307,7 +307,7 @@
   
   }
   .text-white{
-    font-size: 1.125rem;
+    font-size: 0.9rem !important;
  }
  .appt-text{
    padding-bottom:0px !important;
@@ -345,7 +345,7 @@
     margin-top: 20px;
   }
   .text-white{
-    font-size: 13px;
+    font-size: 0.813rem !important;
   }
   .chart-container {
     .ant-card-head-title  {
@@ -366,7 +366,7 @@
     margin-top: 20px;
   }
   .text-white{
-    font-size: 12px;
+    font-size: 0.75rem !important;
   }
   
 }

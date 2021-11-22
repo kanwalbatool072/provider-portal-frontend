@@ -177,7 +177,7 @@ export default {
             isAvailable: false
           },
           {
-            time: '10:30 pm',
+            time: '11:30 pm',
             isAvailable: false
           }
         ]
