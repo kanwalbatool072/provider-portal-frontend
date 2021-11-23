@@ -92,8 +92,8 @@
               <a-button
                 class="my-3"
                 block
+                type="default"
                 :loading="loading"
-                html-type="submit"
                 @click="handleSubmit()"
               >
                 <span v-if="loading == true"> Loading </span>

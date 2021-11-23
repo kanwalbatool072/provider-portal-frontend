@@ -92,7 +92,7 @@
                 class="my-3"
                 block
                 :loading="loading"
-                html-type="submit"
+                type="default"
                 @click="handleSubmit()"
               >
                 <span v-if="loading == true"> Loading </span>

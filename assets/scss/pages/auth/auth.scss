@@ -38,9 +38,10 @@
     }
     .ant-btn {
       height: 43px;
-      background-color: #04c6ff;
-      color: white;
       border: none;
+      &:hover {
+        color:#ffffff ;
+      }
     }
   }
   @media screen and (max-width: 1024px) {
