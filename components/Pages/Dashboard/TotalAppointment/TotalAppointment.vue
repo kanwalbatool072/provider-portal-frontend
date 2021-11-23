@@ -36,6 +36,8 @@ export default {
   border-radius: 25px;
   align-items: center;
   background-image: linear-gradient(to right, #766aa2, #7b6fe1);
+  // box-shadow: 0px 26px 20px -16px rgba(118, 106, 162, 0.38);
+  box-shadow: -2px 22px 41px -23px rgba(123, 111, 225, 1);
   background-size: cover;
   padding: 15px;
   .appointment-card {
