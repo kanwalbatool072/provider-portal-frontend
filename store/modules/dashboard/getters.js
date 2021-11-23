@@ -29,7 +29,7 @@ export default {
           }
         }
       },
-      colors: ['#423869'],
+      colors: ['#786CBC'],
       dataLabels: {
         enabled: true,
         formatter(val) {
@@ -38,7 +38,7 @@ export default {
         offsetY: -20,
         style: {
           fontSize: '12px',
-          colors: ['#423869']
+          colors: ['#434141']
         }
       },
 

@@ -19,7 +19,7 @@
           padding-top: 0px;
           display: flex;
           .ant-card-bordered{
-            border:1px solid #ededed;
+            border:1px solid #F9F9F9;
             border-radius: 10px;
           }
      .ant-card{
@@ -175,11 +175,14 @@
              font-weight: 500;
              margin-bottom: 0px;
              padding: 0px;
+             color: $text-light-info;
            }
            .ant-list-item-meta-description {
             margin-top: 0px;
             padding-top: 0px;
             font-size: 0.625rem;
+            color: $text-light-info;
+            opacity: 0.34;
           }
         .ant-list-item-meta-avatar {
           width: 45px;
