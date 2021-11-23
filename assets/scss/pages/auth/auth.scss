@@ -1,9 +1,8 @@
-@import '@/assets/variables/light';
 #auth {
     .auth-bg {
       position: absolute;
       bottom: 0;
-      color: $text-brown;
+      color: #aaa5bb;
     }
     .auth-img {
       background-image: url('/images/1.png');
@@ -34,14 +33,15 @@
   
       .ant-input {
         height: 40px;
-        color: $text-dark;
+        color: black;
       }
     }
     .ant-btn {
       height: 43px;
-      background-color: #04c6ff;
-      color: $text-white;
       border: none;
+      &:hover {
+        color:#04c6ff ;
+      }
     }
   }
   @media screen and (max-width: 1024px) {
