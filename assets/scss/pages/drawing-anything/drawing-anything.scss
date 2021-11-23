@@ -78,8 +78,8 @@
     }
     .ant-checkbox-inner {
       border-radius: 50%;
-      background-color: #423869;
-      border-color: #423869;
+      background-color: $primary-color;
+      border-color: $primary-color;
       width: 24px;
       height: 24px;
     }
@@ -99,9 +99,9 @@
       padding: 0px;
       .ant-modal-close-icon {
         padding: 4px;
-        background-color: #423869;
+        background-color: $primary-color;
         border-radius: 17px;
-        color: white;
+        color: $text-white;
         font-size: 0.75rem;
         position: absolute;
         top: 12px;
@@ -146,7 +146,7 @@
 @media screen and(max-width:425px) {
  
 
-    
+
     #add-call{
         .ant-modal{
          width: 80% !important;

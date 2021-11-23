@@ -1,3 +1,4 @@
+@import '@/assets/variables/light';
 #vcare-meeting {
     .vcare-img {
       background-image: url("/images/Vcarecalling/family-physician-general-practitioner-main-d.svg");
@@ -97,7 +98,7 @@
             }
         }
         .blue-card.ant-card {
-            background-color: #423869;
+            background-color: $primary-color;
             width: 40%;
             float: right;
             border-radius: 5px;
