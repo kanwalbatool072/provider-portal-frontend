@@ -164,15 +164,15 @@
     .drag-calendar .month-cell[selected='selected'][data-v-5af1977c] {
       padding: 1.2rem 0.1rem !important;
       font-size: 0.563rem;
-      background-color: #423869 !important;
-      border-color: #423869;
+      background-color: $primary-color !important;
+      border-color: $primary-color;
     }
     .drag-calendar .days .cell.today .day-number[data-v-5af1977c] {
       color: #888;
       text-decoration: none;
     }
     .drag-calendar .cal-cell[selected=selected] .cell-content .day-number[data-v-5af1977c], .drag-calendar .month-cell[selected=selected] .cell-content .day-number[data-v-5af1977c] {
-      color: #ffffff;
+      color:$text-white;
     }
     .drag-calendar
       .cal-cell[selected='selected']
@@ -229,15 +229,15 @@
   padding: 0px;
   .ant-modal-close-icon {
     padding: 4px;
-    background-color: #423869;
+    background-color: $primary-color;
     border-radius: 15px;
-    color: white;
+    color: $text-white;
     font-size: 0.75rem;
   }
 }
 .ant-select-selection--multiple {
   height: 50px;
-  background: #F1F0F6;
+  background: $text-white;
   border: none;
   padding: 0 8px;
   .ant-select-selection__rendered > ul > li  {
@@ -246,7 +246,7 @@ margin-top: 9px;
 border-radius: 5px;
 background-color: #E5E3F4;
 line-height: 30px;
-color: #A7A2BF;
+color: $background-grey-light;
 font-size: 0.75rem;
   }
  .ant-select-search--inline{
@@ -254,10 +254,10 @@ display: none;
   }
 }
 .selectedSlot{
-  border: 2px solid #42295a;
+  border: 2px solid $text-white;
     height: 40px;
     border-radius: 5px;
-    color: #42295a;
+    color: $primary-color;
     margin-top: 5px;
 }
 .datepicker-day.disabled {
