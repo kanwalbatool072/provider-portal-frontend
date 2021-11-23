@@ -6,7 +6,7 @@
       background-position: center;
       background-size: cover;
       p {
-          color: #ffffff;
+          color: $text-white;
           opacity: 0.8;
       }
     }
@@ -16,6 +16,10 @@
         }
         .ant-card-body {
           padding: 15px 24px;
+        }
+        .time-stamp-text {
+          display: flex;
+          align-items: center;
         }
         .time-stamp-group-scroll {
           height: 400px;
@@ -58,6 +62,12 @@
           .meeting-list {
             display: flex;
             align-items: center;
+            h4 {
+              color: $text-light-gray;
+            }
+            p {
+              color: $text-light-dark;
+            }
           }
         }
         .meeting-scroll::-webkit-scrollbar {
