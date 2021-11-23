@@ -124,8 +124,21 @@
        
         }
     }
+    #add-call{
+        .ant-modal{
+         width: 48% !important;
+        }
+    } 
     
 }
+@media screen and(max-width:576px) {
+ 
+    #add-call{
+        .ant-modal{
+         width: 65% !important;
+        }
+    } 
+ }
 @media screen and(max-width:425px) {
   
         .drawing-anything {
@@ -137,6 +150,12 @@
                 margin-left: 0rem  !important;
             }
         }
+          
+    #add-call{
+        .ant-modal{
+         width: 80% !important;
+        }
+    } 
     }
       
     
