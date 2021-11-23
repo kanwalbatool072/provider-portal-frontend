@@ -1,3 +1,4 @@
+@import '@/assets/variables/light';
 #dashboard {
     .ant-list-split .ant-list-item {
         border-bottom: none !important;
@@ -242,9 +243,9 @@
     padding: 0px;
     .ant-modal-close-icon {
       padding: 4px;
-      background-color: #423869;
+      background-color: $primary-color;
       border-radius: 15px;
-      color: white;
+      color: $text-white;
       font-size: 0.75rem;
       position: absolute;
       top: 11px;
@@ -279,7 +280,7 @@
            width: 50% !important;
   }
 }
-  .text-white{
+  .appt-title{
     font-size: 0.9rem !important;
   }
   .appt-text{
@@ -306,8 +307,8 @@
   }
   
   }
-  .text-white{
-    font-size: 0.9rem !important;
+  .appt-title{
+    font-size: 1rem  !important;
  }
  .appt-text{
    padding-bottom:0px !important;
@@ -344,8 +345,8 @@
   .new-patient-list{
     margin-top: 20px;
   }
-  .text-white{
-    font-size: 0.813rem !important;
+  .appt-title{
+    font-size: 1rem  !important;
   }
   .chart-container {
     .ant-card-head-title  {
@@ -365,8 +366,8 @@
   .new-patient-list{
     margin-top: 20px;
   }
-  .text-white{
-    font-size: 0.75rem !important;
+  .appt-title{
+    font-size: 0.8rem  !important;
   }
   
 }

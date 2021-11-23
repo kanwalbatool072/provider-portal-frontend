@@ -1,3 +1,4 @@
+@import '@/assets/variables/light';
 #drawing-anything{
     .ant-card {
        border-radius: 10px;
@@ -13,7 +14,7 @@
                 margin: 0;
             }
             .ant-tabs-tab-active {
-                color: white;
+                color: $text-white;
             }
           
         }
@@ -23,7 +24,7 @@
             background-color: #2BC184;
         }
         .ant-tabs-nav .ant-tabs-tab-active {
-            color: white;
+            color: $text-white;
             }
             .meeting-duration {
                 color: #FFFFFF;
