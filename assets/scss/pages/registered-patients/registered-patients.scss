@@ -1,3 +1,4 @@
+@import '@/assets/variables/light';
 #registered-patients {
   .doctor-card {
     h2 {
@@ -7,7 +8,7 @@
       font-weight: medium;
     }
     span {
-      color: #41D2F8;
+      color: $text-secondary;
       opacity: 1;
     }
     p {
@@ -23,9 +24,9 @@
     .ant-card-actions {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        background: #B4ACD3;
+        background: $background-grey-light;
         p{
-        color: #ffffff !important;
+        color: $text-white !important;
         }
     }
     i.anticon.anticon-more {
@@ -42,10 +43,10 @@
 }
     .ant-card-small > .ant-card-head{
         border-radius: 4px !important;
-        background: #B4ACD3 !important;
-        color: #ffffff;
+        background: $background-grey-light !important;
+        color: $text-white;
          .ant-card-extra a{
-            color: #ffffff;
+            color: $text-white;
 
         }
 
@@ -84,8 +85,8 @@
         .drag-calendar .month-cell[selected='selected'][data-v-5af1977c] {
           padding: 1.2rem 0.1rem !important;
           font-size: 0.563rem;
-          background-color: #423869 !important;
-          border-color: #423869;
+          background-color: $primary-color !important;
+          border-color: $primary-color;
         }
         .drag-calendar .days .cell.today .day-number[data-v-5af1977c] {
           color: #888;
