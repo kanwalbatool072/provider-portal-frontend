@@ -225,6 +225,9 @@
     width: 100px;
   
   }
+  .ant-radio-button-wrapper-disabled:first-child{
+    background-color:$background-grey-dark;
+  }
  .ant-modal-close {
   padding: 0px;
   .ant-modal-close-icon {
