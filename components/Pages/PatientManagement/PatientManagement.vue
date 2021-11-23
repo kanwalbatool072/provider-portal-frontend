@@ -63,7 +63,7 @@
           <a-card class="clinic-documents-btn" :bordered="false">
             <a-button
               type="primary"
-              class="ml-1"
+              class="ml-1 btn-group"
               :class="btnName != 'all_demo' ? 'documents-btn' : ''"
               :disabled="enableBtn"
               @click="changePaymentType('all_demo')"
@@ -73,7 +73,7 @@
 
             <a-button
               type="primary"
-              class="ml-1"
+              class="ml-1 btn-group"
               :class="btnName != 'insurance' ? 'documents-btn' : ''"
               :disabled="enableBtn"
               @click="changePaymentType('insurance')"
@@ -82,7 +82,7 @@
             >
             <a-button
               type="primary"
-              class="ml-1"
+              class="ml-1 btn-group"
               :class="btnName != 'draft' ? 'documents-btn' : ''"
               :disabled="enableBtn"
               @click="changePaymentType('draft')"
@@ -91,7 +91,7 @@
             >
             <a-button
               type="primary"
-              class="ml-1"
+              class="ml-1 btn-group"
               :class="btnName != 'documents' ? 'documents-btn' : ''"
               @click="changePaymentType('documents')"
             >

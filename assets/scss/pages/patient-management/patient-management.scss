@@ -7,8 +7,12 @@
           .ant-card-body {
             padding: 8px;
             .documents-btn {
-              background-color: $background-grey-light;
-              border-color:  $background-grey-light !important;
+              background-color: $background-grey-light !important;
+              border-color:  $background-grey-light !important ;
+            }
+            .btn-group{
+              background-color:$secondary-color  ;
+              border-color:  $secondary-color ;
             }
           }
         }
