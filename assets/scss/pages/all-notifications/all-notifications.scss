@@ -1,3 +1,4 @@
+@import '@/assets/variables/light';
 #view-all-notifications {
     .ant-list-split,
     .ant-list-item {
@@ -14,27 +15,27 @@
         }
       }
       .change-background {
-        background-color: #423869;
+        background-color: $primary-color;
         // background-color: rgba(72, 65, 117, 0.2);
         // color: white;
         opacity: 1;
         img {
-          background-color: white;
+          background-color: $background-white;
           border-radius: 5px;
         }
         h3 {
-          color: white;
+          color: $text-white;
         }
         p {
-          color: #d0d0d0;
+          color: $text-brown;
         }
       }
     }
     i.delete-icon.anticon.anticon-delete {
       font-size: 20px;
-      color: white;
+      color: $text-white;
       padding-top: 20px;
-      background-color: #c8c8c859;
+      background-color: $text-brown;
       padding: 8px;
       cursor: pointer;
       border-radius: 5px;

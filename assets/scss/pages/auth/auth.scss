@@ -1,8 +1,9 @@
+@import '@/assets/variables/light';
 #auth {
     .auth-bg {
       position: absolute;
       bottom: 0;
-      color: #aaa5bb;
+      color: $text-brown;
     }
     .auth-img {
       background-image: url('/images/1.png');
@@ -39,7 +40,7 @@
     .ant-btn {
       height: 43px;
       background-color: #04c6ff;
-      color: white;
+      color: $text-white;
       border: none;
     }
   }
