@@ -1,25 +1,26 @@
+@import '@/assets/variables/light';
 .menu-drawer{
     .clode-icon{
         .anticon-close{
-            background: #766aa2;
+            background: $secondary-color;
               padding: 6px;
-              color: white;
+              color: $text-white;
               border-radius: 15px;
           }
     }
     .ant-drawer-content-wrapper{
         .ant-drawer-content{
-            background-color: #42295a;
+            background-color: $primary-color;
             .ant-drawer-body{
                 padding:10px;
                 .ant-menu-dark{
-                    background-color: #42295a;
+                    background-color: $primary-color;
                .ant-menu-item{
                    height: 70px;
                    padding:10px;
                }
                .ant-menu-item-selected{
-               background-color:  #423869 !important
+               background-color:  $primary-color !important
                }
                 }
             }
