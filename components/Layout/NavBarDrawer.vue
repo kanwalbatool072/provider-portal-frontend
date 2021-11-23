@@ -37,7 +37,7 @@
             <img src="/images/icons/Group 57031.svg" alt="" />
             <span class="nav-text">Dashboard</span>
           </a-menu-item>
-          <a-menu-item key="2" @click="showModal">
+          <a-menu-item key="2" @click="handlePageLinks('appointment')">
             <img src="/images/icons/Group 57032.svg" alt="" />
             <span class="nav-text">Appointments</span>
           </a-menu-item>
@@ -86,12 +86,14 @@ export default {
     ...mapActions('modules/specialist', ['handleAvailableSlots']),
     handlePageLinks(val) {
       this.$root.$emit('close-menu-drawer')
-      this.$router.push(`/${val}`)
-      this.handleAvailableSlots(false)
+      if (val == 'appointment') {
+        this.$root.$emit('appointment-modal')
+      } else {
+        this.$router.push(`/${val}`)
+        this.handleAvailableSlots(false)
+      }
     },
-    showModal() {
-      this.$root.$emit('appointment-modal')
-    },
+
     onClose() {
       this.$root.$emit('close-menu-drawer')
     },
