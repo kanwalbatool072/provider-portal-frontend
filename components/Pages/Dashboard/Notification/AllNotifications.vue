@@ -22,17 +22,10 @@
             :class="active_index == index ? 'change-background' : ''"
             @click="chageClass(index)"
           >
-            <a-col :xs="4" :sm="2" :md="2" :lg="2" :xl="2" class="pr-1">
+            <a-col :xs="6" :sm="4" :md="3" :lg="3" :xl="2" class="pr-1">
               <img :src="data.notefication_img" />
             </a-col>
-            <a-col
-              :xs="16"
-              :sm="20"
-              :md="20"
-              :lg="20"
-              :xl="20"
-              class="pt-1 pl-5"
-            >
+            <a-col :xs="18" :sm="20" :md="19" :lg="19" :xl="20" class="pt-1">
               <h3 class="font-500 fs-medium mb-0 mt-1">{{ data.title }}</h3>
               <p class="mb-0 fs-small">{{ data.date }}</p>
             </a-col>
