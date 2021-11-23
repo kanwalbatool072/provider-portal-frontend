@@ -6,7 +6,7 @@
         <a-row
           v-for="(list, index) in getStartAppointment"
           :key="index"
-          class="mb-4"
+          class="mb-4 time-stamp-text"
         >
           <a-col
             :xs="3"
