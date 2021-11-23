@@ -1,23 +1,11 @@
 <!-- ************************* TEMPLATE ************************ -->
 <template>
   <!-- LOGIN SECTION -->
-  <div id="login">
+  <div id="auth">
     <a-row>
       <!--LOGIN IMAGES COLUMN-->
-      <a-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12" class="login-img">
-        <div class="login-bg pl-5 pr-4 ml-2 mr-2">
-          <p class="provider-app-text">Provider App</p>
-          <p class="mb-4 mr-5 pr-5 text-justify fs-small">
-            This system may only be accessed by authorized users, and each user
-            can only view data associated with their specific account. By
-            logging in, you are accepting the
-            <a href="#" class="text-primary-light font-600 account-text">
-              Terms and Conditions
-            </a>
-            this application.
-          </p>
-          <p class="mb-4">VCare version 1.0</p>
-        </div>
+      <a-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12">
+        <AuthLeftSide />
       </a-col>
       <!--END LOGIN IMAGES COLUMN-->
 
@@ -41,7 +29,7 @@
             <h2 class="mb-2 fs-extra-larg px-2 font-600 login-heading pt-5">
               Login
             </h2>
-            <hr class="login-line mx-2" />
+            <hr class="auth-line mx-2" />
             <p class="px-2 fs-normal font-600 py-3 mb-1">
               Please enter your credentials
             </p>
@@ -130,8 +118,12 @@
 <script>
 // STORE
 import { mapGetters } from 'vuex'
+import AuthLeftSide from '@/components/Pages/Auth/AuthLeftSide'
 // IMPORT COMONENT
 export default {
+  components: {
+    AuthLeftSide
+  },
   layout: 'auth',
   data() {
     return {
@@ -170,75 +162,5 @@ export default {
 </script>
 
 <style lang="scss">
-#login {
-  .login-bg {
-    position: absolute;
-    bottom: 0;
-    color: #aaa5bb;
-  }
-  .login-img {
-    background-image: url('/images/1.png');
-    background-size: cover;
-    height: 100vh;
-    .provider-app-text {
-      position: absolute;
-      bottom: 200px;
-      right: 130px;
-      font-size: 1.8rem;
-    }
-  }
-  .login-line {
-    width: 20px;
-    border: 2px solid #04c6ff;
-    border-radius: 5px;
-    position: absolute;
-    top: 135px;
-  }
-  .account-text {
-    color: #04c6ff;
-  }
-  .ant-form-item {
-    margin-bottom: 15px;
-  }
-  .ant-form-item-control {
-    line-height: 50px;
-
-    .ant-input {
-      height: 40px;
-      color: black;
-    }
-  }
-  .ant-btn {
-    height: 43px;
-    background-color: #04c6ff;
-    color: white;
-    border: none;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .login-cridentials-box {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding: 3rem 2rem !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .login-img {
-    display: none;
-  }
-  .login-line {
-    top: 115px !important;
-  }
-}
-@media screen and (max-width: 425px) {
-  .login-cridentials-box {
-    padding: 3rem 0rem !important;
-  }
-}
-@media screen and (max-width: 375px) {
-  .vcare-login {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
+@import '~/assets/scss/pages/auth/auth.scss';
 </style>

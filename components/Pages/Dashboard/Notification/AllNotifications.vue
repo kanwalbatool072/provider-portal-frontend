@@ -81,46 +81,5 @@ export default {
 }
 </script>
 <style lang="scss">
-#view-all-notifications {
-  .ant-list-split,
-  .ant-list-item {
-    border: none;
-  }
-
-  .all-notifications-list {
-    width: 100%;
-
-    .ant-card {
-      border-radius: 10px;
-      .ant-card-body {
-        padding: 15px;
-      }
-    }
-    .change-background {
-      background-color: #423869;
-      // background-color: rgba(72, 65, 117, 0.2);
-      // color: white;
-      opacity: 1;
-      img {
-        background-color: white;
-        border-radius: 5px;
-      }
-      h3 {
-        color: white;
-      }
-      p {
-        color: #d0d0d0;
-      }
-    }
-  }
-  i.delete-icon.anticon.anticon-delete {
-    font-size: 20px;
-    color: white;
-    padding-top: 20px;
-    background-color: #c8c8c859;
-    padding: 8px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-}
+@import '~/assets/scss/pages/all-notifications/all-notifications.scss';
 </style>
