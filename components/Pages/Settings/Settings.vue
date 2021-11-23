@@ -6,29 +6,38 @@
       <h3 class="setting-text font-600">Settings</h3>
       <a-row :gutter="24" class="mt-3">
         <!--SEARCH DOCUMENTS COLUMN -->
-        <a-col :xs="15" :sm="18" :md="20" :lg="16" :xl="16">
+        <a-col :xs="15" :sm="18" :md="20" :lg="16" :xl="20">
           <h3
             class="mt-4 lang-text font-600 pointer"
             @click="handleLanguagesModal('')"
           >
             Change Language
           </h3>
+          <a-divider class="mb-0" />
+        </a-col>
+      </a-row>
+      <a-row :gutter="24" class="mt-3">
+        <!--SEARCH DOCUMENTS COLUMN -->
+        <a-col :xs="15" :sm="18" :md="20" :lg="16" :xl="20">
+          <h3
+            class="mt-1 lang-text font-600 pointer"
+            @click="handleLocationModal('')"
+          >
+            Change Location
+          </h3>
+          <a-divider class="mb-0" />
+        </a-col>
+      </a-row>
+      <a-row :gutter="24" class="mt-3">
+        <!--SEARCH DOCUMENTS COLUMN -->
+        <a-col :xs="15" :sm="18" :md="20" :lg="16" :xl="20">
+          <h3 class="mt-1 lang-text font-600 pointer">
+            Change Timing
+          </h3>
+          <a-divider class="mb-0" />
         </a-col>
       </a-row>
 
-      <a-divider />
-      <h3
-        class="mt-3 lang-text font-600 pointer"
-        @click="handleLocationModal('')"
-      >
-        Change Location
-      </h3>
-      <a-divider />
-      <h3 class="mt-3 lang-text font-600 pointer">
-        Change Timing
-      </h3>
-
-      <a-divider />
       <a-row :gutter="24" class="mt-4 mb-5 pb-5">
         <!--SEARCH DOCUMENTS COLUMN -->
         <a-col :xs="15" :sm="18" :md="20" :lg="18" :xl="18">

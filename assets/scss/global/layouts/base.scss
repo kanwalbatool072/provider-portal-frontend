@@ -16,13 +16,13 @@ html {
  }
   .ant-layout-sider-dark{
     border-radius:0px 30px 0px 0px;
+    background-color: $primary-color;
     width:140px !important;
     #NavBar{
     
-    // .ant-menu-dark{
-    //   background-color:#42295a;
-    // }
-  
+    .ant-menu-dark{
+      background-color: $primary-color;
+    }
     li.logout.ant-menu-item {
       position: absolute;
       bottom: 5px;

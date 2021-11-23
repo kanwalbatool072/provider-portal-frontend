@@ -43,7 +43,7 @@
             class="px-5 mb-2 view-btn"
             @click="$router.push('/all-notifications')"
           >
-            view All
+            View All
           </a-button>
         </nuxt-link>
       </div>
