@@ -115,6 +115,11 @@ label.ant-form-item-no-colon {
 h3{
     font-size: 1.5rem;
 }
+.cancel-btn{
+background-color:$meeting-text;
+border-color: $text-danger;
+color: $text-dark;
+}
     button.ant-btn {
         height: 50px;
         border-radius: 4px;
