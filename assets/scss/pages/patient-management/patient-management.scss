@@ -1,3 +1,4 @@
+@import '@/assets/variables/light';
 #patient-management{
     .patient-management {
         .clinic-documents-btn {
@@ -6,8 +7,8 @@
           .ant-card-body {
             padding: 8px;
             .documents-btn {
-              background-color: #aca5c7;
-              border-color: #aca5c7;
+              background-color: $background-grey-light;
+              border-color:  $background-grey-light !important;
             }
           }
         }
@@ -15,7 +16,7 @@
             border-radius: 8px;
       textarea.ant-input {
     height: auto;
-    background-color: #F5F7F9 !important;
+    background-color:$text-white !important;
 }
 label.ant-form-item-no-colon {
     font-weight: 600;
@@ -38,7 +39,7 @@ button.ant-btn {
         .profile-pic{                     
             width: 150px;
              border-radius: 50%; 
-             border: 5px solid #423869;
+             border: 5px solid $primary-color;
     }
    
   }
@@ -49,7 +50,7 @@ button.ant-btn {
 }
 i.anticon.anticon-delete {
   font-size: 1.25rem;
-  color: #423869;
+  color: $primary-color;
 }
 
   // insurance
@@ -60,13 +61,13 @@ i.anticon.anticon-delete {
         padding: 10px;
     }
     h2 {
-      color: #1F2127;
+      color: $text-grey;
       font-size: 1.25rem;
       line-height: 1.2;
       font-weight: medium;
     }
     span {
-      color: #41D2F8;
+      color: $text-secondary;
       opacity: 1;
     }
     p {
@@ -77,12 +78,12 @@ i.anticon.anticon-delete {
   .ant-card-actions {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    background: #B4ACD3; 
+    background: $background-grey-light; 
     li {
       margin: 18px 0;
     }
     p{
-    color: #ffffff !important;
+    color: $text-white !important;
     }
 }
 i.anticon.anticon-more {
