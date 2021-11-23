@@ -519,7 +519,7 @@ export default {
         firstname: 'John',
         middlename: 'Shawn',
         lastname: 'Wicks',
-        suffix: 'Suffix',
+        suffix: '',
         dateOfBirth: '',
 
         gender: '1',
