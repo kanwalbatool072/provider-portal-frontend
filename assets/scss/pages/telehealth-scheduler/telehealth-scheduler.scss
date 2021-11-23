@@ -1,3 +1,4 @@
+@import '@/assets/variables/light';
 #telehealth-scheduler{
     .appointment-form{
         border-radius: 8px;
@@ -10,13 +11,13 @@
     .sub-heading{
         font-size: 0.875rem;
         font-weight: 400;
-    color: #02100F;
+    color: $text-grey;
     opacity: 0.6;
     }
     .btn-sub-heading{
         font-size: 0.75rem;
         font-weight: 400;
-    color: white;
+    color: $text-white;
     opacity: 0.6;
     }
     }
@@ -52,7 +53,7 @@ label.ant-form-item-no-colon {
 .ant-calendar-picker {
     // width: 100%;
     .ant-calendar-picker-icon {
-        color: #9E99B2;
+        color: $background-grey-light;
     }
 }
 .ant-radio-button-wrapper {
@@ -68,14 +69,14 @@ label.ant-form-item-no-colon {
     border-color:#F5F7F9 ;
 }
 .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
-    background: #423869;
-    border-color: #423869;
-    color: #ffffff;
+    background: $primary-color;
+    border-color: $primary-color;
+    color: $text-white;
 }
 .ant-radio-group-solid .ant-radio-button-wrapper-checked:active {
-    background: #423869;
-    border-color: #423869;
-    color: #ffffff;
+    background: $primary-color;
+    border-color: $primary-color;
+    color:$text-white;
 }
 
     button.ant-btn {
@@ -142,7 +143,7 @@ h3{
         padding: 15px 30px;
     }
         textarea.ant-input {
-            background-color: #F5F7F9 !important;
+            background-color: $text-white !important;
      
         }
         button.ant-btn {
@@ -153,9 +154,9 @@ h3{
             padding: 0px;
             .ant-modal-close-icon {
               padding: 4px;
-              background-color: #423869;
+              background-color: $primary-color;
               border-radius: 15px;
-              color: white;
+              color: $text-white;
               font-size: 0.75rem;
             }
           }
