@@ -266,21 +266,21 @@ display: none;
   margin-top: 5px;
 }
 span.datepicker-day-effect {
-  background: #423869 !important;
+  background: $primary-color !important;
 }
 .datepicker-day.first {
   .datepicker-day-effect {
-    background: #42295a !important;
+    background: $primary-color !important;
   }
 }
 .datepicker-day.between {
   .datepicker-day-effect {
-    background: #42295a !important;
+    background: $primary-color !important;
   }
 }
 .datepicker-day.last {
   .datepicker-day-effect {
-    background: #42295a !important;
+    background: $primary-color !important;
   }
 }
 .dragable-month {
