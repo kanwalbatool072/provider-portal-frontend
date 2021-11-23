@@ -1,3 +1,4 @@
+@import '@/assets/variables/light';
 #LayoutHeader{
   .toggler-icon{
     display: none;
@@ -16,8 +17,8 @@
     .ant-calendar-picker-input.ant-input {
       border-radius:10px;
       
-      background: #423869;
-      color:white;
+      background: $primary-color;
+      color: $text-white;
       height: 45px;
       padding: 4px 40px;
      
@@ -26,13 +27,13 @@
   .ant-calendar-picker{
     .ant-calendar-picker-icon{
         position: absolute;
-        color:white;
+        color: $text-white;
         left: 28px;
       }
     }
     i.anticon.anticon-bell {
       padding: 10px;
-      background: #423869;
+      background: $primary-color;
       border-radius: 5px;
       color: #ffffff;
       font-size: 17px;
@@ -50,7 +51,7 @@
         display: block !important;
         .anticon-menu-unfold{
           padding: 7px 5px;
-          background: #423869;
+          background: $primary-color;
           border-radius: 5px;
           color: #ffffff;
           font-size: 24px;

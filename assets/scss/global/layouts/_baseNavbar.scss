@@ -2,7 +2,7 @@
     padding: 60px 0px;
     .user-info {
       text-align: center;
-      color: white;
+      color: $text-white;
       font-weight: 500;
       font-family: "Poppins";
       padding-bottom: 20px;
@@ -49,9 +49,9 @@
       padding: 0px;
       .ant-modal-close-icon {
         padding: 4px;
-        background-color: #423869;
+        background-color: $primary-color;
         border-radius: 15px;
-        color: white;
+        color: $text-white;
         font-size: 0.75rem;
         position: absolute;
         top: 11px;
