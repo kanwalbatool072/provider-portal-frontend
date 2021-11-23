@@ -46,7 +46,64 @@
     }
     
 }
-
+#add-call {
+    .ant-input {
+      background-color: #f5f5f5;
+      border: antiquewhite;
+      border-radius: 12px;
+      height: 42px;
+  
+      padding-left: 48px;
+    }
+    .ant-modal-content {
+        border-radius: 8px;
+    }
+    .add-btn {
+      height: 35px;
+      border-radius: 20px;
+    }
+  
+    .anticon-search {
+      margin-right: 310px;
+      font-size: 1.625rem;
+      color: rgb(124, 118, 118);
+    }
+    .ant-list-item-meta-content {
+      margin-top: 16px;
+    }
+    .ant-checkbox-inner {
+      border-radius: 50%;
+      background-color: #423869;
+      border-color: #423869;
+      width: 24px;
+      height: 24px;
+    }
+    .ant-checkbox-inner::after {
+        top: 49%;
+        left: 23%;
+        width: 6.714286px;
+        height: 12.142857px;
+    }
+    .ant-checkbox:hover {
+        border: none !important;
+    }
+    .ant-list-split .ant-list-item {
+      border-bottom: none;
+    }
+    .ant-modal-close {
+      padding: 0px;
+      .ant-modal-close-icon {
+        padding: 4px;
+        background-color: #423869;
+        border-radius: 17px;
+        color: white;
+        font-size: 0.75rem;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+      }
+    }
+  }
 @media screen and(max-width:1024px) {
     #drawing {
         .meeting-icon-box{
