@@ -21,13 +21,11 @@
           </a>
           <a-menu slot="overlay">
             <a-menu-item key="0">
-              <a href="http://www.alipay.com/">1st menu item</a>
+              <a href="#">Ascending</a>
             </a-menu-item>
             <a-menu-item key="1">
-              <a href="http://www.taobao.com/">2nd menu item</a>
+              <a href="#">Descending</a>
             </a-menu-item>
-            <a-menu-divider />
-            <a-menu-item key="3"> 3rd menu item </a-menu-item>
           </a-menu>
         </a-dropdown>
       </a-col>
