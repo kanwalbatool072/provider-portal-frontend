@@ -4,7 +4,7 @@
   <div class="demo-profile-form">
     <a-row v-for="(item, key) in getDocumentList" :key="key" class="mb-2">
       <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
-        <a-card class="listCard py-0">
+        <a-card class="listCard py-0 pointer">
           <a-row :gutter="16" class="description">
             <a-col :xs="5" :sm="4" :md="4" :lg="4" :xl="3">
               <img :src="item.avatar" />

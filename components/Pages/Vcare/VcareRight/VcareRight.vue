@@ -93,12 +93,12 @@
         <a-col :xs="22" :sm="22" :md="22" :lg="18" :xl="20">
           <a-input placeholder="Type message here">
             <span slot="prefix">
-              <img src="/images/Vcarecalling/pin.svg" />
+              <img src="/images/Vcarecalling/pin.svg" class="pointer" />
             </span>
           </a-input>
         </a-col>
         <a-col :xs="2" :sm="2" :md="2" :lg="6" :xl="4">
-          <img src="/images/Vcarecalling/Group 57009.svg" />
+          <img src="/images/Vcarecalling/Group 57009.svg" class="pointer" />
         </a-col>
       </a-row>
     </a-card>

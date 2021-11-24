@@ -116,6 +116,7 @@
                   <img
                     src="/images/Vcarecalling/Group 57059.svg"
                     height="30px"
+                    class="pointer"
                     @click="showVideoController"
                   />
                   <img

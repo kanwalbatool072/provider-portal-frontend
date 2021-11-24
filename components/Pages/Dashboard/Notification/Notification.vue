@@ -22,7 +22,7 @@
               slot-scope="item"
               class="notifications-list pt-0"
             >
-              <a-card :bordered="false">
+              <a-card :bordered="false" class="pointer">
                 <a-list-item-meta :description="item.date">
                   <span slot="title">
                     {{ item.title }}
