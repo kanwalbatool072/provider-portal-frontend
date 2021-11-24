@@ -10,11 +10,19 @@
               background-color: $background-info !important;
               border-color:  $background-info !important ;
              
+             
             }
-            .btn-group{
-              background-color:$secondary-color  ;
+            button.ml-1.btn-group.ant-btn.ant-btn-danger {
+              background-color: $secondary-color;
               border-color:  $secondary-color ;
+              color: white !important;
+
             }
+            // .btn-group{
+            //   background-color:$secondary-color  ;
+            //   border-color:  $secondary-color ;
+            //   color: white !important;
+            // }
           }
         }
         .demo-profile-card{

@@ -10,7 +10,7 @@
       @change="handleChange"
     >
       <span slot="delete">
-        <a-icon type="delete" theme="filled" />
+        <a-icon type="delete" theme="filled" class="pointer" />
       </span>
     </a-table>
   </div>

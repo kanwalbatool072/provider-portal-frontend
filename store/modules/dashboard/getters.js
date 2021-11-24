@@ -61,6 +61,13 @@ export default {
         axisBorder: {
           show: false
         },
+        labels: {
+          style: {
+            fontSize: '12px',
+            colors: ['#B1B1B7']
+          }
+        },
+
         axisTicks: {
           show: false
         },
