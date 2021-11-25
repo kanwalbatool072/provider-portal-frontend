@@ -49,9 +49,9 @@
 }
 #add-call {
     .ant-input {
-      background-color: $text-white;
-      border: antiquewhite;
-      border-radius: 12px;
+      background-color: #F8F8F8 !important;
+      border: $border-input;
+      border-radius: 8px;
       height: 42px;
   
       padding-left: 48px;
@@ -74,8 +74,8 @@
     }
     .ant-checkbox-inner {
       border-radius: 50%;
-      background-color: $primary-color;
-      border-color: $primary-color;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
       width: 24px;
       height: 24px;
     }

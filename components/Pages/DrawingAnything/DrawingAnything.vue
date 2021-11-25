@@ -28,7 +28,15 @@
                 />
               </div>
             </a-col>
-            <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" align="end">
+            <a-col
+              :xs="24"
+              :sm="24"
+              :md="24"
+              :lg="24"
+              :xl="24"
+              align="end"
+              class="pointer"
+            >
               <img
                 src="/images/Drawing/blue-icon.svg"
                 @click="pikColor('#423869')"
@@ -49,7 +57,7 @@
     <!--START ATTENDES ROW -->
     <a-row :gutter="16" class="pt-5 px-5 mx-5 meeting-video-call">
       <!--START ATTENDES COLUMN-->
-      <a-col :xs="7" :sm="6" :md="3" :lg="3" :xl="4" class="pl-5">
+      <a-col :xs="7" :sm="6" :md="3" :lg="3" :xl="4" class="pl-5 pointer">
         <img src="/images/Vcarecalling/view attendees.svg" />
       </a-col>
       <!-- END ATTENDES COLUMN -->
@@ -60,7 +68,7 @@
         :md="18"
         :lg="18"
         :xl="11"
-        class="pt-4 text-center"
+        class="pt-4 text-center pointer"
       >
         <img src="/images/Vcarecalling/Bottom Bar.png" height="50px" />
       </a-col>
@@ -72,7 +80,7 @@
         :md="3"
         :lg="3"
         :xl="3"
-        class="pt-4 mt-2"
+        class="pt-4 mt-2 pointer"
         align="end"
       >
         <img

@@ -124,7 +124,7 @@
               :lg="24"
               :xl="24"
               align="center"
-              class="pt-3"
+              class="pt-3 pointer"
             >
               <img
                 src="/images/Drawing/greenuser.svg"

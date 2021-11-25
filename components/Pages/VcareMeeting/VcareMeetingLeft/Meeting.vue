@@ -10,7 +10,7 @@
         <a-row
           v-for="(list, index) in meetingList"
           :key="index"
-          class="mb-1 meeting-list"
+          class="mb-1 meeting-list pointer"
           :gutter="16"
         >
           <a-col :xs="5" :sm="5" :md="5" :lg="7" :xl="5">

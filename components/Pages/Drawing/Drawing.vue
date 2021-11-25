@@ -26,7 +26,15 @@
                 @mouseup="stopDrawing"
               />
             </a-col>
-            <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" align="end">
+            <a-col
+              :xs="24"
+              :sm="24"
+              :md="24"
+              :lg="24"
+              :xl="24"
+              align="end"
+              class="pointer"
+            >
               <img
                 src="/images/Drawing/blue-icon.svg"
                 @click="pikColor('#423869')"
