@@ -2,7 +2,6 @@
 <template>
   <!--START NAVBAR SECTION -->
   <div id="NavBar">
-    <img src="/images/icons/logo1.png" alt="" />
     <nuxt-link to="/edit-profile">
       <div class="user-info">
         <img
