@@ -3,7 +3,11 @@
   <!--START DOCTER  SECTION-->
   <div class="doctor-card">
     <!--START HOVERABLE CARD-->
-    <a-card hoverable :bordered="false">
+    <a-card
+      hoverable
+      :bordered="false"
+      @click="showSpecialist(doctorList.scheduled, 'patient')"
+    >
       <!--START DOCTER IMAGE LIST ROW-->
       <a-row class="pb-3">
         <!--START ICON COLUMN -->
@@ -28,7 +32,7 @@
             >
           </a-col>
           <a-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12" align="center">
-            <span @click="showSpecialist(doctorList.scheduled)">
+            <span @click="showSpecialist(doctorList.scheduled, 'modal')">
               <img :src="doctorList.image1" height="25" />
             </span>
           </a-col>
@@ -64,16 +68,23 @@ export default {
   },
   methods: {
     ...mapActions('modules/specialist', ['handleAvailableSlots']),
-    showSpecialist(val) {
-      if (val == true) {
+    showSpecialist(val1, val2) {
+      console.log(val1, val2)
+      // if (val == true) {
+      //   this.$router.push('/patient-management')
+      //   setTimeout(() => {
+      //     this.$root.$emit('enable-btns')
+      //   }, 300)
+      // }
+      if (val1 == false && val2 == 'modal') {
+        this.handleAvailableSlots(true)
+        // this.$root.$emit('show-specialist-details')
+      }
+      if (val1 == true && val2 == 'patient') {
         this.$router.push('/patient-management')
         setTimeout(() => {
           this.$root.$emit('enable-btns')
         }, 300)
-      }
-      if (val == false) {
-        this.handleAvailableSlots(true)
-        // this.$root.$emit('show-specialist-details')
       }
     }
   }
