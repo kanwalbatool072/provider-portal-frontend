@@ -12,17 +12,14 @@
             alt=""
             class="mt-1 profile-pic"
           />
-          <!-- <a-icon type="plus" /> -->
         </a-col>
-        <!-- <a-col :xs="24" :sm="24" :md="16" :lg="8" :xl="19" class="pt-1">
-        </a-col> -->
       </a-row>
       <!--END EDIT PROFILE PICTURE ROW-->
       <!--START DRIVING LICENSE ROW  -->
       <a-row class="mt-4">
         <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24" align="center">
           <a-button type="primary" class="px-4">
-            Insurance Card Front
+            Driving License Front
           </a-button>
         </a-col>
       </a-row>
@@ -31,21 +28,10 @@
       <a-row class="mt-2">
         <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24" align="center">
           <a-button type="primary" class="px-4 mb-2">
-            Insurance Card Back
+            Driving License Back
           </a-button>
         </a-col>
       </a-row>
-      <!--END INC CARD FRONT ROW  -->
-      <!-- START DRIVING LICENSE ROW  -->
-      <!-- <a-row class="mt-2">
-        <a-col :span="24" align="center">
-          <a-button type="primary" class="px-4">
-            <img src="/images/Dashboard/camera.svg" class="camera-icon" />
-            Ins. Card Back
-          </a-button>
-        </a-col>
-      </a-row> -->
-      <!--END DRIVING LICENSE ROW  -->
     </a-card>
     <!--END EDIT PROFILE PICTURE CARD  -->
   </div>

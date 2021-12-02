@@ -1,7 +1,7 @@
 <!-- ************************** TEMPLATE  ************************* -->
 <template>
   <!--START DOCTER  SECTION-->
-  <div class="doctor-card" @click="showSpecialist(doctorList.scheduled)">
+  <div class="doctor-card">
     <!--START HOVERABLE CARD-->
     <a-card hoverable :bordered="false">
       <!--START DOCTER IMAGE LIST ROW-->
@@ -21,6 +21,18 @@
             doctorList.email
           }}</span>
         </a-col>
+        <a-row v-if="doctorList.timeList" :gutter="16">
+          <a-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12" align="center">
+            <router-link to="/vcare"
+              ><span>{{ doctorList.time }}</span></router-link
+            >
+          </a-col>
+          <a-col :xs="12" :sm="12" :md="12" :lg="12" :xl="12" align="center">
+            <span @click="showSpecialist(doctorList.scheduled)">
+              <img :src="doctorList.image1" height="25" />
+            </span>
+          </a-col>
+        </a-row>
         <!--START DOCTER IMAGE LIST COLUMN-->
       </a-row>
       <!--END  DOCTER IMAGE LIST ROW-->

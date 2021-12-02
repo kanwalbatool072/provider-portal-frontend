@@ -13,6 +13,9 @@
       >
         <!--START PATIENT ID ROW -->
         <a-row :gutter="24" class="px-2">
+          <h2 class="px-2 ml-1 primary-insurance font-500">
+            Primary Insurance
+          </h2>
           <!--START PATIENT ID COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -195,7 +198,7 @@
           <!--START GENDER COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'Add Pharmacy Group'"
+              :label="'Rx Group'"
               prop="gender"
               has-feedback
               :colon="false"
@@ -221,7 +224,33 @@
             </a-form-model-item>
           </a-col>
           <!--END GENDER COLUMN -->
-
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+            <a-form-model-item
+              :label="'Insurance Company Name'"
+              prop="companyName"
+              has-feedback
+              :colon="false"
+              :label-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+              :wrapper-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+            >
+              <a-input
+                v-model="insuranceEditProfile.companyName2"
+                placeholder="221121"
+              />
+            </a-form-model-item>
+          </a-col>
           <!--START SSN COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
@@ -251,13 +280,12 @@
           <!--END SSN COLUMN -->
         </a-row>
         <!--END PATIENT ID ROW -->
-        <!--START ADDRESS ROW -->
-        <a-row :gutter="24" class="px-2">
-          <!--START ADDRESS COLUMN -->
+        <a-row :gutter="24" class="px-2 pt-5">
+          <!--START PATIENT ID COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'Address'"
-              props="address"
+              :label="'Insurance Name'"
+              prop="patientId"
               has-feedback
               :colon="false"
               :label-col="{
@@ -276,18 +304,18 @@
               }"
             >
               <a-input
-                v-model="insuranceEditProfile.address"
-                placeholder="Flat 32b/11"
+                v-model="insuranceEditProfile.patientId1"
+                placeholder="Health Care"
               >
               </a-input>
             </a-form-model-item>
           </a-col>
-          <!--END ADDRESS COLUMN -->
-          <!--START CITY COLUMN -->
+          <!--END PATIENT ID COLUMN -->
+          <!--START FIRST NAME COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'City'"
-              prop="city"
+              :label="'Policy Number'"
+              prop="firstname"
               has-feedback
               :colon="false"
               :label-col="{
@@ -306,18 +334,19 @@
               }"
             >
               <a-input
-                v-model="insuranceEditProfile.city"
-                placeholder="Texas City"
+                v-model="insuranceEditProfile.firstname1"
+                placeholder="123548"
               >
               </a-input>
             </a-form-model-item>
           </a-col>
-          <!--END CITY COLUMN -->
-          <!--START COUNTRY COLUMN -->
+          <!--END FIRST NAME COLUMN -->
+
+          <!--START MIDDLE NAME COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'Country'"
-              prop="country"
+              :label="'Insurance Group #'"
+              prop="middlename"
               has-feedback
               :colon="false"
               :label-col="{
@@ -335,21 +364,19 @@
                 xs: 24
               }"
             >
-              <a-select
-                label-in-value
-                :default-value="{ key: 'USA' }"
-                style="width: 100%"
+              <a-input
+                v-model="insuranceEditProfile.middlename1"
+                placeholder="221121"
               >
-                <a-select-option value="USA"> USA </a-select-option>
-              </a-select>
+              </a-input>
             </a-form-model-item>
           </a-col>
-          <!--START COUNTRY COLUMN -->
-          <!--START STATE COLUMN -->
+          <!--END MIDDLE NAME COLUMN -->
+          <!--START LAST NAME COLUMN -->
           <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
             <a-form-model-item
-              :label="'State'"
-              prop="state"
+              :label="'Eligibility Date'"
+              prop="lastname"
               has-feedback
               :colon="false"
               :label-col="{
@@ -367,132 +394,156 @@
                 xs: 24
               }"
             >
-              <a-input v-model="insuranceEditProfile.state" placeholder="TX">
+              <a-date-picker
+                v-model="insuranceEditProfile.lastname1"
+                placeholder="22/10/21"
+              />
+            </a-form-model-item>
+          </a-col>
+          <!--END LAST NAME COLUMN -->
+
+          <!--START SUFFIX COLUMN -->
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+            <a-form-model-item
+              :label="'Start Date'"
+              prop="suffix"
+              has-feedback
+              :colon="false"
+              :label-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+              :wrapper-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+            >
+              <a-date-picker
+                v-model="insuranceEditProfile.suffix1"
+                placeholder="22/10/21"
+              />
+            </a-form-model-item>
+          </a-col>
+          <!--END SUFFIX  COLUMN -->
+          <!--START DATE OF BIRTH  COLUMN -->
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+            <a-form-model-item
+              :label="'End Date'"
+              prop="dateOfBirth"
+              has-feedback
+              :colon="false"
+              :label-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+              :wrapper-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+            >
+              <a-date-picker
+                v-model="insuranceEditProfile.dateOfBirth1"
+                placeholder="22/10/21"
+              />
+            </a-form-model-item>
+          </a-col>
+          <!--END DATE OF BIRTH COLUMN -->
+          <!--START GENDER COLUMN -->
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+            <a-form-model-item
+              :label="'Rx Group'"
+              prop="gender"
+              has-feedback
+              :colon="false"
+              :label-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+              :wrapper-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+            >
+              <a-input
+                v-model="insuranceEditProfile.gender1"
+                placeholder="221121"
+              />
+            </a-form-model-item>
+          </a-col>
+          <!--END GENDER COLUMN -->
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+            <a-form-model-item
+              :label="'Insurance Company Name'"
+              prop="companyName"
+              has-feedback
+              :colon="false"
+              :label-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+              :wrapper-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+            >
+              <a-input
+                v-model="insuranceEditProfile.companyName"
+                placeholder="221121"
+              />
+            </a-form-model-item>
+          </a-col>
+          <!--START SSN COLUMN -->
+          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+            <a-form-model-item
+              :label="'BIN'"
+              prop="ssn"
+              has-feedback
+              :colon="false"
+              :label-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+              :wrapper-col="{
+                xl: 24,
+                lg: 24,
+                md: 24,
+                sm: 24,
+                xs: 24
+              }"
+            >
+              <a-input v-model="insuranceEditProfile.ssn1" placeholder="221121">
               </a-input>
             </a-form-model-item>
           </a-col>
-          <!--END ADDRESS COLUMN -->
+          <!--END SSN COLUMN -->
         </a-row>
-        <!--END ADDRESS ROW -->
-        <!--START ZIP ROW -->
-        <a-row :gutter="24" class="px-2 mt-0">
-          <!--START ZIP COLUMN -->
-          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
-            <a-form-model-item
-              :label="'ZIP'"
-              prop="zip"
-              has-feedback
-              :colon="false"
-              :label-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-              :wrapper-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-            >
-              <a-input v-model="insuranceEditProfile.zip" placeholder="64587">
-              </a-input>
-            </a-form-model-item>
-          </a-col>
-          <!--END ZIP COLUMN -->
-          <!--START CELL PHONE COLUMN  -->
-          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
-            <a-form-model-item
-              :label="'Cell Phone'"
-              prop="cellphone"
-              has-feedback
-              :colon="false"
-              :label-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-              :wrapper-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-            >
-              <a-input
-                v-model="insuranceEditProfile.cellphone"
-                placeholder="+123456789"
-              >
-              </a-input>
-            </a-form-model-item>
-          </a-col>
-          <!--END CELL PHONE COLUMN -->
-          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
-            <a-form-model-item
-              :label="'Phone Number'"
-              prop="phonenumber"
-              has-feedback
-              :colon="false"
-              :label-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-              :wrapper-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-            >
-              <a-input
-                v-model="insuranceEditProfile.phonenumber"
-                placeholder="+123456789"
-              >
-              </a-input>
-            </a-form-model-item>
-          </a-col>
-          <!--START EMAIL COLUMN  -->
-          <a-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
-            <a-form-model-item
-              :label="'Email'"
-              prop="email"
-              has-feedback
-              :colon="false"
-              :label-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-              :wrapper-col="{
-                xl: 24,
-                lg: 24,
-                md: 24,
-                sm: 24,
-                xs: 24
-              }"
-            >
-              <a-input
-                v-model="insuranceEditProfile.email"
-                placeholder="test@gmail.com"
-              >
-              </a-input>
-            </a-form-model-item>
-          </a-col>
-          <!--END  EMAIL COLUMN  -->
-        </a-row>
-        <!--END ZIP ROW -->
       </a-form-model>
       <!--START FORM MODEL -->
       <a-row :gutter="24">

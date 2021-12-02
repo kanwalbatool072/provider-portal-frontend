@@ -3,34 +3,35 @@
   <!--START EDIT PROFILE-PICTURE SECTION -->
   <div class="demo-profile-picture">
     <!--START EDIT PROFILE PICTURE CARD  -->
-    <a-card class="insurance-card" :bordered="false">
-      <!--START DOCTER IMAGE LIST ROW-->
-      <a-row class="pb-3">
-        <!--START ICON COLUMN -->
-        <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" align="end">
-          <a-icon type="more" />
+    <a-card :bordered="false" class="profile-picture">
+      <!--START EDIT PROFILE PICTURE ROW-->
+      <a-row>
+        <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24" align="center">
+          <img
+            src="/images/Dashboard/dr_john.svg"
+            alt=""
+            class="mt-1 profile-pic"
+          />
         </a-col>
-        <!--END ICON COLUMN-->
-        <!--START DOCTER IMAGE LIST COLUMN-->
-        <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" align="center">
-          <div class="p-3">
-            <img src="/images/Dashboard/dr_john.svg" height="92" />
-          </div>
-          <h2 class="mb-0 pt-2">David James</h2>
-          <span class="fs-normal font-400 management-card-text">1234</span>
-        </a-col>
-        <!--START DOCTER IMAGE LIST COLUMN-->
       </a-row>
-      <!--END  DOCTER IMAGE LIST ROW-->
-      <!--START ORITHOPEDICS TEMPLATES -->
-      <template slot="actions" class="ant-card-actions">
-        <a-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" align="center">
-          <div class="card-text">
-            <p class="mb-0 fs-normal font-400 management-card-text">PATIENT</p>
-          </div>
+      <!--END EDIT PROFILE PICTURE ROW-->
+      <!--START DRIVING LICENSE ROW  -->
+      <a-row class="mt-4">
+        <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24" align="center">
+          <a-button type="primary" class="px-4">
+            Insurance card Front
+          </a-button>
         </a-col>
-      </template>
-      <!--END ORITHOPEDICS TEMPLATES-->
+      </a-row>
+      <!--END DRIVING LICENSE ROW  -->
+      <!--START INC CARD FRONT ROW  -->
+      <a-row class="mt-2">
+        <a-col :xl="24" :lg="24" :md="24" :sm="24" :xs="24" align="center">
+          <a-button type="primary" class="px-4 mb-2">
+            Insurance card Back
+          </a-button>
+        </a-col>
+      </a-row>
     </a-card>
     <!--END EDIT PROFILE PICTURE CARD  -->
   </div>

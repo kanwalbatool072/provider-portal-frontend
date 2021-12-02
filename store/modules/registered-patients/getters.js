@@ -6,55 +6,82 @@ export default {
         title: 'Adrita Kha',
         email: '123458',
         image: '/images/Specialist/doctor1.svg',
-        scheduled: false
+        scheduled: false,
+        timeList: true,
+        time: '10:20 AM',
+        image1: '/images/Dashboard/edit.png'
       },
       {
         title: 'Adrita Kha',
         email: '123458',
         image: '/images/Specialist/doctor2.svg',
-        scheduled: false
+        scheduled: false,
+        timeList: true,
+        time: '10:20 AM',
+        image1: '/images/Dashboard/edit.png'
       },
       {
         title: 'Adrita Kha',
         email: '123458',
         image: '/images/Specialist/doctor3.svg',
-        scheduled: false
+        scheduled: false,
+        timeList: true,
+        time: '10:20 AM',
+        image1: '/images/Dashboard/edit.png'
       },
       {
         title: 'Adrita Kha',
         email: '123458',
         image: '/images/Specialist/doctor1.svg',
-        scheduled: false
+        scheduled: false,
+        timeList: true,
+        time: '10:20 AM',
+        image1: '/images/Dashboard/edit.png'
       },
       {
         title: 'Adrita Kha',
         email: '123458',
         image: '/images/Specialist/doctor2.svg',
-        scheduled: false
+        scheduled: false,
+        timeList: true,
+        time: '10:20 AM',
+        image1: '/images/Dashboard/edit.png'
       },
       {
         title: 'Adrita Kha',
         email: '123458',
         image: '/images/Specialist/doctor4.svg',
-        scheduled: false
+        scheduled: false,
+        timeList: true,
+        time: '10:20 AM',
+        image1: '/images/Dashboard/edit.png'
       },
       {
         title: 'Adrita Kha',
         email: '123458',
         image: '/images/Specialist/doctor1.svg',
-        scheduled: false
+        scheduled: false,
+        timeList: true,
+        time: '10:20 AM',
+        image1: '/images/Dashboard/edit.png'
       },
       {
         title: 'Adrita Kha',
         email: '123458',
         image: '/images/Specialist/doctor2.svg',
-        scheduled: false
+        scheduled: false,
+        timeList: true,
+        time: '10:20 AM',
+        image1: '/images/Dashboard/edit.png'
       },
       {
         title: 'Adrita Kha',
         email: '123458',
         image: '/images/Specialist/doctor4.svg',
-        scheduled: false
+        scheduled: false,
+        timeList: true,
+        time: '10:20 AM',
+        image1: '/images/Dashboard/edit.png'
       }
     ]
     return cardsData

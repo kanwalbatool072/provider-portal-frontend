@@ -15,7 +15,7 @@
         <!--COMPONENT -->
         <h3 class="mt-3 fs-large font-600 pb-2">Diagnosis Code</h3>
         <DiagnosisTable />
-        <h3 class="mt-3 fs-large font-600 pb-2">Insurance Payments</h3>
+        <h3 class="mt-3 fs-large font-600 pb-2">CPT/HCPS Code</h3>
         <CptTable />
         <DraftCard />
       </a-col>
