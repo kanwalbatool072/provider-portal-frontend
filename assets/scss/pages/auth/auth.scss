@@ -1,4 +1,5 @@
 #auth {
+  position: relative;
     .auth-bg {
       position: absolute;
       bottom: 0;
@@ -8,12 +9,6 @@
       background-image: url('/images/login-img.png');
       background-size: cover;
       height: 100vh;
-      .provider-app-text {
-        position: absolute;
-        bottom: 200px;
-        right: 130px;
-        font-size: 1.8rem;
-      }
     }
     .auth-line {
       width: 20px;

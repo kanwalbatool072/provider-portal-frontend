@@ -247,7 +247,7 @@
             >
               <a-input
                 v-model="insuranceEditProfile.companyName2"
-                placeholder="221121"
+                placeholder="Company Name"
               />
             </a-form-model-item>
           </a-col>
@@ -512,7 +512,7 @@
             >
               <a-input
                 v-model="insuranceEditProfile.companyName"
-                placeholder="221121"
+                placeholder="Company Name"
               />
             </a-form-model-item>
           </a-col>
